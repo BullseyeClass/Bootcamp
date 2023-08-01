@@ -2,7 +2,7 @@
 
 namespace Bootcamp.Controllers
 {
-    public class StudentOutcomeAndReviewController : Controller
+    public class StudentOutcomesAndReviewController : Controller
     {
         public IActionResult Index()
         {
