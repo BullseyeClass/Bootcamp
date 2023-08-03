@@ -57,8 +57,10 @@ hr {
     font-size:15px;
     
 }
+#social-btn:hover {
+    background-color: #292929;
+}
 
-
-/*.form-control.is-invalid {
-    border: 5px solid red;*/ /* Display the border in red when there's an error */
-/*}*/
+#social-text:hover{
+    color:white;
+}
