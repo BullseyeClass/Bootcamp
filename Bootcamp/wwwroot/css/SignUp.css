@@ -1,4 +1,4 @@
-﻿body {
+﻿* {
     margin: 0;
     box-sizing: border-box;
     font-family: Montserrat,Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -9,7 +9,9 @@
     background-size: cover;
     background-image: url(../images/camp-bg-8-22-1.png);
     padding-top: 10%;
-
+}
+.headdiv{
+    padding-top: 60px;
 }
     .first h1 {
         text-transform: uppercase;
@@ -25,10 +27,11 @@
         margin-bottom: 1.25rem;
     }
     .first p {
-        font-size: 1.20rem;
+        font-size: 1.50rem;
         line-height: 1.75rem;
         text-align: center;
-        padding-bottom: 5rem;
+        padding-top: 1.50rem;
+        padding-bottom: 3rem;
     }
 .header-text:before, .header-text:after {
     content: "";
@@ -52,7 +55,6 @@
 .second {
     padding-top: 10%;
     padding-bottom: 30%;
-    display: block;
 }
 .space{
     padding-top: 80px;
@@ -119,7 +121,7 @@
 .nsl-container1:hover {
     background: rgba(225,105,100,0.35);
 }
-strong {
+#strong {
     padding-left: 15px;
     margin-left: 130px;
     margin-top: -30px;
@@ -138,7 +140,6 @@ strong {
     background-size: cover;
     background-image: url(../images/camp-bg-green-2.png);
     padding-top: 10%;
-    padding-bottom: 30%;
 }
 
 .form-body {
@@ -146,15 +147,15 @@ strong {
     display: flex;
     justify-content: space-around;
     align-content: center;
-
 }
 
 .form-control {
-    height: 41px;
+    height: 53px;
     background: #f2f2f2;
     box-shadow: none !important;
     border: none;
     padding: 16px 20px;
+    text-indent: 20px;
 }
 
     .form-control:focus {
@@ -167,7 +168,7 @@ strong {
 
 .signup-form {
     width: 50vw;
-   padding-top:100px;
+   padding-top:30px;
 }
 
     .signup-form form {
@@ -199,17 +200,18 @@ strong {
     }
 
     .signup-form .btn {
+        display:flex;
         align-items:center;
         font-size: 20px;
         font-weight: bold;
         background: #F16059;
         border: none;
         margin-left: 30px;
-        padding: 30px 150px;
+        padding: 40px 150px;
     }
 
         .signup-form .btn:hover, .signup-form .btn:focus {
-            background: #2389cd !important;
+            background: rgba(225,105,100,0.35) !important;
             outline: none;
         }
 
@@ -241,42 +243,41 @@ strong {
     margin-bottom: 8rem;
 }
 .checkmark {
-    width: 6%;
+    width: 4%;
+    margin-left:285px;
+    margin-top:-40px;
 }
-.checkmark .text{
-   fill: white;
-}
-.checkmark .text1 {
-    fill: #F16059;
-}
+    .checkmark .text {
+        fill: white;
+    }
+    .checkmark .text1 {
+        fill: #F16059;
+    }
 .bottom {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.relative2 {
-    margin-right: -70px;
+    margin: 0 auto;
 }
 .relative1 {
     padding-left: 22rem;
-    padding-right: 22rem;
+    padding-right: 18rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.50rem;
+    font-size: 1.20rem;
 }
 ul svg {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 150px;
-    margin-top: 100px;
+    margin-top: 40px;
+}
+.svg{
+    position: relative;
+    bottom: 150px;
+    margin-left: 60px;
+    padding-left: 150px;
 }
 .svg p {
-    margin-top: -40px;
-}
-#flex{
-    margin-top: 100px;
+    margin-top: -50px;
 }
 .text-bottom {
     display: flex;
@@ -285,28 +286,26 @@ ul svg {
     line-height: 3rem;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.70rem;
     margin-left: 250px;
     margin-bottom: 20px;
 }
 cite {
-    font-size: 1.75rem;
+    font-size: 1.50rem;
+    margin-bottom: 100px;
 }
 .h3 {
-    margin-left: auto;
-    margin-right: auto;
     text-align:center;
-    padding: 20px;
-    padding-right: 130px;
-}
-.up{
-    position: relative;
-    bottom: 230px;
-
+    padding: 50px;
+    padding-right: 110px;
+    font-weight: 700;
+    font-size: 23px;
 }
 .image1 img{
-    margin-left: 40px;
+    margin-left: 320px;
 }
-.quote{
-   
+.quote {
+    margin-left: 200px;
+    position: relative;
+    bottom: 230px;
 }
