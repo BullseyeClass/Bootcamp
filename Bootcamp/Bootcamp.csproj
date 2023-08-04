@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Models\Login\" />
-    <Folder Include="wwwroot\StudentOutcomesImages\" />
   </ItemGroup>
 
 </Project>
