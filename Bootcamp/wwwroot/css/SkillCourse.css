@@ -1,0 +1,123 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    height: 100%;
+    overflow: hidden;
+/*   background-position: center bottom;
+*/    background-image: url('/Images/SkillBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 7rem;
+    box-sizing: border-box;
+    width: 102%;
+    height: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    line-height:inherit;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+    font-family: Montserrat, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+/*
+:after, ::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;*/
+    /* Content styles */
+    .content {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+    height:50px;
+  
+}
+
+    .content .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: irem;
+    }
+
+.content img {
+    width: 100%;
+    margin-top: 20px;
+    max-height: none;
+}
+
+.cta-box {
+    display: inline-block;
+    background-color: #f16059;
+    right:0;
+    padding: 20px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-weight: bold;
+    align-content: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-transform: uppercase;
+}
+
+.cta-box:hover {
+    background-color: #ff00;
+    color: white;
+}
+
+.content .font-sans p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5rem;
+}
+
+.content .font-sans .leading-loose {
+    line-height: 2;
+}
+
+/* Additional section styles */
+/*.additional-content {
+    background-color: #f8f8f8;*/ /* Add a background color */
+    /*padding-left: 20px;*/ /* Add padding for spacing */
+    /*padding-right: 20px;*/ /* Add padding for spacing */
+
+    /*margin-top: 50px;*/ /* Adjust the top margin to push the section down */
+    /*border-top: 1px solid #ccc;*/ /* Add a top border for separation */
+/*}*/
+
+/*/*/*
+   
+
+
+
+
+
+./*additional-content img {
+    width: 100%;
+    max-height: 200px;
+    margin-top: 20px;
+}*/
+
+/* Additional styling for text */
+.additional-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
