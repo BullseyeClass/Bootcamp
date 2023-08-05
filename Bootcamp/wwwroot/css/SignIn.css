@@ -1,0 +1,65 @@
+﻿.card {
+    background: none;
+    border: none;
+}
+
+.card-body {
+    margin-top: 4rem;
+}
+
+.btn-none {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#labels {
+    margin-right: 380px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1rem;
+}
+
+.lost {
+    margin-left: auto;
+}
+
+ .lost a {
+        text-decoration: none;
+    }
+
+.social {
+    color: #292929;
+    font-size: 15px;
+}
+
+.form-control-lg{
+    border-radius:0%;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 0;
+}
+
+.overlap-container {
+    position: relative;
+}
+
+.overlap-text {
+    position: absolute; 
+    top: -13px; 
+    background-color: rgba(241,96,89); 
+    padding: 0 10px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size:15px;
+    
+}
+#social-btn:hover {
+    background-color: #292929;
+}
+
+#social-text:hover{
+    color:white;
+}
