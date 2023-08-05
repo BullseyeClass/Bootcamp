@@ -254,12 +254,12 @@ ul {
 }
 #container5 {
     display: flex;
-    margin-left:-14rem;
-    width:60rem
+    margin-left: -14rem;
+    width: 60rem;
+    margin-bottom: 3rem;
 }
 .top1 {
-    height: 58px;
-
+    height: 4rem;
     background: #D0F1F1;
 }
 #top1img {
@@ -269,10 +269,9 @@ ul {
     margin-left: -1rem;
 }
 .top2 {
-    height: 58px;
+    height: 4rem;
     background: #FFD7D7;
 }
-
 #con1 {
     justify-content: start;
     margin-left:2rem;
@@ -325,78 +324,150 @@ ul {
     margin: 0.375em 0.56em;
     width: fit-content;
 }
+#tech-classes {
+    display: flex; 
+    font-family: Montserrat;
+    font-size: .85rem;
+    font-weight: 700;
+    flex-flow: row;
+}
+.jg-tech-class-wrapper {
+    margin-left: 0.5rem;
+    width: 150%;
+}
+.developer-classes {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: -7rem;
+    margin-bottom: 2.75rem;
+    background-color: #d0f1f1;
+    justify-content: center;
+    width: 25em;
+    height: 4em;
+    white-space: normal;
+}
+.design-classes {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    margin-left: 12rem;
+    margin-bottom: 2.75rem;
+    background-color: #ffd7d7;
+    width:25em;
+    height:4em;
+    white-space: normal;
+}
 
+.design-classes img, .developer-classes img {
+    position: absolute;
+    left: -2rem;
+    top: -0.36rem;
+}
+.elementor img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.elementor-element {
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+    padding: 0 4rem;
+}
+
+.topcontainer {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+    display: flex;
+}
+
+.svg{
+    display: block;
+    font-size:-2rem;
+}
+
+.element-container{
+    display:flex;
+}
+.elementlist-items{
+    
+}
 
 @media (max-width: 767px) {
     /* Section 1 */
     .section1 {
-        background-size: contain; 
-        width: 100%;
-        margin-left: 0;
-    }
+            background-size: contain;
+            width: 100%;
+            margin-left: 0;
+        }
 
-    #jumbotron {
-        width: 100%;
-        transform: none;
-    }
+        #jumbotron {
+            width: 100%;
+            transform: none;
+        }
 
-    .btn-lg {
-        width: 100%;
-        margin-top: 10px; 
-    }
+        .btn-lg {
+            width: 100%;
+            margin-top: 10px;
+        }
 
-    /* Section 2 */
-    #container2 {
-        flex-direction: column; 
-    }
+        /* Section 2 */
+        #container2 {
+            flex-direction: column;
+        }
 
-    #ForgetImg {
-        margin-left: 0;
-    }
+        #ForgetImg {
+            margin-left: 0;
+        }
 
-    /* Section 3 */
-    #container3 {
-        width: 100%;
-        margin-left: 0;
-    }
+        /* Section 3 */
+        #container3 {
+            width: 100%;
+            margin-left: 0;
+        }
 
-    .video-container {
-        padding-top: 56.25%; 
-        margin-left: 0;
-    }
+        .video-container {
+            padding-top: 56.25%;
+            margin-left: 0;
+        }
 
-    #listcontainer {
-        padding: 1rem;
-    }
+        #listcontainer {
+            padding: 1rem;
+        }
 
-    /* Section 4 */
-    #container4 {
-        flex-direction: column; 
-    }
+        /* Section 4 */
+        #container4 {
+            flex-direction: column;
+        }
 
-    .BreakImg {
-        margin-left: 0;
-    }
+        .BreakImg {
+            margin-left: 0;
+        }
 
-    .TimelineImg {
-        margin-left: 0;
-    }
+        .TimelineImg {
+            margin-left: 0;
+        }
 
-    /* Section 5 */
-    #container5 {
-        flex-direction: column; 
-    }
+        /* Section 5 */
+        #container5 {
+            flex-direction: column;
+        }
 
-    #con1,
-    #con2 {
-        width: 100%;
-        margin-left: 0;
-    }
+        #con1,
+        #con2 {
+            width: 100%;
+            margin-left: 0;
+        }
 
-    .Front2 {
-        margin-left: 0;
+        .Front2 {
+            margin-left: 0;
+        }
     }
-}
 
 
 
