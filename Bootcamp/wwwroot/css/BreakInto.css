@@ -1,5 +1,5 @@
 ﻿
-html {
+/*html {
     font-size: 14px;
 }
 
@@ -13,7 +13,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-}
+}*/
 
 .section1 {
     margin: 0%;
@@ -474,9 +474,9 @@ ul {
 
 
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {*/
     /* Section 1 */
-    .section1 {
+    /*.section1 {
             background-size: contain;
             width: 100%;
             margin-left: 0;
@@ -490,19 +490,19 @@ ul {
         .btn-lg {
             width: 100%;
             margin-top: 10px;
-        }
+        }*/
 
         /* Section 2 */
-        #container2 {
+        /*#container2 {
             flex-direction: column;
         }
 
         #ForgetImg {
             margin-left: 0;
-        }
+        }*/
 
         /* Section 3 */
-        #container3 {
+        /*#container3 {
             width: 100%;
             margin-left: 0;
         }
@@ -514,10 +514,10 @@ ul {
 
         #listcontainer {
             padding: 1rem;
-        }
+        }*/
 
         /* Section 4 */
-        #container4 {
+        /*#container4 {
             flex-direction: column;
         }
 
@@ -527,10 +527,10 @@ ul {
 
         .TimelineImg {
             margin-left: 0;
-        }
+        }*/
 
         /* Section 5 */
-        #container5 {
+        /*#container5 {
             flex-direction: column;
         }
 
@@ -543,7 +543,7 @@ ul {
         .Front2 {
             margin-left: 0;
         }
-    }
+    }*/
 
 
 
