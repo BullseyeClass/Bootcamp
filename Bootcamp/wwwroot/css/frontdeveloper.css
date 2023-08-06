@@ -1,0 +1,20 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.taxonomy {
+    padding-top: 1rem;
+    font-size:1.5rem;
+}

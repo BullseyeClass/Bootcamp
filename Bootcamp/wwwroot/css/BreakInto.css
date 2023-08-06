@@ -224,7 +224,9 @@ ul {
 .learn {
     font-weight: bold;
 }
-
+.leads {
+    font-weight: bold;
+}
 #learncontainer {
     width: 79em;
     margin-left: -14.7em;
@@ -333,7 +335,10 @@ ul {
 }
 .jg-tech-class-wrapper {
     margin-left: 0.5rem;
-    width: 150%;
+    width: 155%;
+}
+.info11{
+    margin-left:1.5rem;
 }
 .developer-classes {
     display: flex;
@@ -380,34 +385,77 @@ ul {
 .topcontainer {
     text-align: center;
     margin-bottom: 3rem;
-}
+    margin-left:-10rem;
 
-.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap {
+}
+.element-container {
     display: flex;
+
+    flex-flow:row;
+    margin-top:2rem;
+    width:60rem;
+    white-space:normal;
+   justify-content:space-between;
+}
+/*#fouroneimg{
+    margin-left:-9rem;
+    margin-top:-2rem;*/
+    
+}
+.list-text {
+    font-size: .856rem;
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.svg{
-    display: block;
-    font-size:-2rem;
-}
-
-.element-container{
+.Stepcontainer{
     display:flex;
 }
-.elementlist-items{
+
+.steimgcontainer {
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+   /* margin-top: -5em;
+    padding: 2rem;*/
+}
+
+#steimg {
+    width: 200px; /* Set the desired width */
+    height: auto;
+    margin-left:-9rem;
+    display:flex;
+    justify-content:space-between;
+   
+}
+
+#steimg1 {
+    padding:3rem;
+    width: 200px; /* Set the desired width */
+    height: auto;
+    margin-left: -33rem;
+    margin-top:5rem;
+    
+
     
 }
 
-
-
-
-
-
-
-
-
-
-
+.textcontainer {
+    font-family: "Open Sans",Sans-serif;
+    font-weight: 200;
+    width: 15em;
+    font-size: -10rem;
+    align-content: flex-start;
+    
+}
+/*#textcon1 {
+    font-family: "Open Sans",Sans-serif;
+    font-weight: 400;
+    align-content: flex-start;
+    font-size: .86rem;
+}*/
 
 
 
