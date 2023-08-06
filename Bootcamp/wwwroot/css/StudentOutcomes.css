@@ -1,0 +1,197 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+body {
+    font-family: Montserrat,"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.hero {
+    min-height: 75rem;
+    background-image: url('../StudentOutcomesImages/reviews-bg.png.webp');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    padding: 3rem;     
+}
+
+.title {
+    margin-top: 7.5rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.text-center {
+    text-align: center;
+}
+
+.bold-topic {  
+    width: 50%;
+    margin: 1.75rem auto;
+}
+
+.hero-heading {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+.write-up{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.video-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.video-container {
+    max-width: 70%;
+    width: 70%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rating-images{
+    margin: 4rem auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-online-img{
+    margin: 2rem auto;
+    text-align: center;
+}
+
+
+.best-online-img>p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.best-online-img > img {
+    height: 3.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-wrapper {
+    margin: 4rem auto;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.review-title-top>p {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.asterisk {
+    color: rgb(255,0,0);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: -0.5rem;
+    font-size: 3rem;
+}
+
+.card1 {
+    flex-basis: calc(45% - 0.625rem);
+    margin: 2rem;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    min-height: 54rem;
+    min-width: 40%;
+    padding: 6rem 4rem 5rem 4rem;
+    background-color: rgba(250,250,250,0.9);
+}
+
+.review-pix > img {
+    overflow: hidden;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.review-title {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.review-title>a:hover{
+    color: rgb(128, 128, 128);
+}
+
+.review-write-up {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.review-name {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review-job-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review-location {
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cta{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cta > span > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(255,0,0);
+}
+
+.cta > span > a:hover {
+     color: rgb(178,34,34);
+}
