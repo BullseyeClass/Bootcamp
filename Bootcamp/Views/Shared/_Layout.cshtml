@@ -7,42 +7,246 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Bootcamp.styles.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Bootcamp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="nav">
+        <div class="top-nav-container">
+
+            <div class="top-nav-text-container">
+                <h2 class="nav-tagline-text">
+                    THE ONLINE CODING &AMP; DESIGN SCHOOL WITH A
+
+                </h2>
+
+                <span>
+                    <svg viewBox="0 0 20 20" class="nav-with-love" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="rainbowHeart" gradientTransform="rotate(90)">
+                                <stop stop-color="red" offset="0%"></stop>
+                                <stop stop-color="orange" offset="25%"></stop>
+                                <stop stop-color="yellow" offset="50%"></stop>
+                                <stop stop-color="green" offset="75%"></stop>
+                                <stop stop-color="blue" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path class="nav-tagline__heart-icon" fill="url(#rainbowHeart)" fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                    </svg>
+
+                </span>
             </div>
-        </nav>
+
+            <div  class="SignIn">
+                <a id="kkkk">
+               
+                    <svg class="fa inline mb-0.5 svg-inline--fa fa-sign-in-alt fa-w-16 nav-tagline__cta__icon w-3" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="sign-in-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"></path></svg><span>SIGN IN</span>
+                
+             
+                </a>
+            </div>
+        </div>
+
+        <div id="mmmm" class="main-navbar">
+            <a>
+                <img src="~/images/Skillcrush_Logo@2x.webp" />
+            </a>
+            <a>
+                BREAK INTO TECH PROGRAM
+            </a>
+            <a>
+                SKILL COURSES
+            </a>
+            <a>
+                STUDENT OUTCOMES
+            </a>
+            <a>
+                TUITION
+            </a>
+            <a>
+                BLOG
+            </a>
+            <p>
+                <div id="camp">
+                    FREE CODING CAMP
+                </div>
+            </p>
+        </div>
+
     </header>
+
+
+
+
+
+
+
+
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-   
+    <footer>
+
+
+        <div class="container-flex main-footer-container">
+
+            <h3 class="footer-text">Haven't Found What <br /> You're Looking For?</h3>
+
+
+            <div class="search-container">
+
+                <div class="search-input">
+
+                    <input type="text" placeholder="Enter Search Terms">
+                </div>
+
+                <div class="search-button">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 w-3 pb-0.5 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+                    <p class="submit-button">SEARCH</p>
+                </div>
+            </div>
+
+
+            <div id="pppp" class="footer-menu">
+
+                <div class="courses menu-section">
+
+                    <h4>COURSES</h4>
+                    <hr />
+
+                    <a> Meet with an Enrollment Counselor</a><br />
+                    <a> View All Courses</a> <br />
+                    <a> <b>FREE</b> Coding Camp</a> <br />
+                    <a> Break Into Tech Job Training Program</a> <br />
+                    <a> Front End + React JS</a> <br />
+                    <a> Front End Development</a><br />
+                    <a> Python for Web Apps & Data</a> <br />
+                    <a> User Experience (UX)</a> <br />
+                    <a>Visual Design</a> <br />
+                    <a>Tuition Options</a> <br />
+
+                </div>
+
+                <div  class="courses menu-section">
+
+                    <h4>RESOURCES</h4>
+                    <hr />
+
+                    <a><b>NEW!</b> Tech Jobs Database</a><br />
+                    <a> The Get Hired Track</a> <br />
+                    <a> Career Coaching for Skillcrush Students: Here’s How It Works</a> <br />
+                    <a> 100+ Ways to Learn to Code for Free</a> <br />
+                    <a>
+                        11 High-Paying Entry-Level Tech Jobs—No Experience Required
+                    </a> <br />
+                    <a> How to Decide Between Being a Web Designer vs. Web Developer</a><br />
+                    <a> The 15 Essential Front End Developer Skills</a> <br />
+                    <a> 9 Skills Every Successful Web Designer Needs (UX)</a> <br />
+                    
+
+                </div>
+
+                <div class="courses menu-section">
+
+                    <h4>ABOUT SKILLCRUSH</h4>
+                    <hr />
+
+                    <p> We’re on a mission to support our students— <br />especially those marginalized by gender, race, and/or <br /> age—to learn in-demand tech skills and land higher <br /> paying and more fulfilling jobs.</p><br />
+                    <a> About The Team</a> <br />
+                    <a> Blog</a> <br />
+                    <a>Community Guidelines</a> <br />
+                    <a>Jobs</a> <br />
+                    <a> Sign In</a><br />
+                   
+
+                </div>
+
+            </div>
+
+            <div class="social-logos">
+
+                <a>
+                    <img src="~/images/facebook.svg" />
+                </a>
+
+                <a>
+                    <img src="~/images/instagram.svg" />
+                </a>
+
+                <a>
+                    <img src="~/images/linkedin.svg" />
+                </a>
+
+                <a>
+                    <img src="~/images/instagram.svg" />
+                </a>
+
+            </div>
+
+            <div class="footer-help">
+                <div" class="help-logo">
+
+                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="life-ring" class="svg-inline--fa fa-life-ring fa-w-16 footer__help__icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 504c136.967 0 248-111.033 248-248S392.967 8 256 8 8 119.033 8 256s111.033 248 248 248zm-103.398-76.72l53.411-53.411c31.806 13.506 68.128 13.522 99.974 0l53.411 53.411c-63.217 38.319-143.579 38.319-206.796 0zM336 256c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80zm91.28 103.398l-53.411-53.411c13.505-31.806 13.522-68.128 0-99.974l53.411-53.411c38.319 63.217 38.319 143.579 0 206.796zM359.397 84.72l-53.411 53.411c-31.806-13.505-68.128-13.522-99.973 0L152.602 84.72c63.217-38.319 143.579-38.319 206.795 0zM84.72 152.602l53.411 53.411c-13.506 31.806-13.522 68.128 0 99.974L84.72 359.398c-38.319-63.217-38.319-143.579 0-206.796z"></path></svg>
+                </div">
+
+                <div class="need-help">
+
+                    <h5>
+                        <b >Need</b> <br />
+                        
+                        <b>Help?</b>
+                    </h5>
+
+                </div>
+
+                <div class="footer-counselor">
+
+                    Check out the <u><b>FAQs,</b></u> email us at <u><b>hello@skillcrush.com,</b></u> text us at (805) 865-7552, or set up a time to meet with an <u><b>enrollment</b></u> <br /> <u><b>counselor!</b></u>
+
+                </div>
+
+
+            </div>
 
 
 
+        </div>
+
+        <div class="footer-logo-title">
+
+            <a>
+                <img src="~/images/Skillcrush_Logo@2x.webp" />
+            </a>
+
+            <div id="copywrite">
+
+                <span id="copywrite-text">
+                © 2012 - 2023 Skillcrush, Inc. All Rights Reserved.
+            </span>
+            <a>
+                Site Map
+            </a>
+            <a>
+                Privacy Policy
+            </a>
+            <a>
+                Terms of Service
+            </a>
+            </div>
+        </div>
+
+
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
+
+
