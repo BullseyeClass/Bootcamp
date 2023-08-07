@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Blogs>
+@{
     ViewData["Title"] = "Learn To Code";
 
 }
@@ -11,28 +12,92 @@
 
 <div class="container">
 
-            <div class="container">
-                <div class="card-wrapper">
+    <div class="container">
+        <div class="card-wrapper">
    
-                    @foreach(var item in Model)
-                    {
-                        @if (item.Category.Contains("Blog"))
-                        {
-                            <div class="my-card">
-                                <div class="image">
-                                    <img src="@item.Image" alt="image">
-                                </div>
-                                <div class="my-card-body">
-                                    <h5 class="my-card-title">@item.Title</h5>
-                                    <p class="card-text">@item.Content</p>
-                                    <div class="card-cta"> <a href="@item.Link">Read More</a>  </div>
-                                </div>
-                            </div>    
-                        }   
-                    }
+            @foreach(var item in Model)
+            {
+               
+                @if (item.Category.Contains("Blog"))
+                {
 
-                </div>
+                                <div class="my-card">
+                                    <div class="image">
+                                        <img src="@item.Image" alt="image">
+                                    </div>
+                                    <div class="my-card-body">
+                                        <h5 class="my-card-title">@item.Title</h5>
+                                        <p class="card-text">@item.Content</p>
+                                        <div class="card-cta"> <a href="@item.Link">Read More</a>  </div>
+                                    </div>
+                                </div>
+                           
+                }
+                
+            }
+
+        </div>
+    </div>
+
+
+   @* <div class="card-wrapper">
+
+        <div class="my-card">
+            <div class="image">
+                <img src="../StudentOutcomesImages/reviewpix1.webp" alt="image">
             </div>
+            <div class="my-card-body">
+                <h5 class="my-card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="card-cta"> <a href="">Read More</a>  </div>
+            </div>
+        </div>
+
+
+        <div class="my-card">
+            <div class="image">
+                <img src="../StudentOutcomesImages/reviewpix1.webp" alt="image">
+            </div>
+            <div class="my-card-body">
+                <h5 class="my-card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="card-cta"> <a href="">Read More</a>  </div>
+            </div>
+        </div>
+
+        <div class="my-card">
+            <div class="image">
+                <img src="../StudentOutcomesImages/reviewpix1.webp" alt="image">
+            </div>
+            <div class="my-card-body">
+                <h5 class="my-card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="card-cta"> <a href="">Read More</a>  </div>
+            </div>
+        </div>
+
+        <div class="my-card">
+            <div class="image">
+                <img src="../StudentOutcomesImages/reviewpix1.webp" alt="image">
+            </div>
+            <div class="my-card-body">
+                <h5 class="my-card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="card-cta"> <a href="">Read More</a>  </div>
+            </div>
+        </div>
+
+        <div class="my-card">
+            <div class="image">
+                <img src="../StudentOutcomesImages/reviewpix1.webp" alt="image">
+            </div>
+            <div class="my-card-body">
+                <h5 class="my-card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <div class="card-cta"> <a href="">Read More</a>  </div>
+            </div>
+        </div>
+*@
 
 
 </div>
