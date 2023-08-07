@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bootcamp.Controllers
 {
-    public class LearnToCodeController : Controller
+    public class BlogController : Controller
     {
         private readonly IGetBlogs _getBlogs;
 
-        public LearnToCodeController(IGetBlogs getBlogs)
+        public BlogController(IGetBlogs getBlogs)
         {
             _getBlogs = getBlogs;
         }
