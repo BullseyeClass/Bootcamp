@@ -25,7 +25,7 @@ namespace Bootcamp.Controllers
             int pageNumber = page ?? 1; 
             int itemsPerPage = 10;
 
-            var blogs = _getBlogs.GetBlogsFromDB().Where(item => item.Category.Contains("Blog"));
+            var blogs = _getBlogs.GetBlogsFromDB().Result.Where(item => item.Category.Contains("Blog"));
 
             
             IPagedList<Blogs> pagedBlogs = blogs.ToPagedList(pageNumber, itemsPerPage);
