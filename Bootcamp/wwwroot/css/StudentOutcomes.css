@@ -42,6 +42,7 @@ body {
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.15rem;
+    color: #2c4964;
 }
 
 .write-up{
@@ -51,8 +52,7 @@ body {
 }
 
 .video-container {
-    max-width: 70%;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -60,11 +60,11 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    margin: 3rem auto;
+    margin: 0 auto;
 }
 
 .rating-images{
-    margin: 4rem auto;
+    margin: 2rem auto;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -86,12 +86,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/*.card-wrapper {
-    margin: 4rem auto;
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-}*/
 
 .card-wrapper {
     display: grid;
@@ -100,9 +94,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
-.review-title-top>p {
+.review-title-top > p {
     text-decoration: none;
-    color: black;
+    color: #2c4964;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
@@ -138,11 +132,11 @@ body {
 
 .review-title {
     text-decoration: none;
-    color: black;
     text-align: center;
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 2rem;
+    color: #2c4964;
 }
 
 .review-title>a:hover{
@@ -160,6 +154,7 @@ body {
     font-weight: 700;
     margin: 0 auto;
     text-align: center;
+    color: #2c4964;
 }
 
 .review-job-title {
@@ -167,6 +162,7 @@ body {
     font-weight: 700;
     margin: 0 auto;
     text-align: center;
+    color: #2c4964;
 }
 
 .review-location {
@@ -174,6 +170,7 @@ body {
     margin: 0 auto;
     margin-bottom: 2rem;
     text-align: center;
+    color: #2c4964;
 }
 
 .cta{
@@ -210,11 +207,15 @@ body {
         min-height: 30rem;
     }
 
-    video {
+    .video-container, .bold-topic, .write-up {
         width: 100%;
     }
 
     .title{
         margin-top: 1rem;
+    }
+
+    .hero {
+        padding-bottom: 0 0 0 2rem;
     }
 }
