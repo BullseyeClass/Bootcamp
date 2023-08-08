@@ -8,7 +8,7 @@
     top: 0;
     z-index: 99999;
     background: #8ed8e6;
-    width: 87%;
+    width: 100%;
 }
 .card-wrapper {
     display: grid;
