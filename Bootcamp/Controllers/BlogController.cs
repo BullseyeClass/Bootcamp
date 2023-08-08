@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-﻿using Microsoft.AspNetCore.Mvc;
-
-namespace Bootcamp.Controllers
-{
-    public class blogController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
-=======
 ﻿using Bootcamp.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,7 +15,6 @@ namespace Bootcamp.Controllers
         {
             var blogs = _getBlogs.GetBlogsFromDB();
             return View(blogs.ToList());
->>>>>>> Beta
         }
     }
 }
