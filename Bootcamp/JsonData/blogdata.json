@@ -7,8 +7,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Career Change", "Get Hired in Tech" ],
     "SubCategory": [],
     "Link": "https://skillcrush.com/blog/double-your-salary-even-when-youre-new-to-tech/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "707f72a0-6b5a-47a6-94f8-16ce002c794d",
@@ -18,8 +18,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Career Change", "Get Hired in Tech" ],
     "SubCategory": [],
     "Link": "https://skillcrush.com/blog/find-an-entry-level-job-in-tech/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "d77e9b0f-d2ea-4e0e-bd37-4d02ca4e999c",
@@ -29,8 +29,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Career Change" ],
     "SubCategory": [],
     "Link": "https://skillcrush.com/blog/get-experience-in-tech/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "ebb92ff4-2b1d-4649-9237-96887c183c88",
@@ -40,8 +40,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Front End Developer", "Learn to Code" ],
     "SubCategory": [ "Front End Developer" ],
     "Link": "https://skillcrush.com/blog/what-does-a-front-end-developer-do/",
-    "Start-Here": true,
-    "Most-Recent": true
+    "StartHere": true,
+    "MostRecent": true
   },
   {
     "Id": "98e8fc27-dae1-4e9b-bc18-902f27df5f67",
@@ -51,8 +51,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Front End Developer", "Learn to Code" ],
     "SubCategory": [ "Front End Developer" ],
     "Link": "https://skillcrush.com/blog/skills-to-become-a-front-end-developer/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "c06fb9ad-bd4b-43e2-8b53-10f586e75f0c",
@@ -62,8 +62,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Front End Developer", "Learn to Code" ],
     "SubCategory": [ "Front End Developer" ],
     "Link": "https://skillcrush.com/blog/how-to-become-a-front-end-developer-in-6-months/",
-    "Start-Here": true,
-    "Most-Recent": true
+    "StartHere": true,
+    "MostRecent": true
   },
   {
     "Id": "4a0be5e5-2a4b-4b4a-8e8c-5fb8e7b6d6df",
@@ -73,8 +73,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "UI/UX Designer", "Career Change" ],
     "SubCategory": [ "UI/UX Designer" ],
     "Link": "https://skillcrush.com/blog/difference-between-ux-and-ui/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "4adfd0e3-e1eb-4f5f-9e1e-ee0d4b6d29df",
@@ -84,8 +84,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "UI/UX Designer", "Learn to Code", "Front End Developer" ],
     "SubCategory": [ "UI/UX Designer", "UI Design" ],
     "Link": "https://skillcrush.com/blog/what-is-ui-design/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "8e21f65b-2c2e-4a79-b10e-47ebe0f6555f",
@@ -95,8 +95,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "UI/UX Designer" ],
     "SubCategory": [ "UI/UX Designer" ],
     "Link": "https://skillcrush.com/blog/what-do-ux-designers-do/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "09ed2f17-e2e2-4d4f-98af-431b6c7e2347",
@@ -106,8 +106,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "UI/UX Designer", "UX Design" ],
     "Link": "https://skillcrush.com/blog/elements-of-user-experience/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "f1b007b3-6da6-4e8d-b3ef-9dbd042c07c1",
@@ -117,8 +117,8 @@
     "Category": [ "Blog", "UI/UX Designer", "Entry Level Tech Jobs", "Get Hired in Tech" ],
     "SubCategory": [ "UI/UX Designer" ],
     "Link": "https://skillcrush.com/blog/how-much-is-a-ux-designer-salary/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "6ff193b3-6c35-44f7-909d-b0eb7ff4a8ef",
@@ -128,8 +128,8 @@
     "Category": [ "Blog", "Front End Developer", "Entry Level Tech Jobs" ],
     "SubCategory": [ "Full Stack Developer" ],
     "Link": "https://skillcrush.com/blog/how-to-become-a-full-stack-developer/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "7fc1a3df-3f3f-4a9c-84c2-8e7e5f9c7fc5",
@@ -139,8 +139,8 @@
     "Category": [ "Blog", "Front End Developer", "Entry Level Tech Jobs", "Career Change", "Get Hired in Tech" ],
     "SubCategory": [ "Full Stack Developer", "Landing Your First Front End Job" ],
     "Link": "https://skillcrush.com/blog/web-developer-salaries/",
-    "Start-Here": true,
-    "Most-Recent": true
+    "StartHere": true,
+    "MostRecent": true
   },
   {
     "Id": "b0621a77-98c0-4613-977d-e8b4ce8563e7",
@@ -150,8 +150,8 @@
     "Category": [ "Blog", "Front End Developer", "Entry Level Tech Jobs" ],
     "SubCategory": [ "Full Stack Developer" ],
     "Link": "https://skillcrush.com/blog/tech-101-what-is-a-web-developer/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "1157e273-e2f6-49f6-8c27-0a4cb5b5f51e",
@@ -161,8 +161,8 @@
     "Category": [ "Blog", "Career Change", "Entry Level Tech Jobs" ],
     "SubCategory": [ "Digital Marketer" ],
     "Link": "https://skillcrush.com/blog/what-is-digital-marketing/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "4cd41b05-04f9-4a21-86c9-e9c4d06e2c2b",
@@ -172,8 +172,8 @@
     "Category": [ "Blog", "Get Hired in Tech", "Entry Level Tech Jobs", "Learn to Code" ],
     "SubCategory": [ "Digital Marketer" ],
     "Link": "https://skillcrush.com/blog/digital-marketing-skills/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "500c0c66-c3f1-4ff2-986f-76eb91358c7d",
@@ -183,8 +183,8 @@
     "Category": [ "Blog", "Get Hired in Tech", "Entry Level Tech Jobs" ],
     "SubCategory": [ "Digital Marketer" ],
     "Link": "https://skillcrush.com/blog/best-entry-level-digital-marketing-jobs/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "80e31279-e5d9-4c79-8d8e-2db301a3b6aa",
@@ -194,8 +194,8 @@
     "Category": [ "Blog", "Get Hired in Tech", "Entry Level Tech Jobs", "Front End Developer" ],
     "SubCategory": [ "Landing Your First Job in Tech", "Landing Your First Front End Job" ],
     "Link": "https://skillcrush.com/blog/front-end-developer-job-postings/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "6b5952e5-5a3e-4c21-901c-bf5eb73c88a2",
@@ -205,8 +205,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Front End Developer" ],
     "SubCategory": [ "Landing Your First Job in Tech", "Landing Your First Front End Job" ],
     "Link": "https://skillcrush.com/blog/land-junior-web-developer-job/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "b2c7c75e-d1c2-4c66-8353-1ef7a648d800",
@@ -216,8 +216,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Front End Developer", "Get Hired in Tech", "Learn to Code" ],
     "SubCategory": [ "Landing Your First Job in Tech", "HTML & CSS", "Landing Your First Front End Job" ],
     "Link": "https://skillcrush.com/blog/skillcrushtv-9-jobs-html-css/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "a0cb33f2-6662-4fb7-b9d5-43179e4bea97",
@@ -227,8 +227,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Career Change", "Get Hired in Tech" ],
     "SubCategory": [ "Landing Your First Job in Tech" ],
     "Link": "https://skillcrush.com/blog/should-you-work-for-free/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "66372d43-7d6f-4c9b-bbea-927ce8ac666f",
@@ -238,8 +238,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "UI/UX Designer" ],
     "SubCategory": [ "Tech Job Interview Questions", "Landing Your First UI/UX Designer Job" ],
     "Link": "https://skillcrush.com/blog/web-designer-job-interview-questions/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "01e6cc41-6f0c-465e-a583-7e1c91861b97",
@@ -249,8 +249,8 @@
     "Category": [ "Blog", "Entry Level Tech Jobs", "Front End Developer" ],
     "SubCategory": [ "Tech Job Interview Questions", "Landing Your First Front End Job" ],
     "Link": "https://skillcrush.com/blog/technical-interviews/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "d9f8e67f-4682-4702-bf52-076c408e5a97",
@@ -260,8 +260,8 @@
     "Category": [ "Blog", "Learn to Code", "Front End Developer" ],
     "SubCategory": [ "Tech Job Interview Questions", "JavaScript & JavaScript Frameworks", "Landing Your First Front End Job" ],
     "Link": "https://skillcrush.com/blog/react-js-interview-questions/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "4e43b57a-4e29-4991-9f3a-0cf0a8897f36",
@@ -271,8 +271,8 @@
     "Category": [ "Blog", "Learn to Code", "Career Change", "Entry Level Tech Jobs", "Get Hired in Tech" ],
     "SubCategory": [ "Tech Job Interview Questions" ],
     "Link": "https://skillcrush.com/blog/how-to-use-chatgpt-to-supercharge-your-tech-career-change/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "9f00349b-6b6e-4b89-8989-798d37e6e37b",
@@ -282,8 +282,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "Tech Job Interview Questions" ],
     "Link": "https://skillcrush.com/blog/landing-page-design-how-to-create-pages-that-convert-with-examples/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "5dbfb4df-cdd9-4ca5-86db-92f03bf520e5",
@@ -293,8 +293,8 @@
     "Category": [ "Blog", "Career Change", "Entry Level Tech Jobs" ],
     "SubCategory": [ "Tech Job Interview Questions" ],
     "Link": "https://skillcrush.com/blog/tech-jobs-in-non-technical-industries/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "46430045-94b0-43cc-89c9-4561da0779a7",
@@ -304,8 +304,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "Tech Job Interview Questions" ],
     "Link": "https://skillcrush.com/blog/inclusive-design/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "2ac81b66-0bb5-45c2-9dd5-23d49df1769d",
@@ -315,8 +315,8 @@
     "Category": [ "Blog", "Front End Developer", "Get Hired in Tech" ],
     "SubCategory": [ "Building Your Front End Portfolio" ],
     "Link": "https://skillcrush.com/blog/front-end-developer-portfolio/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "937ed83f-03a0-4ef9-88bb-9c37a5f2a126",
@@ -326,8 +326,8 @@
     "Category": [ "Blog", "Front End Developer", "Entry Level Tech Jobs", "Learn to Code" ],
     "SubCategory": [ "HTML & CSS" ],
     "Link": "https://skillcrush.com/blog/html/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "266ca456-4e4f-4873-88c9-4181a1d8994d",
@@ -337,8 +337,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code" ],
     "SubCategory": [ "HTML & CSS" ],
     "Link": "https://skillcrush.com/blog/how-long-does-it-take-to-learn-html/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "b5d5b3e5-7e97-42e9-af71-616057e034a1",
@@ -348,8 +348,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "HTML & CSS" ],
     "Link": "https://skillcrush.com/blog/css/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "12e9d4d1-0ab0-4ca9-aab9-746b2b5edc0d",
@@ -359,8 +359,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "HTML & CSS" ],
     "Link": "https://skillcrush.com/blog/understanding-css-classes-vs-ids/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "08f64d5a-1d9c-4b44-a834-9df7f49d8a79",
@@ -370,8 +370,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "HTML & CSS" ],
     "Link": "https://skillcrush.com/blog/advanced-css/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "1a9ff5c1-e81b-4d3c-9c85-92587de1d9a2",
@@ -381,8 +381,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "HTML & CSS", "Building Your Front End Portfolio" ],
     "Link": "https://skillcrush.com/blog/html-css-projects/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "7e147eb9-81b9-4f8b-b05b-9414441ea7d7",
@@ -392,8 +392,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "HTML & CSS" ],
     "Link": "https://skillcrush.com/blog/project-make-a-logo-in-pure-css/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "99961a51-9db7-44d0-a830-26b062ab7a6a",
@@ -403,8 +403,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks" ],
     "Link": "https://skillcrush.com/blog/javascript/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "a13d1bbf-90b8-4d16-934c-8c6bf827f6d6",
@@ -414,8 +414,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks" ],
     "Link": "https://skillcrush.com/blog/learn-javascript/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "8c444bea-bc6b-4f8c-9347-149ea6e1185d",
@@ -425,8 +425,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks" ],
     "Link": "https://skillcrush.com/blog/how-hard-is-it-to-learn-javascript/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "829f8e8f-0c98-4a40-bf0e-81a9f74c53b5",
@@ -436,8 +436,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks" ],
     "Link": "https://skillcrush.com/blog/whats-the-difference-between-java-and-javascript/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "6075cb57-4514-4b51-bd9b-7d9a96e9541e",
@@ -447,8 +447,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks" ],
     "Link": "https://skillcrush.com/blog/what-is-jquery-used-for/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "7ad1a1e3-8a11-43db-8750-7b0b6515955d",
@@ -458,8 +458,8 @@
     "Category": [ "Blog", "Front End Developer", "Learn to Code", "Entry Level Tech Jobs" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks", "Building Your Front End Portfolio" ],
     "Link": "https://skillcrush.com/blog/projects-you-can-do-with-javascript/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "e04265c0-4710-4266-80f8-cc1a8ea56b4a",
@@ -469,8 +469,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "JavaScript & JavaScript Frameworks" ],
     "Link": "https://skillcrush.com/blog/learn-web-design/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "a2c2087f-d632-4eb3-9af6-0df8b6e2889d",
@@ -480,8 +480,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "UI Design" ],
     "Link": "https://skillcrush.com/blog/what-is-visual-design/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "2ca77ad0-e43a-42d8-b3c3-09578ec733f2",
@@ -491,8 +491,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "UI Design" ],
     "Link": "https://skillcrush.com/blog/web-design-tools/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "22cd8a77-5564-450a-9ab2-ffea2f9cf645",
@@ -502,8 +502,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "UI Design" ],
     "Link": "https://skillcrush.com/blog/typography-guide/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "4a0634db-7b00-463a-906f-0510e45f1d5e",
@@ -513,8 +513,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "UI Design" ],
     "Link": "https://skillcrush.com/blog/color-theory-guide/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "d6168ea9-7cc9-4572-a1c6-27e297e74d24",
@@ -524,8 +524,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "UX Design" ],
     "Link": "https://skillcrush.com/blog/ux-design-process/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "a01c9e01-11b9-4c4d-b7ea-98399d198f81",
@@ -535,8 +535,8 @@
     "Category": [ "Blog", "UI/UX Designer", "Entry Level Tech Jobs", "Learn to Code" ],
     "SubCategory": [ "UX Design" ],
     "Link": "https://skillcrush.com/blog/ux-design-courses/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "73a7eb3b-9dc2-4b5c-97a9-18651e22b88e",
@@ -546,8 +546,8 @@
     "Category": [ "Blog", "UI/UX Designer", "Entry Level Tech Jobs", "Get Hired in Tech" ],
     "SubCategory": [ "Building Your UI/UX Design Portfolio" ],
     "Link": "https://skillcrush.com/blog/ux-design-portfolio-advice/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "e4a5b66a-0f94-429b-a964-4e90be39d008",
@@ -557,8 +557,8 @@
     "Category": [ "Blog", "UI/UX Designer", "Entry Level Tech Jobs", "Get Hired in Tech" ],
     "SubCategory": [ "Building Your UI/UX Design Portfolio" ],
     "Link": "https://skillcrush.com/blog/7-projects-for-ux-portfolio/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   },
   {
     "Id": "79f77c5c-d6ef-4ac5-a572-2b97a20154f5",
@@ -568,8 +568,8 @@
     "Category": [ "Blog", "UI/UX Designer" ],
     "SubCategory": [ "Landing Your First UI/UX Designer Job" ],
     "Link": "https://skillcrush.com/blog/design-principles/",
-    "Start-Here": false,
-    "Most-Recent": true
+    "StartHere": false,
+    "MostRecent": true
   },
   {
     "Id": "596ae9a5-36fb-43d5-a6b5-7b5b17e9d65b",
@@ -579,8 +579,8 @@
     "Category": [ "Blog", "Learn to Code" ],
     "SubCategory": [],
     "Link": "https://skillcrush.com/blog/64-online-resources-to-learn-to-code-for-free/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "1850114c-23f7-45e1-8232-d03abdf3eb27",
@@ -590,8 +590,8 @@
     "Category": [ "Blog", "Learn to Code", "Career Change" ],
     "SubCategory": [],
     "Link": "https://skillcrush.com/blog/should-i-learn-to-code/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "91a24b5c-6875-4a48-9182-3200e84b8580",
@@ -601,8 +601,8 @@
     "Category": [ "Blog", "Learn to Code", "Career Change" ],
     "SubCategory": [],
     "Link": "https://skillcrush.com/blog/am-i-too-old-to-learn-to-code/",
-    "Start-Here": true,
-    "Most-Recent": false
+    "StartHere": true,
+    "MostRecent": false
   },
   {
     "Id": "9a3d0a8b-3bd0-4b5f-9ca6-17c7e45652ac",
@@ -612,7 +612,7 @@
     "Category": [ "Blog", "Learn to Code" ],
     "SubCategory": [ "Frequently Asked Questions" ],
     "Link": "https://skillcrush.com/blog/do-i-need-to-be-good-at-math-to-code/",
-    "Start-Here": false,
-    "Most-Recent": false
+    "StartHere": false,
+    "MostRecent": false
   }
 ]
