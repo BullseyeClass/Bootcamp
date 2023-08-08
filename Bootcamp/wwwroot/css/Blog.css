@@ -3,7 +3,13 @@
 }
 
 
-
+.alert {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    background: #8ed8e6;
+    width: 100%;
+}
 .card-wrapper {
     display: grid;
     grid-column-gap: 2rem;
