@@ -15,11 +15,10 @@ namespace Bootcamp.Services
             _hostEnvironment = hostEnvironment;
         }
 
-        public Task<IEnumerable<Blogs>> GetBlogsFromDB()
+        public IEnumerable<Blogs> GetBlogsFromDB()
         {
             string filePath = Path.Combine(_hostEnvironment.ContentRootPath, "JsonData", "blogdata.json");
-            IEnumerable<Blogs> blogs = _jsonHelper.ReadFromJsons(filePath);
-            return Task.FromResult(blogs);
+            return _jsonHelper.ReadFromJsons(filePath);
         }
     }
 }

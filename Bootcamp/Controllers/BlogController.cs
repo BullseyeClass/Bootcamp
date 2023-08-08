@@ -1,6 +1,8 @@
 ﻿using Bootcamp.Repository.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using PagedList;
+using X.PagedList;
+using System.Linq;
+using Bootcamp.Models;
 
 namespace Bootcamp.Controllers
 {
@@ -12,15 +14,21 @@ namespace Bootcamp.Controllers
         {
             _getBlogs = getBlogs;
         }
+        //public IActionResult Index()
+        //{
+        //    var blogs = _getBlogs.GetBlogsFromDB();
+        //    return View(blogs.ToList());
+        //}
 
-        public async Task<IActionResult> Index(string search, int? page)
+        public IActionResult Index(int? page)
         {
-            var blogs = await _getBlogs.GetBlogsFromDB();
-
-            int pageSize = 8;
             int pageNumber = page ?? 1;
+            int itemsPerPage = 10;
 
-            var pagedBlogs = blogs.ToPagedList(pageNumber, pageSize);
+            var blogs = _getBlogs.GetBlogsFromDB().Where(item => item.Category.Contains("Blog"));
+
+
+            IPagedList<Blogs> pagedBlogs = blogs.ToPagedList(pageNumber, itemsPerPage);
 
             return View(pagedBlogs);
         }
