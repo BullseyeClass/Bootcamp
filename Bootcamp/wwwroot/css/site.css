@@ -80,12 +80,12 @@ body {
 }
 
 
-    #kkkk:hover {
-        cursor: pointer;
-        color: #F16059;
-        border-color: red;
-        white-space: nowrap;
-    }
+#kkkk:hover {
+    cursor: pointer;
+    color: #1977CC;
+    border-color: red;
+    white-space: nowrap;
+}
 
     .SignIn p {
         padding-left: 8px;
@@ -113,6 +113,7 @@ body {
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
     font-weight: 400;
+    color:white;
   
     
   /*  margin-left: -0.1rem;*/
@@ -125,7 +126,7 @@ body {
     width: 100%;
     padding: 1rem;
     border: 1px solid #D7D7D7;
-    color: black;
+    color: white;
    /* background-color: red;*/
     text-decoration:none;
 }
@@ -135,15 +136,15 @@ body {
         text-decoration:none;
     }
 
-    #mmmm :hover {
-        cursor: pointer;
-        color: red;
-    }
+#mmmm :hover {
+    cursor: pointer;
+    color: #1977CC;
+}
 
 #camp {
     padding: 0.5rem 1.9rem;
     background-color: #1977CC;
-    color: white;
+    color: #fff;
     display: block;
     font-family: Montserrat,'Open Sans',sans-serif;
     font-size: 14px;
@@ -337,7 +338,7 @@ footer h3 {
 
 #pppp a:hover {
     cursor: pointer;
-    color: red;
+    color: #1977CC;
 }
 
 #copywrite {
@@ -354,6 +355,6 @@ footer h3 {
     padding-left: 50px;
 }
 
-    #copywrite a:hover{
-        color:red;
-    }
+#copywrite a:hover {
+    color: #1977CC;
+}
