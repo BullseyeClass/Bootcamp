@@ -26,6 +26,7 @@
     font-weight: 700;
     font-size: 1.70rem;
     line-height: 1.75rem;
+    color: #2c4964;
 }
 
 .first h2 {
@@ -33,6 +34,7 @@
     font-weight: 700;
     font-size: 5rem;
     margin-bottom: 1.25rem;
+    color: #2c4964;
 }
 
 .first p {
@@ -41,6 +43,7 @@
     text-align: center;
     padding-top: 1.50rem;
     padding-bottom: 3rem;
+    color: #2c4964;
 }
 
 .header-text:before,
@@ -99,13 +102,15 @@
     line-height: 2rem;
     padding-top: 1.875rem;
     padding-left: 3rem;
+    color: #2c4964;
 }
 
 .second h2 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.25rem;
     line-height: 2.25rem;
     text-align: center;
+    color: #2c4964;
 }
 
 .base {
@@ -113,16 +118,18 @@
     font-size: 1.25rem;
     padding-left: 3rem;
     padding-right: 4rem;
+    color: #2c4964;
 }
 
 .nsl-container {
     font-size: 1.25rem;
     font-weight: bold;
-    background: #e1696430;
+    background: #8ad1ded4;
     border: none;
     margin-left: 1.875rem;
     padding: 0.75rem 5rem;
     padding-bottom: 0.625rem;
+    margin-right: 1.5rem;
 }
 
     .nsl-container svg {
@@ -130,17 +137,18 @@
     }
 
     .nsl-container:hover {
-        background: rgba(225, 105, 100, 0.35);
+        background: #b4dee6;
     }
 
 .nsl-container1 {
     font-size: 1.25rem;
     font-weight: bold;
-    background: #e1696430;
+    background: #8ad1ded4;
     border: none;
     margin-left: 1.875rem;
     padding: 0.75rem 5rem;
     margin-bottom: 1.5625rem;
+    margin-right: 1.5rem;
 }
 
     .nsl-container1 svg {
@@ -148,7 +156,7 @@
     }
 
     .nsl-container1:hover {
-        background: rgba(225, 105, 100, 0.35);
+        background: #b4dee6;
     }
 
 
@@ -189,6 +197,7 @@ label {
     line-height: 1.2rem;
     text-transform: uppercase;
     font-family: Montserrat,Open Sans;
+    color: #2c4964;
 }
  .span input {
     --tw-border-opacity: 1;
@@ -255,14 +264,14 @@ label {
         align-items: center;
         font-size: 1.25rem;
         font-weight: bold;
-        background: #F16059;
+        background: #1977cc;
         border: none;
         margin-left: 1.875rem;
         padding: 2.5rem 9.375rem;
     }
 
         .signup-form .btn:hover, .signup-form .btn:focus {
-            background: rgba(225,105,100,0.35) !important;
+            background: #6b9ce2 !important;
             outline: none;
         }
 
@@ -276,7 +285,7 @@ label {
         }
 
     .signup-form form a {
-        color: #F16059;
+        color: #1977cc;
         text-decoration: none;
     }
 
@@ -286,15 +295,16 @@ label {
     }
 
 .header {
-    line-height: 4rem;
+    line-height: 3.5rem;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
-    padding-left: 26.75rem;
-    padding-right: 26.75rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     margin-bottom: 8rem;
     color: black;
-    font-family: Montserrat,Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: Montserrat,Open Sans;
+    color: #2c4964;
 }
 
     .checkmark .text {
@@ -314,7 +324,8 @@ label {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
-    font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: Open Sans;
+    color: #2c4964;
 }
 
 ul{
@@ -343,6 +354,7 @@ ul{
     font-size: 1.70rem;
     margin-left: 15.625rem;
     margin-bottom: 1.25rem;
+    color: #2c4964;
 }
 
 cite {
@@ -354,6 +366,7 @@ cite {
     padding-left: 2rem;
     font-weight: 700;
     font-size: 1.4375rem;
+    color: #2c4964;
 }
 
 .section-wrapper{
