@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/BreakImage/courses-hero-background.png');
+    background-image: url('/BreakImage/break.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -242,7 +242,7 @@ ul {
 #learncontainer {
     width: 79em;
     margin-left: -14.7em;
-    background-color: #fef2f1;
+    background-color: #bff2e6;
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
     padding: 4rem;
 }

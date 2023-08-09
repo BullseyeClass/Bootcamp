@@ -4,6 +4,6 @@ namespace Bootcamp.Repository.Interfaces
 {
     public interface IGetBlogs
     {
-        IEnumerable<Blogs> GetBlogsFromDB();
+        Task<IEnumerable<Blogs>> GetBlogsFromDB();
     }
 }
