@@ -1,63 +1,81 @@
 ﻿* {
     margin: 0;
     box-sizing: border-box;
-    font-family: Montserrat,Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    /*border: 1px solid red;*/
+    font-family: Montserrat, Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
+
+:root {
+    font-size: 16px;
+}
+
 .first {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/camp-bg-8-22-1.png);
-    padding-top: 10%;
+    padding-top: 10rem;
 }
-.headdiv{
-    padding-top: 60px;
+
+.headdiv {
+    padding-top: 3.75rem;
 }
-    .first h1 {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.70rem;
-        line-height: 1.75rem;
-    }
-    .first h2 {
-        line-height: 2.5rem;
-        font-weight: 700;
-        font-size: 5rem;
-        margin-bottom: 1.25rem;
-        margin-bottom: 1.25rem;
-    }
-    .first p {
-        font-size: 1.50rem;
-        line-height: 1.75rem;
-        text-align: center;
-        padding-top: 1.50rem;
-        padding-bottom: 3rem;
-    }
-.header-text:before, .header-text:after {
+
+.first h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.70rem;
+    line-height: 1.75rem;
+    color: #2c4964;
+}
+
+.first h2 {
+    line-height: 2.5rem;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 1.25rem;
+    color: #2c4964;
+}
+
+.first p {
+    font-size: 1.50rem;
+    line-height: 1.75rem;
+    text-align: center;
+    padding-top: 1.50rem;
+    padding-bottom: 3rem;
+    color: #2c4964;
+}
+
+.header-text:before,
+.header-text:after {
     content: "";
     flex: 1 1;
     border-bottom: 1px solid;
     margin: auto;
 }
+
 .header-text:before {
-    margin-right: 10px
+    margin-right: 0.625rem;
 }
 
 .header-text:after {
-    margin-left: 10px
+    margin-left: 0.625rem;
 }
+
 .header-text {
     display: flex;
     flex-direction: row;
     color: black;
-    padding: 30px;
+    padding: 1.875rem;
 }
+
 .second {
-    padding-top: 10%;
-    padding-bottom: 30%;
+    padding-top: 10rem;
+    padding-bottom: 30rem;
 }
-.space{
-    padding-top: 80px;
+
+.space {
+    padding-top: 5rem;
 }
 
 .text {
@@ -68,69 +86,92 @@
     display: flex;
     align-items: flex-start;
     float: left;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     justify-content: space-evenly;
 }
- .less img {
-     margin-top: 30px;
-      margin-right: 20px;
+
+    .less img {
+        position:relative;
+        bottom: -4rem;
+        margin-right: 1.25rem;
     }
 
 .uppercase1 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2rem;
-    padding-top:30px;
+    padding-top: 1.875rem;
+    padding-left: 3rem;
+    color: #2c4964;
 }
+
 .second h2 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.25rem;
     line-height: 2.25rem;
+    text-align: center;
+    color: #2c4964;
 }
+
 .base {
     line-height: 2rem;
     font-size: 1.25rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    color: #2c4964;
 }
+
 .nsl-container {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
-    background: #e1696430;
+    background: #8ad1ded4;
     border: none;
-    margin-left: 30px;
-    padding: 12px 80px;
-    padding-bottom: 10px;
+    margin-left: 1.875rem;
+    padding: 0.75rem 5rem;
+    padding-bottom: 0.625rem;
+    margin-right: 1.5rem;
 }
-.nsl-container svg{
-    margin-left: 100px;
-}
-.nsl-container:hover {
-    background: rgba(225,105,100,0.35);
-}
-.nsl-container1 {
-    font-size: 20px;
-    font-weight: bold;
-    background: #e1696430;
-    border: none;
-    margin-left: 30px;
-    padding: 12px 80px;
-    margin-bottom: 25px;
-}
-.nsl-container1 svg {
-        margin-left: 100px;
+
+    .nsl-container svg {
+        margin-left: 6.25rem;
     }
-.nsl-container1:hover {
-    background: rgba(225,105,100,0.35);
+
+    .nsl-container:hover {
+        background: #b4dee6;
+    }
+
+.nsl-container1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: #8ad1ded4;
+    border: none;
+    margin-left: 1.875rem;
+    padding: 0.75rem 5rem;
+    margin-bottom: 1.5625rem;
+    margin-right: 1.5rem;
 }
+
+    .nsl-container1 svg {
+        margin-left: 6.25rem;
+    }
+
+    .nsl-container1:hover {
+        background: #b4dee6;
+    }
+
+
+
 #strong {
-    padding-left: 15px;
-    margin-left: 130px;
-    margin-top: -30px;
+    padding-left: 0.9375rem;
+    margin-left: 8.125rem;
+    margin-top: -1.875rem;
     float: left;
 }
+
 #ye {
-    padding-left: 15px;
-    margin-left: 130px;
-    margin-top: -30px;
+    padding-left: 0.9375rem;
+    margin-left: 8.125rem;
+    margin-top: -1.875rem;
     float: left;
 }
 
@@ -139,7 +180,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/camp-bg-green-2.png);
-    padding-top: 10%;
+    padding-top: 10rem;
+    width: 100vw;
 }
 
 .form-body {
@@ -148,14 +190,30 @@
     justify-content: space-around;
     align-content: center;
 }
-
+label {
+    color: #292929;
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    font-family: Montserrat,Open Sans;
+    color: #2c4964;
+}
+ .span input {
+    --tw-border-opacity: 1;
+    flex-shrink: 0;
+    height: 1.30rem;
+    margin-right: 1rem;
+    width: 1.25rem;
+    border: 2px solid black;
+}
 .form-control {
-    height: 53px;
+    height: 3.3125rem;
     background: #f2f2f2;
     box-shadow: none !important;
     border: none;
-    padding: 16px 20px;
-    text-indent: 20px;
+    padding: 1rem 1.25rem;
+    text-indent: 1.25rem;
 }
 
     .form-control:focus {
@@ -163,55 +221,57 @@
     }
 
 .form-control, .btn {
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 }
 
 .signup-form {
     width: 50vw;
-   padding-top:30px;
+    padding-top: 1.875rem;
 }
 
     .signup-form form {
         color: #999;
-        border-radius: 3px;
-         margin-bottom: 15px;
+        border-radius: 0.1875rem;
+        margin-bottom: 0.9375rem;
         background: #fff;
-        box-shadow: 0 0 6px 4px rgb(225,105,100,0.19);
-        padding: 120px;
+        box-shadow: 0 0 0.375rem 0.25rem rgba(225,105,100,0.19);
+        padding: 7.5rem;
     }
 
+
+
     .signup-form .form-group {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 
     .signup-form input[type="checkbox"] {
-        padding: 0 16px 0 0 0;
-        width: 30px;
-        height: 28px;
-        border: 8px solid;
+        padding: 0 1rem 0 0 0;
+        width: 1.875rem;
+        height: 1.75rem;
+        border: 0.5rem solid;
     }
 
     .signup-form .row div:first-child {
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
 
     .signup-form .row div:last-child {
-        padding-left: 10px;
+        padding-left: 0.625rem;
     }
 
     .signup-form .btn {
-        display:flex;
-        align-items:center;
-        font-size: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
         font-weight: bold;
-        background: #F16059;
+        background: #1977cc;
         border: none;
-        margin-left: 30px;
-        padding: 40px 150px;
+        margin-left: 1.875rem;
+        padding: 2.5rem 9.375rem;
     }
 
         .signup-form .btn:hover, .signup-form .btn:focus {
-            background: rgba(225,105,100,0.35) !important;
+            background: #6b9ce2 !important;
             outline: none;
         }
 
@@ -225,60 +285,65 @@
         }
 
     .signup-form form a {
-        color: #F16059;
+        color: #1977cc;
         text-decoration: none;
     }
 
     .signup-form .hint-text {
-        padding-bottom: 15px;
+        padding-bottom: 1.25rem;
         text-align: center;
     }
+
 .header {
     line-height: 3.5rem;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
-    padding-left: 30rem;
-    padding-right: 30rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     margin-bottom: 8rem;
+    color: black;
+    font-family: Montserrat,Open Sans;
+    color: #2c4964;
 }
-.checkmark {
-    width: 4%;
-    margin-left:285px;
-    margin-top:-40px;
-}
+
     .checkmark .text {
         fill: white;
     }
-    .checkmark .text1 {
-        fill: #F16059;
-    }
+
+.checkmark .text1 {
+    fill: #F16059;
+}
+
 .bottom {
     margin: 0 auto;
 }
+
 .relative1 {
-    padding-left: 22rem;
-    padding-right: 18rem;
+    padding-left: 2rem;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.20rem;
+    font-size: 1.2rem;
+    font-family: Open Sans;
+    color: #2c4964;
 }
-ul svg {
+
+ul{
+    margin-bottom: 7rem;
+}
+
+.mr-10 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 150px;
-    margin-top: 40px;
+    margin-left: 7rem;
+    margin-top: 2.8rem;
 }
-.svg{
-    position: relative;
-    bottom: 150px;
-    margin-left: 60px;
-    padding-left: 150px;
-}
-.svg p {
-    margin-top: -50px;
-}
+
+    .svg p {
+        margin-top: -3.125rem;
+    }
+
 .text-bottom {
     display: flex;
     align-items: center;
@@ -287,25 +352,42 @@ ul svg {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.70rem;
-    margin-left: 250px;
-    margin-bottom: 20px;
+    margin-left: 15.625rem;
+    margin-bottom: 1.25rem;
+    color: #2c4964;
 }
+
 cite {
     font-size: 1.50rem;
-    margin-bottom: 100px;
 }
+
 .h3 {
-    text-align:center;
-    padding: 50px;
-    padding-right: 110px;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
     font-weight: 700;
-    font-size: 23px;
+    font-size: 1.4375rem;
+    color: #2c4964;
 }
-.image1 img{
-    margin-left: 320px;
+
+.section-wrapper{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
 }
-.quote {
-    margin-left: 200px;
-    position: relative;
-    bottom: 230px;
+.image1 {
+    padding-left: 1rem;
+    width: 25%;
+    padding-bottom: -5rem;
+}
+.checkmark {
+     width: 3rem;
+    margin-top: -1rem;
+}
+
+.quote{
+    margin-left: 2rem;
+}
+.bottom-set{
+   position: relative;
+   bottom: -3rem;
 }
