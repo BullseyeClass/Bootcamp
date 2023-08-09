@@ -47,18 +47,31 @@
         </div>
 
         <div id="mmmm" class="main-navbar">
-            <a>
-                <img src="~/images/Skillcrush_Logo@2x.webp" />
+            <a asp-controller="Breakinto" asp-action="Index">
+                <img src="/images/bullseyelogo.png"/>
             </a>
-               
-             <a href="@Url.Action("Index", "Breakinto")">BREAK INTO TECH PROGRAM</a>
-             <a href="@Url.Action("Index", "SkillCourse")"> SKILL COURSES</a>
-             <a href="@Url.Action("Index", "StudentOutcomesAndReview")"> STUDENT OUTCOMES</a>        
-             <a href="@Url.Action("Index", "")"> TUITION</a>
-             <a href="@Url.Action("Index", "Blog")"> BLOG</a>
+
+          
+            <a asp-controller="Breakinto" asp-action="Index">
+                BREAK INTO TECH PROGRAM
+            </a>
+            <a asp-controller="SkillCourses" asp-action="Index">
+                SKILL COURSES
+            </a>
+            <a asp-controller="StudentOutcomesAndReview"  asp-action="Index">
+                STUDENT OUTCOMES
+            </a>
+            <a asp-controller="" asp-action="">
+                TUITION
+            </a>
+            <a asp-controller="Blog" asp-action="Index">
+                BLOG
+            </a>
+      
+      
             <p>
                 <div id="camp">
-                    FREE CODING CAMP
+                    <a asp-controller="user" asp-action="Index"> FREE CODING CAMP </a>
                 </div>
             </p>
         </div>
@@ -170,7 +183,7 @@
         </div>
         <div class="footer-logo-title">
             <a>
-                <img src="~/images/Skillcrush_Logo@2x.webp" />
+                <img src="/images/bullseyelogo.png" />
             </a>
             <div id="copywrite">
                 <span id="copywrite-text">
