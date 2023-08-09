@@ -156,6 +156,11 @@ body {
     text-decoration-color: initial;
 }
 
+#camp a:hover
+{
+    color:white;
+}
+
     #camp:hover
     {
         cursor:pointer;
