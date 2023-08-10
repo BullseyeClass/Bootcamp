@@ -108,7 +108,7 @@ body {
 }
 
 .main-navbar img {
-    width: 95px;
+    width: 200px;
 }
 
 .main-navbar p {
@@ -120,22 +120,32 @@ body {
     
   /*  margin-left: -0.1rem;*/
 }
-.main-navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FFFFFF;
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #D7D7D7;
-    color: white;
-   /* background-color: red;*/
-    text-decoration:none;
-}
+
+    #camp a
+    {
+       color:white;
+       font-size:12px;
+    }
+
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFFFFF;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #D7D7D7;
+        color: white;
+        /* background-color: red;*/
+        text-decoration: none;
+    }
 
     .main-navbar a {
-        color:black;
+        color:#2C4964;
         text-decoration:none;
+        font-size:14px;
+        /*font-weight:400;*/
     }
 
 #mmmm :hover {
@@ -149,7 +159,7 @@ body {
     color: #fff;
     display: block;
     font-family: Montserrat,'Open Sans',sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1;
     padding: 14px 32px;
@@ -164,16 +174,17 @@ body {
     text-decoration-color: initial;
 }
 
+
 #camp a:hover
 {
     color:white;
 }
 
-    #camp:hover
-    {
-        cursor:pointer;
-        background-color:#743737;
-        color:white;
+    #camp:hover {
+        cursor: pointer;
+        background-color: #166ab5;
+        color: white;
+        box-shadow:5px;
     }
 
 .main-footer-container {
@@ -293,7 +304,7 @@ footer h3 {
     margin-top: 2.5rem;
     align-items: center;
     /* margin-right:5rem;*/
-    margin-left: -12rem;
+    margin-left: -4rem;
     padding: 2.5rem;
 }
 
@@ -314,7 +325,7 @@ footer h3 {
 
 .footer-logo-title img
 {
-    width: 120px;
+    width: 200px;
 }
 
 .footer-logo-title {
@@ -325,6 +336,7 @@ footer h3 {
     justify-content: flex-start;
     font-size: 12px;
     padding: 2.5rem 3.3rem;
+    margin-left:-2rem;
 }
 
 .line-divider {
@@ -354,7 +366,7 @@ footer h3 {
 }
 #copywrite-text {
     color: black;
-    padding-left: 50px;
+    padding-left: 49px;
 }
 
 #copywrite a:hover {
