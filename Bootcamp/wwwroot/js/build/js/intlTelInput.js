@@ -92,7 +92,7 @@
             // inject a hidden input with this name, and on submit, populate it with the result of getNumber
             hiddenInput: "",
             // initial country
-            initialCountry: "",
+            initialCountry: "+234",
             // localized country names e.g. { 'de': 'Deutschland' }
             localizedCountries: null,
             // don't insert international dial codes
@@ -104,7 +104,7 @@
             // the countries at the top of the list. defaults to united states and united kingdom
             preferredCountries: [ "ng", "gb" ],
             // display the country dial code next to the selected flag so it's not part of the typed number
-            separateDialCode: false,
+            separateDialCode: true,
             // specify the path to the libphonenumber script to enable validation/formatting
             utilsScript: ""
         };
@@ -464,7 +464,7 @@
                         } else {
                             if (dialCode && isRegionlessNanp) {
                                 // has intl dial code, is regionless nanp, and no initialCountry, so default to US
-                                this._setFlag("us");
+                                this._setFlag("ng");
                             } else {
                                 // no dial code and no initialCountry, so default to first in list
                                 this.defaultCountry = this.preferredCountries.length ? this.preferredCountries[0].iso2 : this.countries[0].iso2;
