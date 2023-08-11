@@ -28,7 +28,7 @@ new Chart(ctx, {
             borderRadius: 30,
             barThickness: 12,
             backgroundColor: [
-                'rgba(114, 92, 255, 1)'
+                'rgba(25,119,204, 0.9)'
             ],
             borderColor: [
                 'rgba(114, 92, 255, 1)'

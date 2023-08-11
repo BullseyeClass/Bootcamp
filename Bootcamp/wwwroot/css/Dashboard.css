@@ -88,7 +88,7 @@ body {
     }
 
     .side-nav__item:hover, .side-nav__item-active {
-        background-color: #7C5CFC;
+        background-color: rgba(25,119,204, 0.9);
         color: white;
     }
 
