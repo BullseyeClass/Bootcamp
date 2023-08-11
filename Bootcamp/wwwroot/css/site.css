@@ -197,6 +197,7 @@ body {
 .main-footer-container {
     border-top: 0.1px solid #ddcdcd;
     padding-top:50px;
+    background-color:#f4e9e9;
 }
 
 
@@ -371,10 +372,13 @@ footer h3 {
    
     padding-left: 50px;
     cursor:pointer;
+    color:#444444;
 }
 #copywrite-text {
     color: black;
     padding-left: 49px;
+    font-size:14px;
+    font-weight:400;
 }
 
 #copywrite a:hover {
