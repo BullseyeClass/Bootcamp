@@ -16,9 +16,12 @@ body {
 }
 
 .bullseyecontainter {
-    margin-left: -15rem;
-    width: 70rem;
-    max-width: 100%;
+    margin-left:-1.5rem;
+    width:103.8%;
+}
+.bullimage {
+    width: 100%;
+    height:20rem;
 }
 .section1 {
     margin: 0%;
@@ -31,10 +34,11 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     width: 79.3em;
-    height: 100%;
+    height: 90%;
     margin-left: -15em;
     z-index: -1;
     min-height: 100vh;
+    margin-top: -10rem;
 }
 
 .container {
@@ -50,6 +54,7 @@ body {
     width: 200vh;
     justify-content: center;
     align-items: center;
+    margin-top:9rem;
 }
 
 .btn-lg {
@@ -92,7 +97,7 @@ h1 {
     font-family: Montserrat,Sans-serif;
     font-size: 2em;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     justify-content: space-between;
     white-space: nowrap;
     margin-left: 1%;
@@ -115,7 +120,7 @@ h1 {
     min-height: 1em;
     white-space: pre-wrap;
     font-weight: normal;
-    text-align:center;
+    text-align:start;
 }
 
 .p3 {
@@ -127,6 +132,7 @@ h1 {
     min-height: 1em;
     white-space: pre-wrap;
     font-weight: 100;
+    text-align:start;
 }
 
 #text11 {
@@ -167,7 +173,7 @@ h1 {
     width: 90%;
     padding-top: 50.25%;
     margin-bottom: 01em;
-    margin-left: 8em;
+    margin-left: 08em;
 }
 
 .video {
@@ -207,6 +213,7 @@ ul {
     justify-content: space-between;
     white-space: nowrap;
     margin-left: 1%;
+    text-align:center
 }
 
 .BreakImg {
@@ -226,6 +233,7 @@ ul {
     min-height: 1em;
     white-space: pre-wrap;
     font-weight: normal;
+    text-align:start;
 }
 
 #text12 {
@@ -496,8 +504,12 @@ ul {
 }
 
 
+/*ForgotPassword Layout
+*/
 
-
+.forgot12{
+    width:100rem;
+}
 
 
 

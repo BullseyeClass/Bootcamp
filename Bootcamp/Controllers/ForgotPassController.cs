@@ -2,13 +2,16 @@
 
 namespace Bootcamp.Controllers
 {
-    public class SignInController : Controller
+    public class ForgotPassController : Controller
     {
+
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
     }
+
+
 
 }
