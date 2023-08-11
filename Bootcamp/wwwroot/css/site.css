@@ -40,11 +40,17 @@ body {
     margin-top: 0.3rem;
 }
 
-.nav-tagline-text {
-    font-size: 14px;
-    font-weight: 900;
-    font-family: Montserrat,'Open Sans',sans-serif;
-}
+    .top-nav-text-container img {
+        width:15px;
+        margin-left:8px;
+        margin-bottom:10px;
+    }
+
+    .nav-tagline-text {
+        font-size: 14px;
+        font-weight: 900;
+        font-family: Montserrat,'Open Sans',sans-serif;
+    }
 .SignIn svg{
     width: 16px;
    /* display: flex;*/
@@ -82,7 +88,7 @@ body {
 }
 
 
-#kkkk:hover {
+#icon:hover {
     cursor: pointer;
     color: #1977CC;
     border-color: red;
@@ -148,7 +154,7 @@ body {
         /*font-weight:400;*/
     }
 
-#mmmm :hover {
+#main-nav-logo :hover {
     cursor: pointer;
     color: #1977CC;
 }
@@ -158,6 +164,7 @@ body {
     background-color: #1977CC;
     color: #fff;
     display: block;
+    border-radius:35px;
     font-family: Montserrat,'Open Sans',sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -350,13 +357,14 @@ footer h3 {
 }
 
 
-#pppp a:hover {
+#section a:hover {
     cursor: pointer;
     color: #1977CC;
 }
 
 #copywrite {
     padding-top: 3px;
+
 }
 
 #copywrite a {
