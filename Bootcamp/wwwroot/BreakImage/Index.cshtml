@@ -1,0 +1,215 @@
+﻿@{
+	ViewData["Title"] = "SignUp";
+}
+<link rel="stylesheet" href="~/css/SignUp.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/telephone.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/js/build/css/demo.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/js/build/css/intlTelInput.css" asp-append-version="true" />
+
+
+<section class="first">
+	<div class="headdiv">
+		<h1 class="font-display font-bold text-xl uppercase text-center">Start Coding for FREE Today</h1>
+		<h2 class="font-display font-bold text-5xl text-center leading-10">Join Camp Bullseye</h2>
+		<p class="block text-lg text-center pb-20 mb-2">No credit card required!</p>
+	</div>
+	<div class="form-body">
+		<div class="signup-form">
+			<form action="/examples/actions/confirmation.php" method="post">
+				<div class="form-group">
+					<label>Email*</label>
+					<input type="email" class="form-control" name="email" placeholder="" required="required">
+				</div>
+				<div class="form-group">
+					<label>Password*</label>
+					<input type="password" class="form-control" name="password" placeholder="" required="required">
+				</div>
+				<div class="form-group">
+					<label id="label">Phone* </label><em id="label"> Optional</em>
+					<input type="tel" id="phone" class="form-control" placeholder=""> @*<input type="number" class="form-control" name="password" placeholder="" required="required">*@
+				</div>
+				<div class="form-group span">
+					<input type="checkbox" required="required" />
+					<span> I hereby declare that I have read and I accept the terms and conditions stated in the Terms of Service and in the Privacy Policy.</span>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-lg">START FOR FREE</button>
+				</div>
+				<div class="h-2 mt-6 flex items-center text-xs leading-4 font-bold font-display">
+					<div class="header-text">OR CREATE AN ACCOUNT WITH</div>
+				</div>
+				<div class="nsl-container1 nsl-container-block" data-align="left">
+					<div class="nsl-container-buttons">
+						<a href="https://learn.skillcrush.com/wp-login.php?loginSocial=facebook&amp;redirect=https://learn.skillcrush.com" rel="nofollow" aria-label="Facebook" data-plugin="nsl" data-action="connect" data-provider="facebook" data-popupwidth="600" data-popupheight="600" class="no-underline">
+							<div class="nsl-button-camp-sc nsl-button-default nsl-button-facebook">
+								<div class="flex items-center" style="min-width: 118px">
+									<div class="nsl-button-svg-container">
+										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M22.6728 0.149658H2.24637C1.27599 0.149658 0.451172 0.891961 0.451172 1.81984V21.5836C0.451172 22.5115 1.27599 23.2538 2.24637 23.2538H12.0957V13.5575H10.1064V10.1243H12.0957V7.89744C12.0957 6.32005 12.872 3.81478 16.3653 3.81478H19.4706V7.15514H17.1902C16.705 7.15514 16.3168 7.47989 16.2683 7.94383C16.2683 7.99023 16.2683 8.03662 16.2683 8.08301V10.078H19.4706L19.0824 13.5111H16.2198V23.2074H22.5758C23.5461 23.2074 24.3224 22.4651 24.371 21.5372V1.81984C24.4195 0.891961 23.6432 0.149658 22.6728 0.149658Z" fill="#1977cc"></path>
+										</svg>
+									</div>
+									<div class="nsl-button-label-container pt-0.5" id="strong"><strong>Facebook</strong></div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="nsl-container nsl-container-block" data-align="left">
+					<div class="nsl-container-buttons">
+						<a href="https://learn.skillcrush.com/wp-login.php?loginSocial=google&amp;redirect=https://learn.skillcrush.com" rel="nofollow" aria-label="Google" data-plugin="nsl" data-action="connect" data-provider="google" data-popupwidth="600" data-popupheight="600" class="no-underline">
+							<div class="nsl-button-camp-sc nsl-button-default nsl-button-google">
+								<div class="flex items-center" style="min-width: 118px">
+									<div class="nsl-button-svg-container">
+										<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M24.3754 12.6979C24.3754 11.9047 24.3082 11.1072 24.1647 10.3269H12.6543V14.8203H19.2457C18.9722 16.2695 18.0934 17.5515 16.8065 18.3661V21.2817H20.7389C23.0482 19.2494 24.3754 16.2481 24.3754 12.6979Z" fill="#1977cc"></path>
+											<path d="M12.654 24.0986C15.9453 24.0986 18.7208 23.0653 20.7431 21.2816L16.8107 18.3661C15.7166 19.0778 14.3041 19.4808 12.6585 19.4808C9.47489 19.4808 6.77555 17.4271 5.80701 14.6659H1.74902V17.6715C3.82061 21.6118 8.04002 24.0986 12.654 24.0986Z" fill="#1977cc"></path>
+											<path d="M5.80278 14.6659C5.29161 13.2167 5.29161 11.6474 5.80278 10.1982V7.19263H1.74928C0.0184696 10.4898 0.0184696 14.3743 1.74928 17.6715L5.80278 14.6659Z" fill="#1977cc"></path>
+											<path d="M12.654 5.37901C14.3938 5.35328 16.0753 5.97927 17.3352 7.12834L20.8193 3.79689C18.6132 1.81603 15.6852 0.726984 12.654 0.761284C8.04001 0.761284 3.82061 3.24808 1.74902 7.19266L5.80252 10.1983C6.76657 7.43276 9.47039 5.37901 12.654 5.37901Z" fill="#1977cc"></path>
+										</svg>
+									</div>
+									<div class="nsl-button-label-container pt-0.5"><strong id="ye">Google</strong></div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</form>
+			@*<div class="hint-text">Already have an account? <a href="#">Login here</a></div>*@
+		</div>
+	</div>
+</section>
+<section class="second">
+	<div>
+		<h2 class="">What You'll Learn</h2>
+		<div class="space">
+			<ul class="less">
+				<li class="list-unstyled">
+					<div class="">
+						<div class="items-center">
+							<img width="30" height="30" src="~/images/HTML-CSS.png" class="" alt="" />
+							<div class="text">
+								<p class="uppercase1">HTML &amp; CSS Essentials</p>
+								<p class="text-base leading-7 base">Learn the basic building blocks that go into every website.</p>
+							</div>
+						</div>
+						<div class="items-center">
+							<img width="30" height="30" src="~/images/Javascript.png" class="lazyloaded" alt="" />
+							<div class="text">
+								<p class="uppercase1">Javascript 101</p>
+								<p class="text-base base">Learn the basics of the web’s most popular programming language</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="list-unstyled">
+					<div>
+							<div class="text">
+						<div class="items-center ">
+							<img width="30" height="30" src="~/images/Visual-Design-1.png" class="lazyloaded" alt="" />
+								<p class="uppercase1">Visual &amp; Web Design Basics</p>
+								<p class="text-base base">Design standout digital brands and stunning websites.</p>
+							</div>
+						</div>
+						<div class="items-center ">
+							<img width="30" height="30" src="~/images/UX.png" class="" alt="" />
+							<div class="text">
+								<p class="uppercase1">User Experience (UX) Basics</p>
+								<p class="text-base base">Design and deliver digital experiences that are guaranteed to succeed.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="third">
+	<div class="">
+		<h2 class=" header">
+			Join Over 350,000
+			Students In Our Free Coding Bootcamp
+		</h2>
+
+		<div class="section-wrapper">
+			<div class="image1">
+
+				<div >
+					<img width="170" height="170" style="border-radius:200px" src="~/images/reviewer-300x300.jpg" class="w-full h-full object-cover lazyautosizes ls-is-cached lazyloaded" alt="" />
+				</div>
+
+				<div >
+					<svg class="checkmark">
+						<path class="fill-current text" d="M25.05,42.48a15.09,15.09,0,0,1-2.22-.17,8.9,8.9,0,0,1-5.21-1.11L17.2,41a9.38,9.38,0,0,1-1.43-.38C11.66,39.13.74,35.26.71,23.16c0-.12,0-.25,0-.38-1.38-3.9-1.3-9.27,4.94-14.73a12.05,12.05,0,0,1,6.09-5.4,18.64,18.64,0,0,1,4.67-1.12c2.83-1.62,7.37-2.63,13.8.53a27.24,27.24,0,0,1,7.55,5.43,16.7,16.7,0,0,1,4.47,11,10.75,10.75,0,0,1-.06,4.11C41.46,26.05,38.46,37.72,30,41.47A12,12,0,0,1,25.05,42.48Z"></path>
+						<path class="fill-current  text1" d="M32.14,16.4c-.27.86.09,1.5.27,1.5-.85,1.1-3.79,5.47-4.09,7.1a7.75,7.75,0,0,0-.48,2.35.71.71,0,0,1-.72.77A12.91,12.91,0,0,1,22.5,27,11.8,11.8,0,0,1,22,23.07a2.76,2.76,0,0,0,.48-1.24c.1-.7.63-1.78.58-1.92-.11-.33.45-.88.31-1.16a.36.36,0,0,1,.23-.47.49.49,0,0,0,.35-.55c-.08-.22,1.11-1.18,1-1.67,1-.23,1.63-1.29,2.71-1.45A16.65,16.65,0,0,0,32.14,16.4Zm-10,1.41a41.5,41.5,0,0,0-3.47,7.74A8.39,8.39,0,0,0,18.37,28a.77.77,0,0,1-.66.86A12,12,0,0,1,13.26,28a12.08,12.08,0,0,1-.66-4.11,3.32,3.32,0,0,0,.4-1.32,7.51,7.51,0,0,1,.31-1.5,1.9,1.9,0,0,0,.13-.85,1.3,1.3,0,0,0,.22-1,.37.37,0,0,1,.23-.51c.23-.12.28-.55.26-.64-.08-.36,1-1.36.85-1.8.64-.25,1.37-1.43,2.44-1.66a18.18,18.18,0,0,0,4.35,1.66C21.57,17.53,22,17.81,22.15,17.81Z"></path>
+					</svg>
+				</div>
+
+			</div>
+			
+			<div class="quote ">
+
+					<h3 class="font-display font-bold leading-5 mb-10 h3">I completely changed my career in only 5 months</h3>
+					<p class="leading-6 mb-10 relative1">WINsday...I got an e-mail offering me a job as a full time junior developer! I applied last month, had a Skype interview...and interviewed in person on Monday, everyone was so friendly and loves their work and I can’t wait to start. Could hardly have believed it, this time 5 months ago I was just starting BIT, my heart is very full today!</p>
+					<p class="font-display font-bold uppercase leading-5 relative1"><cite class="not-italic" style="font-weight:bold;">Aisha Schofield | Junior Developer</cite></p>
+				
+			</div>
+
+		</div>
+
+
+		<div class="bottom-set">
+			<ul class="flex flex-col items-start max-w-max mx-auto list-unstyled svg" style="padding-left:8rem;">
+				<li class="text-center mb-10 -ml-14">
+					<div class="flex justify-center items-center">
+						<svg class="mr-10" width="60" height="50" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M35.8976 2.84749C28.1527 -2.26176 16.0978 -0.0563703 9.33127 5.97755C2.56475 12.0115 0.216667 20.7597 0.00731752 29.0995C-0.0263467 30.4242 0.0209936 31.8453 0.925721 32.9239C1.90093 34.0873 3.63149 34.5701 5.25579 34.9334C10.6568 36.143 16.224 36.8163 21.807 36.9367" fill="#30C0A1"></path>
+							<path d="M25.0252 15.8108C20.611 15.2736 16.1484 17.3397 13.4384 20.3535C10.7284 23.3673 9.54072 27.1865 9.04733 30.9574C8.95055 31.7019 8.88532 32.4905 9.2672 33.1649C9.78584 34.0812 10.9872 34.5535 12.1329 34.8435C18.083 36.3494 24.8096 34.6917 29.4184 31.1511C34.0273 27.6106 36.6047 22.3977 37.1433 17.1334C37.2401 16.1836 37.2622 15.1741 36.7246 14.3374C36.1018 13.3667 34.851 12.8179 33.6222 12.4588C28.4685 10.9518 22.412 11.9467 18.2871 14.9793C14.1622 18.012 12.1245 22.9663 13.127 27.5257C13.3174 28.3928 13.6309 29.2767 14.3305 29.927C14.9828 30.5333 15.9033 30.8757 16.8217 31.1312C22.0502 32.5858 28.1192 31.6067 32.3588 28.6232C35.5474 26.3791 37.2664 21.4971 33.7043 19.7074C30.1022 17.8979 26.0025 21.4824 24.5203 24.8114C26.2098 24.0836 27.7668 22.672 27.5269 21.073C27.2871 19.4749 24.3015 18.5848 23.4493 20.0237C25.7637 20.9651 28.6473 20.0467 30.3926 18.4466C32.1379 16.8465 33.0037 14.7102 33.8242 12.642C34.3029 11.4346 34.7847 10.1267 34.3313 8.91192C33.2646 6.05308 28.4274 6.15257 25.1536 7.26049C16.8585 10.0659 9.92576 15.6768 6.21743 22.5872C4.16075 26.4178 3.12137 31.0118 5.34111 34.7765C7.26418 38.0385 11.3723 40.0837 15.5971 40.7036C19.822 41.3235 24.1689 40.6879 28.2991 39.7077C31.9033 38.8522 35.5411 37.6709 38.1869 35.4195C42.7368 31.547 43.3228 25.5371 43.6416 20.0676C43.8751 16.0475 44.0056 11.6974 41.3145 8.38623C37.0939 3.19425 28.3054 3.04136 20.9014 3.42673C17.2656 3.61627 13.4521 3.85189 10.3844 5.5232C4.55 8.70248 3.71049 15.5427 3.47274 21.4363C3.36017 24.2103 3.24866 26.9833 3.1361 29.7573C3.06982 31.3878 3.02038 33.0884 3.83253 34.566C5.82713 38.1914 11.5848 38.6082 16.2862 38.5045" fill="#30C0A1"></path>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5096 24.6585C23.1518 22.2866 24.754 19.9723 26.3562 17.659C27.5723 15.9029 28.7884 14.1457 30.0056 12.3917C30.6273 11.4942 31.1355 11.4031 32.0612 12.0199C32.4505 12.2786 32.8397 12.5372 33.2268 12.798C34.0821 13.3739 34.1842 13.863 33.6056 14.6976C31.4016 17.8842 29.1955 21.0708 26.9895 24.2563C25.8112 25.9591 24.6351 27.6618 23.4547 29.3625C22.5984 30.596 21.5653 30.707 20.4849 29.6567C18.5166 27.7435 16.5588 25.8198 14.6031 23.8951C13.9656 23.2678 13.9667 22.7212 14.5874 22.097C14.985 21.696 15.39 21.2991 15.7982 20.9085C16.4378 20.2969 16.9986 20.2917 17.635 20.9085C18.8059 22.0436 19.9652 23.1893 21.1319 24.3296C21.2392 24.4302 21.3539 24.5213 21.5096 24.6585Z" fill="white"></path>
+						</svg>
+						<p class="font-display font-bold text-xl uppercase leading-7 text-bottom">You Don't Need Any Prior Tech Experience</p>
+					</div>
+				</li>
+				<li class="text-center mb-10 -ml-14">
+					<div class="flex justify-center items-center">
+						<svg class="mr-10" width="60" height="50" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M35.8976 2.84749C28.1527 -2.26176 16.0978 -0.0563703 9.33127 5.97755C2.56475 12.0115 0.216667 20.7597 0.00731752 29.0995C-0.0263467 30.4242 0.0209936 31.8453 0.925721 32.9239C1.90093 34.0873 3.63149 34.5701 5.25579 34.9334C10.6568 36.143 16.224 36.8163 21.807 36.9367" fill="#30C0A1"></path>
+							<path d="M25.0252 15.8108C20.611 15.2736 16.1484 17.3397 13.4384 20.3535C10.7284 23.3673 9.54072 27.1865 9.04733 30.9574C8.95055 31.7019 8.88532 32.4905 9.2672 33.1649C9.78584 34.0812 10.9872 34.5535 12.1329 34.8435C18.083 36.3494 24.8096 34.6917 29.4184 31.1511C34.0273 27.6106 36.6047 22.3977 37.1433 17.1334C37.2401 16.1836 37.2622 15.1741 36.7246 14.3374C36.1018 13.3667 34.851 12.8179 33.6222 12.4588C28.4685 10.9518 22.412 11.9467 18.2871 14.9793C14.1622 18.012 12.1245 22.9663 13.127 27.5257C13.3174 28.3928 13.6309 29.2767 14.3305 29.927C14.9828 30.5333 15.9033 30.8757 16.8217 31.1312C22.0502 32.5858 28.1192 31.6067 32.3588 28.6232C35.5474 26.3791 37.2664 21.4971 33.7043 19.7074C30.1022 17.8979 26.0025 21.4824 24.5203 24.8114C26.2098 24.0836 27.7668 22.672 27.5269 21.073C27.2871 19.4749 24.3015 18.5848 23.4493 20.0237C25.7637 20.9651 28.6473 20.0467 30.3926 18.4466C32.1379 16.8465 33.0037 14.7102 33.8242 12.642C34.3029 11.4346 34.7847 10.1267 34.3313 8.91192C33.2646 6.05308 28.4274 6.15257 25.1536 7.26049C16.8585 10.0659 9.92576 15.6768 6.21743 22.5872C4.16075 26.4178 3.12137 31.0118 5.34111 34.7765C7.26418 38.0385 11.3723 40.0837 15.5971 40.7036C19.822 41.3235 24.1689 40.6879 28.2991 39.7077C31.9033 38.8522 35.5411 37.6709 38.1869 35.4195C42.7368 31.547 43.3228 25.5371 43.6416 20.0676C43.8751 16.0475 44.0056 11.6974 41.3145 8.38623C37.0939 3.19425 28.3054 3.04136 20.9014 3.42673C17.2656 3.61627 13.4521 3.85189 10.3844 5.5232C4.55 8.70248 3.71049 15.5427 3.47274 21.4363C3.36017 24.2103 3.24866 26.9833 3.1361 29.7573C3.06982 31.3878 3.02038 33.0884 3.83253 34.566C5.82713 38.1914 11.5848 38.6082 16.2862 38.5045" fill="#30C0A1"></path>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5096 24.6585C23.1518 22.2866 24.754 19.9723 26.3562 17.659C27.5723 15.9029 28.7884 14.1457 30.0056 12.3917C30.6273 11.4942 31.1355 11.4031 32.0612 12.0199C32.4505 12.2786 32.8397 12.5372 33.2268 12.798C34.0821 13.3739 34.1842 13.863 33.6056 14.6976C31.4016 17.8842 29.1955 21.0708 26.9895 24.2563C25.8112 25.9591 24.6351 27.6618 23.4547 29.3625C22.5984 30.596 21.5653 30.707 20.4849 29.6567C18.5166 27.7435 16.5588 25.8198 14.6031 23.8951C13.9656 23.2678 13.9667 22.7212 14.5874 22.097C14.985 21.696 15.39 21.2991 15.7982 20.9085C16.4378 20.2969 16.9986 20.2917 17.635 20.9085C18.8059 22.0436 19.9652 23.1893 21.1319 24.3296C21.2392 24.4302 21.3539 24.5213 21.5096 24.6585Z" fill="white"></path>
+						</svg>
+						<p class="font-display font-bold text-xl uppercase leading-7 text-bottom">You Don't Have to Have A Computer Science Degree</p>
+					</div>
+				</li>
+				<li class="text-center mb-10 -ml-14">
+					<div class="flex justify-center items-center">
+						<svg class="mr-10" width="60" height="50" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M35.8976 2.84749C28.1527 -2.26176 16.0978 -0.0563703 9.33127 5.97755C2.56475 12.0115 0.216667 20.7597 0.00731752 29.0995C-0.0263467 30.4242 0.0209936 31.8453 0.925721 32.9239C1.90093 34.0873 3.63149 34.5701 5.25579 34.9334C10.6568 36.143 16.224 36.8163 21.807 36.9367" fill="#30C0A1"></path>
+							<path d="M25.0252 15.8108C20.611 15.2736 16.1484 17.3397 13.4384 20.3535C10.7284 23.3673 9.54072 27.1865 9.04733 30.9574C8.95055 31.7019 8.88532 32.4905 9.2672 33.1649C9.78584 34.0812 10.9872 34.5535 12.1329 34.8435C18.083 36.3494 24.8096 34.6917 29.4184 31.1511C34.0273 27.6106 36.6047 22.3977 37.1433 17.1334C37.2401 16.1836 37.2622 15.1741 36.7246 14.3374C36.1018 13.3667 34.851 12.8179 33.6222 12.4588C28.4685 10.9518 22.412 11.9467 18.2871 14.9793C14.1622 18.012 12.1245 22.9663 13.127 27.5257C13.3174 28.3928 13.6309 29.2767 14.3305 29.927C14.9828 30.5333 15.9033 30.8757 16.8217 31.1312C22.0502 32.5858 28.1192 31.6067 32.3588 28.6232C35.5474 26.3791 37.2664 21.4971 33.7043 19.7074C30.1022 17.8979 26.0025 21.4824 24.5203 24.8114C26.2098 24.0836 27.7668 22.672 27.5269 21.073C27.2871 19.4749 24.3015 18.5848 23.4493 20.0237C25.7637 20.9651 28.6473 20.0467 30.3926 18.4466C32.1379 16.8465 33.0037 14.7102 33.8242 12.642C34.3029 11.4346 34.7847 10.1267 34.3313 8.91192C33.2646 6.05308 28.4274 6.15257 25.1536 7.26049C16.8585 10.0659 9.92576 15.6768 6.21743 22.5872C4.16075 26.4178 3.12137 31.0118 5.34111 34.7765C7.26418 38.0385 11.3723 40.0837 15.5971 40.7036C19.822 41.3235 24.1689 40.6879 28.2991 39.7077C31.9033 38.8522 35.5411 37.6709 38.1869 35.4195C42.7368 31.547 43.3228 25.5371 43.6416 20.0676C43.8751 16.0475 44.0056 11.6974 41.3145 8.38623C37.0939 3.19425 28.3054 3.04136 20.9014 3.42673C17.2656 3.61627 13.4521 3.85189 10.3844 5.5232C4.55 8.70248 3.71049 15.5427 3.47274 21.4363C3.36017 24.2103 3.24866 26.9833 3.1361 29.7573C3.06982 31.3878 3.02038 33.0884 3.83253 34.566C5.82713 38.1914 11.5848 38.6082 16.2862 38.5045" fill="#30C0A1"></path>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5096 24.6585C23.1518 22.2866 24.754 19.9723 26.3562 17.659C27.5723 15.9029 28.7884 14.1457 30.0056 12.3917C30.6273 11.4942 31.1355 11.4031 32.0612 12.0199C32.4505 12.2786 32.8397 12.5372 33.2268 12.798C34.0821 13.3739 34.1842 13.863 33.6056 14.6976C31.4016 17.8842 29.1955 21.0708 26.9895 24.2563C25.8112 25.9591 24.6351 27.6618 23.4547 29.3625C22.5984 30.596 21.5653 30.707 20.4849 29.6567C18.5166 27.7435 16.5588 25.8198 14.6031 23.8951C13.9656 23.2678 13.9667 22.7212 14.5874 22.097C14.985 21.696 15.39 21.2991 15.7982 20.9085C16.4378 20.2969 16.9986 20.2917 17.635 20.9085C18.8059 22.0436 19.9652 23.1893 21.1319 24.3296C21.2392 24.4302 21.3539 24.5213 21.5096 24.6585Z" fill="white"></path>
+						</svg>
+						<p class="font-display font-bold text-xl uppercase leading-7 text-bottom">You Don't Need to Quit Your Job To Learn</p>
+					</div>
+				</li>
+				<li class="text-center mb-10 -ml-14">
+					<div class="flex justify-center items-center">
+						<svg class="mr-10" width="60" height="50" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M35.8976 2.84749C28.1527 -2.26176 16.0978 -0.0563703 9.33127 5.97755C2.56475 12.0115 0.216667 20.7597 0.00731752 29.0995C-0.0263467 30.4242 0.0209936 31.8453 0.925721 32.9239C1.90093 34.0873 3.63149 34.5701 5.25579 34.9334C10.6568 36.143 16.224 36.8163 21.807 36.9367" fill="#30C0A1"></path>
+							<path d="M25.0252 15.8108C20.611 15.2736 16.1484 17.3397 13.4384 20.3535C10.7284 23.3673 9.54072 27.1865 9.04733 30.9574C8.95055 31.7019 8.88532 32.4905 9.2672 33.1649C9.78584 34.0812 10.9872 34.5535 12.1329 34.8435C18.083 36.3494 24.8096 34.6917 29.4184 31.1511C34.0273 27.6106 36.6047 22.3977 37.1433 17.1334C37.2401 16.1836 37.2622 15.1741 36.7246 14.3374C36.1018 13.3667 34.851 12.8179 33.6222 12.4588C28.4685 10.9518 22.412 11.9467 18.2871 14.9793C14.1622 18.012 12.1245 22.9663 13.127 27.5257C13.3174 28.3928 13.6309 29.2767 14.3305 29.927C14.9828 30.5333 15.9033 30.8757 16.8217 31.1312C22.0502 32.5858 28.1192 31.6067 32.3588 28.6232C35.5474 26.3791 37.2664 21.4971 33.7043 19.7074C30.1022 17.8979 26.0025 21.4824 24.5203 24.8114C26.2098 24.0836 27.7668 22.672 27.5269 21.073C27.2871 19.4749 24.3015 18.5848 23.4493 20.0237C25.7637 20.9651 28.6473 20.0467 30.3926 18.4466C32.1379 16.8465 33.0037 14.7102 33.8242 12.642C34.3029 11.4346 34.7847 10.1267 34.3313 8.91192C33.2646 6.05308 28.4274 6.15257 25.1536 7.26049C16.8585 10.0659 9.92576 15.6768 6.21743 22.5872C4.16075 26.4178 3.12137 31.0118 5.34111 34.7765C7.26418 38.0385 11.3723 40.0837 15.5971 40.7036C19.822 41.3235 24.1689 40.6879 28.2991 39.7077C31.9033 38.8522 35.5411 37.6709 38.1869 35.4195C42.7368 31.547 43.3228 25.5371 43.6416 20.0676C43.8751 16.0475 44.0056 11.6974 41.3145 8.38623C37.0939 3.19425 28.3054 3.04136 20.9014 3.42673C17.2656 3.61627 13.4521 3.85189 10.3844 5.5232C4.55 8.70248 3.71049 15.5427 3.47274 21.4363C3.36017 24.2103 3.24866 26.9833 3.1361 29.7573C3.06982 31.3878 3.02038 33.0884 3.83253 34.566C5.82713 38.1914 11.5848 38.6082 16.2862 38.5045" fill="#30C0A1"></path>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5096 24.6585C23.1518 22.2866 24.754 19.9723 26.3562 17.659C27.5723 15.9029 28.7884 14.1457 30.0056 12.3917C30.6273 11.4942 31.1355 11.4031 32.0612 12.0199C32.4505 12.2786 32.8397 12.5372 33.2268 12.798C34.0821 13.3739 34.1842 13.863 33.6056 14.6976C31.4016 17.8842 29.1955 21.0708 26.9895 24.2563C25.8112 25.9591 24.6351 27.6618 23.4547 29.3625C22.5984 30.596 21.5653 30.707 20.4849 29.6567C18.5166 27.7435 16.5588 25.8198 14.6031 23.8951C13.9656 23.2678 13.9667 22.7212 14.5874 22.097C14.985 21.696 15.39 21.2991 15.7982 20.9085C16.4378 20.2969 16.9986 20.2917 17.635 20.9085C18.8059 22.0436 19.9652 23.1893 21.1319 24.3296C21.2392 24.4302 21.3539 24.5213 21.5096 24.6585Z" fill="white"></path>
+						</svg>
+						<p class="font-display font-bold text-xl uppercase leading-7 text-bottom">You Don't Need to Be Young, White, or Male</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+</section>
+<script src="~/js/build/js/intlTelInput.js"></script>
+<script>
+	var input = document.querySelector("#phone");
+	window.intlTelInput(input, {});
+</script>
+
+
+
