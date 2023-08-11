@@ -16,6 +16,7 @@
     background-size: cover;
     background-image: url(../images/camp-bg-8-22-1.png);
     padding-top: 10rem;
+    width: 100%;
 }
 
 .first h1 {
