@@ -6,31 +6,27 @@
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/BreakInto.css" asp-append-version="true" />
 @*Section 1*@
-<div class="container">
-    <div class="bullseyecontainter">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="./Register.html" class="scrollto">
-                       
-                        <img class="d-block w-100" src="./BreakImage/slider1.jpg" alt="First slide">
-                    </a>
-                </div>
-            </div>
+
+<div class="bullseyecontainter">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+
+            <img class="bullimage" src="./BreakImage/bullseyeslide.jpg" alt="First slide">
+        </div>
     </div>
+</div>
 
-    
-
+<div class="container">
     <section class="section1">
         <div class="container">
             <div id="jumbotron" class="text-center">
-                <h1 class="display-6">The Break into Tech + Get Hired Program</h1>
                 <div>
                     <p id="leads">Land a High Paying & Fulfilling Job in <br /> Tech—in 12 Months or Less!</p>
                 </div>
                 <span id="lead"> Let us show you how fun, empowering, and fast making a career change <br /> into front end development and UI/UX design can be! </span>
 
             </div>
-            <a href="#" class="btn btn- alert-primary btn-lg btn-lg d-block mx-auto">ENROLL NOW</a>
+            <a class="btn btn- alert-primary btn-lg btn-lg d-block mx-auto" asp-action="Index" asp-controller="User">ENROLL NOW</a>
         </div>
 
     </section>
