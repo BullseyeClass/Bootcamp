@@ -15,6 +15,11 @@ body {
     padding: 0;
 }
 
+.bullseyecontainter {
+    margin-left: -15rem;
+    width: 70rem;
+    max-width: 100%;
+}
 .section1 {
     margin: 0%;
     padding: 0px;
@@ -48,12 +53,13 @@ body {
 }
 
 .btn-lg {
-    padding: 15px 30px;
+     padding: 15px 30px;
     font-size: 20px;
     width: 300px;
     margin-top: 7%;
     background: #1977cc;
     color: ghostwhite;
+   
 }
 
 h1 {
@@ -109,6 +115,7 @@ h1 {
     min-height: 1em;
     white-space: pre-wrap;
     font-weight: normal;
+    text-align:center;
 }
 
 .p3 {
@@ -144,7 +151,7 @@ h1 {
 }
 
 #container3 {
-    background-color: #f7f0ff;
+    background-color: #bff2e6;
     width: 160.8%;
     margin-left: -16rem;
     height: 60em;
@@ -478,7 +485,7 @@ ul {
 .textcontainer {
     font-family: "Open Sans",Sans-serif;
     font-weight: 200;
-    width: 15em;
+    width: 11em;
     font-size: -10rem;
     /* align-content: flex-start;*/
 }
