@@ -68,7 +68,7 @@
 
 .second {
     padding-top: 10rem;
-    padding-bottom: 30rem;
+    /*padding-bottom: 30rem;*/
 }
 
 .space {
@@ -294,10 +294,9 @@ label {
     font-weight: 700;
     font-size: 2.25rem;
     text-align: center;
-    padding-left: 26rem;
-    padding-right: 26rem;
+    padding-left: 23rem;
+    padding-right: 23rem;
     margin-bottom: 8rem;
-    color: black;
     font-family: Montserrat,Open Sans;
     color: #2c4964;
 }
