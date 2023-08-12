@@ -895,6 +895,45 @@ element.style {
 }
 
 
+/* Responsive Styles for Small Screens (up to 767px) */
+/*@media (max-width: 767px) {*/
+    /* Adjust styles for screens up to 767px wide */
+    /*.content {
+        padding-top: 10vh;
+    }
+    .additional-content {
+        padding-top: 20vh;
+    }
+    .new-section {
+        padding: 2rem;
+    }
+    .max-w-4xl {
+        max-width: 100%;
+    }
+    .text-center.md\:text-left.md\:ml-11 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .text-left.md\:ml-11 {
+        text-align: left;
+        margin-left: 0;
+    }
+    .my-sm-4 {
+        margin-top: 0.5rem;
+    }
+}*/
+
+/* Responsive Styles for Tablet Screens (768px to 1023px) */
+/*@media (min-width: 768px) and (max-width: 1023px) {*/
+    /* Adjust styles for tablet screens */
+    /* ... (add your tablet responsive styles here) ... */
+/*}*/
+
+/* Responsive Styles for Desktop Screens (1024px and larger) */
+/*@media (min-width: 1024px) {*/
+    /* Adjust styles for desktop screens */
+    /* ... (add your desktop responsive styles here) ... */
+/*}*/
 
 
 
