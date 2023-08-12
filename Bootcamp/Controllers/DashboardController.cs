@@ -2,7 +2,7 @@
 
 namespace Bootcamp.Controllers
 {
-    public class LearnToCodeController : Controller
+    public class DashboardController : Controller
     {
         public IActionResult Index()
         {

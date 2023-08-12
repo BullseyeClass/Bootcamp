@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Adigun_Pelumi",
+      "email": "adigunpelumi236@gmail.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "username": "Pelumi_Olamiju",
+      "email": "olamipelumi534@gmail.com",
+      "password": "secret456"
+    },
+    {
+      "id": 3,
+      "username": "Adigun_Olamiju",
+      "email": "adigunolami11@gmail.com",
+      "password": "qwerty789"
+    }
+  ]
+}

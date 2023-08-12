@@ -1,0 +1,76 @@
+﻿@using X.PagedList.Mvc.Common;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Mvc.Core.Common;
+@model X.PagedList.IPagedList<Bootcamp.Models.Blogs>
+@{
+    ViewData["Title"] = "Blog";
+
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="~/css/Blog.css" asp-append-version="true" />
+
+
+<div class="board-space">
+    <div class="board">
+        <div class="text">
+            <h1 class="">Wondering if tech is right for you?</h1>
+            <p class="">Take our 3-minute quiz to figure out if a tech career is right for you.</p>
+            <div class="dropdown">
+                <button class=" quize dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Take Quiz
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">HTML</a>
+                    <a class="dropdown-item" href="#">CSS</a>
+                    <a class="dropdown-item" href="#">JAVA SCRIPT</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="board-image">
+            <img width="384" height="300" src="./images/blog-top.png" class="" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="container">
+        <div class="card-wrapper">
+
+            @foreach (var item in Model)
+            {
+
+                @if (item.Category.Contains("Blog"))
+                {
+
+                    <div class="my-card">
+                        <div class="image">
+                            <img src="@item.Image" alt="image">
+                        </div>
+                        <div class="my-card-body">
+                            <h5 class="my-card-title">@item.Title</h5>
+                            <p class="card-text">@item.Content</p>
+                            <div class="card-cta"> <a href="@item.Link">Read More</a>  </div>
+                        </div>
+                    </div>
+
+                }
+
+            }
+
+        </div>
+    </div>
+
+</div>
+<div class="pagination-container">
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions { Display = PagedListDisplayMode.IfNeeded })
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

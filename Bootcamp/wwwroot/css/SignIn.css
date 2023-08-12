@@ -17,6 +17,7 @@
     text-align: left;
     font-weight: 700;
     line-height: 1rem;
+    color: #2c4964;
 }
 
 .lost {
@@ -28,7 +29,7 @@
     }
 
 .social {
-    color: #292929;
+    color: #2c4964;
     font-size: 15px;
 }
 
@@ -47,17 +48,17 @@ hr {
 }
 
 .overlap-text {
-    position: absolute; 
-    top: -13px; 
-    background-color: rgba(241,96,89); 
-    padding: 0 10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    font-size:15px;
-    
+    position: absolute;
+    top: -13px;
+    background-color: #e9ecef;
+    padding: 0 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    color: #2c4964;
 }
 #social-btn:hover {
-    background-color: #292929;
+    background-color: #1977cc;
 }
 
 #social-text:hover{
