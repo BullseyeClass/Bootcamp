@@ -1,4 +1,7 @@
 ﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
     /*border: 1px solid red;*/
 }
 
@@ -145,8 +148,7 @@
     justify-content: center;
 }
 .pagination-container{
-   position:relative;
-   left: 16rem; 
+   margin-left: 16.5rem; 
    font-size: 1.30rem;
    padding-top: 2rem;
 }
