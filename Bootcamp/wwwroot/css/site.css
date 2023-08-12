@@ -261,6 +261,8 @@ footer h3 {
 
 .menu-section a{
     line-height:40px;
+    text-decoration:none;
+    color:black;
 }
 
 .footer-menu hr{

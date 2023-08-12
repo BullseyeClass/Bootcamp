@@ -123,10 +123,10 @@
     font-weight: bold;
     background: #8ad1ded4;
     border: none;
-    margin-left: 1.875rem;
+    margin-left: 0.2rem;
     padding: 0.75rem 5rem;
     padding-bottom: 0.625rem;
-    margin-right: 0.3rem;
+    margin-right: 1.2rem;
 }
 
     .nsl-container svg {
@@ -142,10 +142,10 @@
     font-weight: bold;
     background: #8ad1ded4;
     border: none;
-    margin-left: 1.875rem;
+    margin-left: 0.2rem;
     padding: 0.75rem 5rem;
     margin-bottom: 1.5625rem;
-    margin-right: 0.3rem;
+    margin-right: 1.2rem;
 }
 
     .nsl-container1 svg {
@@ -211,6 +211,9 @@ label {
     padding: 1rem 1.25rem;
     text-indent: 1.25rem;
 }
+#phone{
+    padding-right: 11rem;
+}
 
     .form-control:focus {
         background: #f2f2f2;
@@ -261,8 +264,8 @@ label {
         font-weight: bold;
         background: #1977cc;
         border: none;
-        margin-left: 0.875rem;
-        padding: 2rem 7.375rem;
+        margin-right: -6rem;
+        padding: 2rem 8.375rem;
     }
 
         .signup-form .btn:hover, .signup-form .btn:focus {
