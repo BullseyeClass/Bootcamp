@@ -20,5 +20,12 @@ namespace Bootcamp.Repository.Helper
             string jsonContent = File.ReadAllText(fullPath);
             return JsonSerializer.Deserialize<List<Blogs>>(jsonContent);
         }
+
+        public T ReadFromJson<T>(string fileName)
+        {
+            string jsonContent = File.ReadAllText(Getpath(fileName));
+            return JsonSerializer.Deserialize<T>(jsonContent);
+        }
+
     }
 }
