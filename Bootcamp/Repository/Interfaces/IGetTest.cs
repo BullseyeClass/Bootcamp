@@ -1,4 +1,6 @@
-﻿namespace Bootcamp.Repository.Interfaces
+﻿using Bootcamp.Models;
+
+namespace Bootcamp.Repository.Interfaces
 {
     public interface IGetTest
     {

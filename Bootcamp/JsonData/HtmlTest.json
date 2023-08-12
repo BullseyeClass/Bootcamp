@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does JavaScript primarily add to a webpage?",
+    "options": [
+      "a) Style and layout",
+      "b) Interactivity and behavior",
+      "c) Database storage",
+      "d) Audio and video"
+    ],
+    "correctAnswer": "b) Interactivity and behavior"
+  },
+  {
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "options": [
+      "a) var",
+      "b) variable",
+      "c) v",
+      "d) let"
+    ],
+    "correctAnswer": "a) var"
+  },
+  {
+    "question": "What is the purpose of the 'console.log()' function in JavaScript?",
+    "options": [
+      "a) To log errors in the console",
+      "b) To create a popup message",
+      "c) To print messages to the console for debugging",
+      "d) To display a message in the browser"
+    ],
+    "correctAnswer": "c) To print messages to the console for debugging"
+  },
+  {
+    "question": "Which symbol is used for single-line comments in JavaScript?",
+    "options": [
+      "a) //",
+      "b) /* */",
+      "c) <!-- -->",
+      "d) --"
+    ],
+    "correctAnswer": "a) //"
+  },
+  {
+    "question": "What is the result of the expression: 5 + '5' in JavaScript?",
+    "options": [
+      "a) 55",
+      "b) 10",
+      "c) '55'",
+      "d) NaN"
+    ],
+    "correctAnswer": "c) '55'"
+  },
+  {
+    "question": "Which built-in method is used to convert a string to uppercase letters in JavaScript?",
+    "options": [
+      "a) toUpperCase()",
+      "b) upper()",
+      "c) changeCase('upper')",
+      "d) stringToUpper()"
+    ],
+    "correctAnswer": "a) toUpperCase()"
+  },
+  {
+    "question": "In JavaScript, what is the purpose of the 'return' statement?",
+    "options": [
+      "a) To terminate the execution of a loop",
+      "b) To exit the current function and return a value",
+      "c) To display a message in the console",
+      "d) To reload the webpage"
+    ],
+    "correctAnswer": "b) To exit the current function and return a value"
+  },
+  {
+    "question": "Which JavaScript data type can hold multiple values of different types?",
+    "options": [
+      "a) string",
+      "b) number",
+      "c) boolean",
+      "d) array"
+    ],
+    "correctAnswer": "d) array"
+  },
+  {
+    "question": "What does the '=== 'operator in JavaScript check for?",
+    "options": [
+      "a) Equality of value and type",
+      "b) Equality of value",
+      "c) Assignment",
+      "d) Inequality"
+    ],
+    "correctAnswer": "a) Equality of value and type"
+  },
+  {
+    "question": "Which JavaScript method is used to add a new element to an array?",
+    "options": [
+      "a) push()",
+      "b) add()",
+      "c) insert()",
+      "d) append()"
+    ],
+    "correctAnswer": "a) push()"
+  },
+  {
+    "question": "What is the purpose of the 'setTimeout()' function in JavaScript?",
+    "options": [
+      "a) To pause the execution of a loop",
+      "b) To define a delay before running a function",
+      "c) To create a timer for animations",
+      "d) To set the font size of an element"
+    ],
+    "correctAnswer": "b) To define a delay before running a function"
+  },
+  {
+    "question": "Which JavaScript loop executes a block of code as long as a specified condition is true?",
+    "options": [
+      "a) while loop",
+      "b) for loop",
+      "c) do-while loop",
+      "d) if-else loop"
+    ],
+    "correctAnswer": "a) while loop"
+  },
+  {
+    "question": "What is the purpose of the 'NaN' value in JavaScript?",
+    "options": [
+      "a) To represent a negative number",
+      "b) To indicate 'Not a Number'",
+      "c) To represent an infinity value",
+      "d) To stand for 'No action needed'"
+    ],
+    "correctAnswer": "b) To indicate 'Not a Number'"
+  },
+  {
+    "question": "Which JavaScript function is used to parse JSON data?",
+    "options": [
+      "a) JSON.stringify()",
+      "b) JSON.parse()",
+      "c) parseJSON()",
+      "d) stringifyJSON()"
+    ],
+    "correctAnswer": "b) JSON.parse()"
+  },
+  {
+    "question": "What is the JavaScript 'this' keyword used for?",
+    "options": [
+      "a) To create a new object",
+      "b) To refer to the current object or context",
+      "c) To declare a variable",
+      "d) To import external scripts"
+    ],
+    "correctAnswer": "b) To refer to the current object or context"
+  }
+]

@@ -15,7 +15,8 @@ namespace Bootcamp.Services
 
         public List<Questions> GetHtmlQuestions()
         {
-
+            var result = _jsonHelper.ReadFromJson<List<Questions>>("HtmlTest.json");
+            return result;
         }
     }
 }

@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bootcamp.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class Test : ControllerBase
+  
+    public class Test : Controller
     {
         private readonly IGetTest _getTest;
 
@@ -18,6 +17,8 @@ namespace Bootcamp.Controllers
         [HttpGet]
         public IActionResult GetHtmlTest()
         {
+
+            return View(_getTest.GetHtmlQuestions());
 
         }
     }
