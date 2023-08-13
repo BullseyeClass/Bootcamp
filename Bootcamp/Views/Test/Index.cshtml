@@ -67,48 +67,56 @@
 
 
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
-		var form = document.getElementById("quizForm");
-		var submitButton = document.getElementById("submitButton");
+    document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("quizForm");
+        var submitButton = document.getElementById("submitButton");
 
-		form.addEventListener("submit", function (event) {
-			var questions = form.getElementsByClassName("question");
-			var hasErrors = false;
+        form.addEventListener("submit", function (event) {
+            var questions = form.getElementsByClassName("question");
+            var hasErrors = false;
 
-			for (var i = 0; i < questions.length; i++) {
-				var question = questions[i];
-				var options = question.getElementsByClassName("option-radio");
-				var errorMessage = question.getElementsByClassName("error-message")[0];
-				var isChecked = false;
+            for (var i = 0; i < questions.length; i++) {
+                var question = questions[i];
+                var options = question.getElementsByClassName("option-radio");
+                var errorMessage = question.getElementsByClassName("error-message")[0];
+                var isChecked = false;
 
+                for (var j = 0; j < options.length; j++) {
+                    if (options[j].checked) {
+                        isChecked = true;
+                        break;
+                    }
+                }
 
-				for (var j = 0; j < options.length; j++) {
-					if (options[j].checked) {
-						isChecked = true;
-						break;
-					}
-				}
+                if (!isChecked) {
+                    errorMessage.style.display = "block";
+                    hasErrors = true;
+                } else {
+                    errorMessage.style.display = "none";
+                }
+            }
 
-				if (!isChecked) {
-					errorMessage.style.display = "block";
-					hasErrors = true;
-				} else {
-					errorMessage.style.display = "none";
-				}
-			}
+            if (hasErrors) {
+                event.preventDefault();
+            }
+        });
 
-			if (hasErrors) {
-				event.preventDefault();
-			}
-		});
+        var optionRadios = form.getElementsByClassName("option-radio");
+        for (var i = 0; i < optionRadios.length; i++) {
+            optionRadios[i].addEventListener("click", function () {
+                var question = this.closest(".question");
+                var otherOptions = question.getElementsByClassName("option-radio");
 
-		var optionRadios = form.getElementsByClassName("option-radio");
-		for (var i = 0; i < optionRadios.length; i++) {
-			optionRadios[i].addEventListener("click", function () {
-				var question = this.closest(".question");
-				var errorMessage = question.getElementsByClassName("error-message")[0];
-				errorMessage.style.display = "none";
-			});
-		}
-	});
+                
+                for (var j = 0; j < otherOptions.length; j++) {
+                    if (otherOptions[j] !== this) {
+                        otherOptions[j].checked = false;
+                    }
+                }
+
+                var errorMessage = question.getElementsByClassName("error-message")[0];
+                errorMessage.style.display = "none";
+            });
+        }
+    });
 </script>
