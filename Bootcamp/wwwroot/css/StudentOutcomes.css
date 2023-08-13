@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -17,7 +17,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-    padding: 3rem;     
+    padding:3rem;
+    margin-bottom: 3rem;
 }
 
 .title {

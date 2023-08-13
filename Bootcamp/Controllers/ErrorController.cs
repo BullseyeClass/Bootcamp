@@ -2,13 +2,11 @@
 
 namespace Bootcamp.Controllers
 {
-    public class SignInController : Controller
+    public class ErrorController : Controller
     {
-        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
     }
-
 }

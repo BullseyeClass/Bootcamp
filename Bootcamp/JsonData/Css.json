@@ -1,0 +1,317 @@
+[
+  {
+    "question": "Which property is used to change the text color of an element?",
+    "options": {
+      "a": {
+        "text": "color",
+        "correct": true
+      },
+      "b": {
+        "text": "font-color",
+        "correct": false
+      },
+      "c": {
+        "text": "text-color",
+        "correct": false
+      },
+      "d": {
+        "text": "text",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": {
+      "a": {
+        "text": "Cascading Style Sheets",
+        "correct": true
+      },
+      "b": {
+        "text": "Creative Styling System",
+        "correct": false
+      },
+      "c": {
+        "text": "Computer Style Sheets",
+        "correct": false
+      },
+      "d": {
+        "text": "Colorful Style Sheets",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which CSS property is used to control the spacing between elements?",
+    "options": {
+      "a": {
+        "text": "margin",
+        "correct": true
+      },
+      "b": {
+        "text": "padding",
+        "correct": false
+      },
+      "c": {
+        "text": "spacing",
+        "correct": false
+      },
+      "d": {
+        "text": "border",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "How can you select an element with the id 'myElement' in CSS?",
+    "options": {
+      "a": {
+        "text": "#myElement",
+        "correct": true
+      },
+      "b": {
+        "text": ".myElement",
+        "correct": false
+      },
+      "c": {
+        "text": "element.myElement",
+        "correct": false
+      },
+      "d": {
+        "text": "element#myElement",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which property is used to set the font size of text?",
+    "options": {
+      "a": {
+        "text": "font-size",
+        "correct": true
+      },
+      "b": {
+        "text": "text-size",
+        "correct": false
+      },
+      "c": {
+        "text": "size",
+        "correct": false
+      },
+      "d": {
+        "text": "font-style",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does the 'box-sizing' property control in CSS?",
+    "options": {
+      "a": {
+        "text": "How the total width and height of an element is calculated",
+        "correct": true
+      },
+      "b": {
+        "text": "The size of the box shadows",
+        "correct": false
+      },
+      "c": {
+        "text": "The spacing between elements",
+        "correct": false
+      },
+      "d": {
+        "text": "The alignment of the text inside an element",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which CSS property is used to add a background color to an element?",
+    "options": {
+      "a": {
+        "text": "background-color",
+        "correct": true
+      },
+      "b": {
+        "text": "color",
+        "correct": false
+      },
+      "c": {
+        "text": "bg-color",
+        "correct": false
+      },
+      "d": {
+        "text": "background",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "How can you make text bold in CSS?",
+    "options": {
+      "a": {
+        "text": "font-weight: bold;",
+        "correct": true
+      },
+      "b": {
+        "text": "text-style: bold;",
+        "correct": false
+      },
+      "c": {
+        "text": "bold-text: true;",
+        "correct": false
+      },
+      "d": {
+        "text": "font-bold: true;",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What is the default value of the 'position' property in CSS?",
+    "options": {
+      "a": {
+        "text": "static",
+        "correct": true
+      },
+      "b": {
+        "text": "relative",
+        "correct": false
+      },
+      "c": {
+        "text": "absolute",
+        "correct": false
+      },
+      "d": {
+        "text": "fixed",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which property is used to control the order of elements in relation to their siblings?",
+    "options": {
+      "a": {
+        "text": "order",
+        "correct": true
+      },
+      "b": {
+        "text": "position",
+        "correct": false
+      },
+      "c": {
+        "text": "z-index",
+        "correct": false
+      },
+      "d": {
+        "text": "index",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which CSS property is used to create space around elements, outside of any defined borders?",
+    "options": {
+      "a": {
+        "text": "margin",
+        "correct": true
+      },
+      "b": {
+        "text": "padding",
+        "correct": false
+      },
+      "c": {
+        "text": "spacing",
+        "correct": false
+      },
+      "d": {
+        "text": "border",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does the CSS 'float' property do?",
+    "options": {
+      "a": {
+        "text": "Specifies how an element should float",
+        "correct": true
+      },
+      "b": {
+        "text": "Changes the font of an element",
+        "correct": false
+      },
+      "c": {
+        "text": "Adds a shadow to an element",
+        "correct": false
+      },
+      "d": {
+        "text": "Applies a background image to an element",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which CSS selector targets all elements of a specific class?",
+    "options": {
+      "a": {
+        "text": ".classname",
+        "correct": true
+      },
+      "b": {
+        "text": "#classname",
+        "correct": false
+      },
+      "c": {
+        "text": "class.name",
+        "correct": false
+      },
+      "d": {
+        "text": "classname",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which CSS property is used to control the space between the content and the border of an element?",
+    "options": {
+      "a": {
+        "text": "padding",
+        "correct": true
+      },
+      "b": {
+        "text": "margin",
+        "correct": false
+      },
+      "c": {
+        "text": "spacing",
+        "correct": false
+      },
+      "d": {
+        "text": "border-spacing",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does the CSS 'display' property control?",
+    "options": {
+      "a": {
+        "text": "How an element is displayed",
+        "correct": true
+      },
+      "b": {
+        "text": "The color of an element",
+        "correct": false
+      },
+      "c": {
+        "text": "The positioning of an element",
+        "correct": false
+      },
+      "d": {
+        "text": "The font of an element",
+        "correct": false
+      }
+    }
+  }
+]

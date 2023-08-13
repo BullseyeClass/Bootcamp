@@ -1,0 +1,159 @@
+﻿@model List<Questions>
+
+<style>
+    .error-message {
+        display: none;
+        color: red;
+    }
+
+    .hidden-ol {
+        list-style: none;
+        padding-left: 0;
+    }
+
+</style>
+
+<h1>@ViewData["title"]</h1>
+
+
+@*<form id="quizForm" method="post" asp-action="PostHtmlTest" asp-controller="Test">
+    @if (Model != null)
+    {
+        for (int i = 0; i < Model.Count; i++)
+        {
+            var question = Model[i];
+            <div class="question">
+                <p>@string.Format($"{i+1}. ")<strong>@question.Question</strong></p>
+                <ol class="hidden-ol">
+                    @for (int j = 0; j < question.Options.Count; j++)
+                    {
+                        var option = question.Options.ElementAt(j);
+                        <li>
+                            @option.Key)
+                            <label>
+                                <input class="option-radio" type="radio" name="model[@i].SelectedAnswer" value="@option.Key">
+                                @option.Value.Text
+                            </label>
+                        </li>
+                    }
+                </ol>
+                <div class="error-message" style="display: none;">Please select an option.</div>
+            </div>
+        }
+        <button type="submit" id="submitButton">Submit</button>
+    }
+    else
+    {
+        <p>No questions available.</p>
+    }
+</form>
+*@
+
+<form id="quizForm" method="post" asp-action="PostHtmlTest" asp-controller="Test">
+
+    @if (Model != null)
+
+    {
+
+        for (int i = 0; i < Model.Count; i++)
+
+        {
+
+            var question = Model[i];
+
+            <div class="question">
+
+                <p>@string.Format($"{i+1}. ")<strong>@question.Question</strong></p>
+
+                <ol class="hidden-ol">
+
+                    @for (int j = 0; j < question.Options.Count; j++)
+
+                    {
+
+                        var option = question.Options.ElementAt(j);
+
+                        <li>
+
+                            @option.Key)
+
+                            <label>
+
+                                <input class="option-radio" type="radio" name="questionList[@i].Options[@option.Key].Selected" value="true">
+
+                                @option.Value.Text
+
+                            </label>
+
+                        </li>
+
+                    }
+
+                </ol>
+
+                <div class="error-message" style="display: none;">Please select an option.</div>
+
+            </div>
+
+        }
+
+        <button type="submit" id="submitButton">Submit</button>
+
+    }
+
+    else
+
+    {
+
+        <p>No questions available.</p>
+
+    }
+
+</form>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("quizForm");
+        var submitButton = document.getElementById("submitButton");
+
+        form.addEventListener("submit", function (event) {
+            var questions = form.getElementsByClassName("question");
+            var hasErrors = false;
+
+            for (var i = 0; i < questions.length; i++) {
+                var question = questions[i];
+                var options = question.getElementsByClassName("option-radio");
+                var errorMessage = question.getElementsByClassName("error-message")[0];
+                var isChecked = false;
+
+             
+   for (var j = 0; j < options.length; j++) {
+                    if (options[j].checked) {
+                        isChecked = true;
+                        break;
+                    }
+                }
+
+                if (!isChecked) {
+                    errorMessage.style.display = "block";
+                    hasErrors = true;
+                } else {
+                    errorMessage.style.display = "none";
+                }
+            }
+
+            if (hasErrors) {
+                event.preventDefault(); 
+            }
+        });
+
+        var optionRadios = form.getElementsByClassName("option-radio");
+        for (var i = 0; i < optionRadios.length; i++) {
+            optionRadios[i].addEventListener("click", function () {
+                var question = this.closest(".question");
+                var errorMessage = question.getElementsByClassName("error-message")[0];
+                errorMessage.style.display = "none";
+            });
+        }
+    });
+</script>

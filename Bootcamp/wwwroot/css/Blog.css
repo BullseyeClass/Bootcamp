@@ -1,4 +1,7 @@
 ﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
     /*border: 1px solid red;*/
 }
 
@@ -6,21 +9,22 @@
 .alert {
     position: fixed;
     top: 0;
+    left: -0.06rem;
     z-index: 99999;
     background: #8ed8e6;
     width: 100%;
     height:12%;
 }
 .alert-dismissible .btn-close {
-    height: 12px;
-    right: 8px;
+    height: 4px;
+    right: -10px;
     top: -11px;
-    width: 6px;
+    width: 5px;
 }
 .alert h2{
-    padding-left: 20rem;
+    padding-left: 16rem;
     padding-top: 0.50rem;
-    font-size: 23px;
+    font-size: 18px;
 }
 .alert p {
     text-align: center;
@@ -29,17 +33,17 @@
     font-family: "Open Sans";
     line-height: 2;
     position: relative;
-    bottom: 2.30rem;
-    right: 3.50rem;
+    bottom: 2.10rem;
+    right: 1.40rem;
 }
 .span{
     position:relative;
     bottom: 4.80rem;
-    left: 50rem;
+    left: 45rem;
     text-decoration: none;
     color: black;
     background-color: #fff;
-    padding: 16px 24px;
+    padding: 10px 24px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -51,12 +55,13 @@
     border-bottom: 2px solid grey;
 }
 .board .text{
-    padding-left: 8rem;
+    padding-top: 3rem;
+    padding-left: 4rem;
     line-height: 4rem;
 }
 .board-image img{
     position:relative;
-    left: 14rem;
+    left: 4rem;
 }
 .quize {
     display: inline-block;
@@ -143,9 +148,8 @@
     justify-content: center;
 }
 .pagination-container{
-   position:relative;
-   left: 20rem; 
-   font-size: 1.50rem;
+   margin-left: 16.5rem; 
+   font-size: 1.30rem;
    padding-top: 2rem;
 }
 .pagination {
@@ -156,15 +160,15 @@
 
     .pagination li {
         display: inline;
-        margin-right: 5px;
+        margin-right: 12px;
     }
 
     .pagination a {
         color: #8ed8e6;
         text-decoration: none;
         transition: color 0.3s;
-        padding: 6px 12px;
-        border:2px solid grey;
+        padding: 0 2px;
+       /* border:0.12rem solid grey;*/
     }
 
         .pagination a:hover {

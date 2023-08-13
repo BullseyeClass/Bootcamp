@@ -102,8 +102,8 @@
                     <hr />
                     <a> Meet with an Enrollment Counselor</a><br />
                     <a> View All Courses</a> <br />
-                    <a> <b>Coding</b> Camp</a> <br />
-                    <a> Break Into Tech Job Training Program</a> <br />
+                    <a asp-controller="user" asp-action="Index"> <b>Coding</b> Camp</a> <br />
+                    <a asp-controller="Breakinto" asp-action="Index"> Break Into Tech Job Training Program</a> <br />
                     <a> Front End + React JS</a> <br />
                     <a> Front End Development</a><br />
                     <a> Python for Web Apps & Data</a> <br />
@@ -131,24 +131,25 @@
                     <hr />
                     <p> We’re on a mission to support our students— <br />especially those marginalized by gender, race, and/or <br /> age—to learn in-demand tech skills and land higher <br /> paying and more fulfilling jobs.</p><br />
                     <a> About The Team</a> <br />
-                    <a> Blog</a> <br />
+                    <a asp-controller="Blog" asp-action="Index"> Blog</a> <br />
                     <a>Community Guidelines</a> <br />
                     <a>Jobs</a> <br />
-                    <a> Sign In</a><br />
+                    <a asp-controller="SignIn" asp-action="Index"> Sign In</a><br />
                    
                 </div>
             </div>
             <div class="social-logos">
-                <a>
+                <a href="https://web.facebook.com/login.php?_rdc=1&_rdr">
                     <img src="~/images/facebook.svg" />
                 </a>
-                <a>
-                    <img src="~/images/instagram.svg" />
+                <a href="https://twitter.com/i/flow/login">
+                    <img src="~/images/twitter.svg" />
                 </a>
-                <a>
-                    <img src="~/images/linkedin.svg" />
+                <a href="https://www.linkedin.com/feed/">
+                    <img src="~/images/linkedin.svg" alt="LinkedIn Icon" />
                 </a>
-                <a>
+
+                <a href="https://www.instagram.com/accounts/login/">
                     <img src="~/images/instagram.svg" />
                 </a>
             </div>

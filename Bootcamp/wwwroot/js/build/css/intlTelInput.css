@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 6px 0 20px;
+    padding: 0 6px 0 6px;
     background-color: rgba(0,0,0,.05);
 }
   .iti__arrow {
@@ -79,8 +79,8 @@
   .iti__flag-box, .iti__country-name {
     margin-right: 6px; }
   .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
-    padding-right: 287px;
-    padding-left: 52px;
+   /* padding-right: 287px;*/
+   /* padding-left: 52px;*/
     margin-left: 0; }
   .iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
     right: auto;
