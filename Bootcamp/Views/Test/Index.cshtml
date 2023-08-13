@@ -16,7 +16,7 @@
 <h1>@ViewData["title"]</h1>
 
 
-
+<div class="container">
 <form id="quizForm" method="post" asp-action="PostHtmlTest" asp-controller="Test">
 
 	@if (Model != null)
@@ -64,7 +64,7 @@
 		<p>No questions available.</p>
 	}
 </form>
-
+</div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
