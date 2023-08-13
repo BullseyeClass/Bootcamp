@@ -1,0 +1,317 @@
+[
+  {
+    "question": "What does the acronym 'HTML' stand for?",
+    "options": {
+      "a": {
+        "text": "Hypertext Markup Language",
+        "correct": true
+      },
+      "b": {
+        "text": "Hyperlink and Text Markup Language",
+        "correct": false
+      },
+      "c": {
+        "text": "Home Tool Management Language",
+        "correct": false
+      },
+      "d": {
+        "text": "High-level Text Manipulation Language",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which HTML element is used to define the structure of an HTML document?",
+    "options": {
+      "a": {
+        "text": "<structure>",
+        "correct": false
+      },
+      "b": {
+        "text": "<document>",
+        "correct": false
+      },
+      "c": {
+        "text": "<html>",
+        "correct": true
+      },
+      "d": {
+        "text": "<body>",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the 'alt' attribute in the 'img' tag?",
+    "options": {
+      "a": {
+        "text": "To define the alignment of the image",
+        "correct": false
+      },
+      "b": {
+        "text": "To set the image source",
+        "correct": false
+      },
+      "c": {
+        "text": "To specify alternative text for the image",
+        "correct": true
+      },
+      "d": {
+        "text": "To control the image size",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which HTML tag is used to create an unordered list?",
+    "options": {
+      "a": {
+        "text": "<list>",
+        "correct": false
+      },
+      "b": {
+        "text": "<ul>",
+        "correct": true
+      },
+      "c": {
+        "text": "<ol>",
+        "correct": false
+      },
+      "d": {
+        "text": "<li>",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the 'href' attribute in the 'a' tag?",
+    "options": {
+      "a": {
+        "text": "To define the heading for the link",
+        "correct": false
+      },
+      "b": {
+        "text": "To set the target of the link",
+        "correct": false
+      },
+      "c": {
+        "text": "To specify the link's destination URL",
+        "correct": true
+      },
+      "d": {
+        "text": "To format the link's appearance",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which HTML tag is used to create a table row?",
+    "options": {
+      "a": {
+        "text": "<td>",
+        "correct": false
+      },
+      "b": {
+        "text": "<row>",
+        "correct": false
+      },
+      "c": {
+        "text": "<tr>",
+        "correct": true
+      },
+      "d": {
+        "text": "<th>",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does the 'DOCTYPE' declaration specify in an HTML document?",
+    "options": {
+      "a": {
+        "text": "The document's title",
+        "correct": false
+      },
+      "b": {
+        "text": "The version of HTML used",
+        "correct": false
+      },
+      "c": {
+        "text": "The character encoding for the document",
+        "correct": false
+      },
+      "d": {
+        "text": "The type of document and its version",
+        "correct": true
+      }
+    }
+  },
+  {
+    "question": "Which HTML tag is used to emphasize text without implying any specific semantic meaning?",
+    "options": {
+      "a": {
+        "text": "<strong>",
+        "correct": false
+      },
+      "b": {
+        "text": "<em>",
+        "correct": true
+      },
+      "c": {
+        "text": "<bold>",
+        "correct": false
+      },
+      "d": {
+        "text": "<italic>",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does the 'meta' tag provide in the 'head' section of an HTML document?",
+    "options": {
+      "a": {
+        "text": "The main content of the document",
+        "correct": false
+      },
+      "b": {
+        "text": "The title of the document",
+        "correct": false
+      },
+      "c": {
+        "text": "Additional styles for the document",
+        "correct": false
+      },
+      "d": {
+        "text": "Metadata and document information",
+        "correct": true
+      }
+    }
+  },
+  {
+    "question": "Which HTML tag is used to define a line break?",
+    "options": {
+      "a": {
+        "text": "<lb>",
+        "correct": false
+      },
+      "b": {
+        "text": "<br>",
+        "correct": true
+      },
+      "c": {
+        "text": "<newline>",
+        "correct": false
+      },
+      "d": {
+        "text": "<break>",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What does the 'id' attribute uniquely identify in an HTML document?",
+    "options": {
+      "a": {
+        "text": "A block-level element",
+        "correct": false
+      },
+      "b": {
+        "text": "A paragraph",
+        "correct": false
+      },
+      "c": {
+        "text": "A class of elements",
+        "correct": false
+      },
+      "d": {
+        "text": "A specific element",
+        "correct": true
+      }
+    }
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": {
+      "a": {
+        "text": "<link>",
+        "correct": false
+      },
+      "b": {
+        "text": "<a>",
+        "correct": true
+      },
+      "c": {
+        "text": "<hlink>",
+        "correct": false
+      },
+      "d": {
+        "text": "<href>",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "What is the purpose of the 'header' element in HTML?",
+    "options": {
+      "a": {
+        "text": "To define the main heading of the page",
+        "correct": false
+      },
+      "b": {
+        "text": "To group together navigation links",
+        "correct": false
+      },
+      "c": {
+        "text": "To create a header section for content",
+        "correct": true
+      },
+      "d": {
+        "text": "To style text as a header",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which HTML attribute is used to provide alternative text for images?",
+    "options": {
+      "a": {
+        "text": "alt",
+        "correct": true
+      },
+      "b": {
+        "text": "title",
+        "correct": false
+      },
+      "c": {
+        "text": "src",
+        "correct": false
+      },
+      "d": {
+        "text": "href",
+        "correct": false
+      }
+    }
+  },
+  {
+    "question": "Which HTML tag is used to create an ordered list?",
+    "options": {
+      "a": {
+        "text": "<ol>",
+        "correct": true
+      },
+      "b": {
+        "text": "<list>",
+        "correct": false
+      },
+      "c": {
+        "text": "<ul>",
+        "correct": false
+      },
+      "d": {
+        "text": "<li>",
+        "correct": false
+      }
+    }
+  }
+]
