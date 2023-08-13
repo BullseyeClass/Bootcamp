@@ -57,7 +57,13 @@ namespace Bootcamp.Controllers
             return View("Index", result);
         }
 
-        
+        [HttpGet]
+        public IActionResult ScoresView()
+        {
+            ViewData["title"] = "View";
+           
+            return View();
+        }
 
     }
 }
