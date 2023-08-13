@@ -1,0 +1,21 @@
+﻿@model Bootcamp.Models.Blogs
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@Model.Title</title>
+</head>
+<body>
+    <div id="header">
+        <h1>@Model.Title</h1>
+        <p>By: @Model.Author</p>
+        <p>Published on: @Model.PublishedDate.ToString("MMMM dd, yyyy")</p>
+    </div>
+
+    <div id="content">
+        @Html.Raw(Model.BiggerContent)
+    </div>
+
+
+</body>
+</html>

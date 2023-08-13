@@ -11,6 +11,31 @@
 <link rel="stylesheet" href="~/css/Blog.css" asp-append-version="true" />
 
 
+<div class="board-space">
+    <div class="board">
+        <div class="text">
+            <h1 class="">Wondering if tech is right for you?</h1>
+            <p class="">Take our 3-minute quiz to figure out if a tech career is right for you.</p>
+            <div class="dropdown">
+                <button class=" quize dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Take Quiz
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item"  asp-action="GetHtmlTest" asp-controller="Test">HTML</a>
+                    <a class="dropdown-item" asp-action="GetCssTest" asp-controller="Test">CSS</a>
+                    <a class="dropdown-item"  asp-action="GetJsTest" asp-controller="Test">JAVASCRIPT</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="board-image">
+            <img width="384" height="300" src="./images/blog-top.png" class="" alt="">
+        </div>
+    </div>
+</div>
+
 <div class="container">
 
     <div class="container">

@@ -36,21 +36,25 @@ body {
 
 .top-nav-text-container {
     display: flex;
-    margin-right: 45.4rem;
+    margin-right: 41rem;
     margin-top: 0.3rem;
 }
 
-.nav-tagline-text {
-    font-size: 14px;
-    font-weight: 900;
-    font-family: Montserrat,'Open Sans',sans-serif;
-}
+    .top-nav-text-container img {
+        width:15px;
+        margin-left:8px;
+        margin-bottom:10px;
+    }
+
+    .nav-tagline-text {
+        font-size: 14px;
+        font-weight: 900;
+        font-family: Montserrat,'Open Sans',sans-serif;
+    }
 .SignIn svg{
     width: 16px;
-   /* display: flex;*/
     background-color: transparent;
     border: 0;
-    /* display: none;*/
     font-size: 14px;
     line-height: 1.625em;
     margin-top: 0px;
@@ -61,31 +65,32 @@ body {
     padding-right: 0px;
     padding-bottom: 2.7px;
     padding-left: 0px;
-  
-  
-
 }
+
 .SignIn {
     display: flex;
-   /* width: fit-content;*/
    justify-content:center;
-   
     margin: 0;
     padding: 0;
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
     font-weight: 400;
     flex-direction:row;
-
+    text-decoration:none;
+    color:black;
 }
 
+.SignIn a {
+   text-decoration: none;
+    color: black;
+}
 
-    #kkkk:hover {
-        cursor: pointer;
-        color: #F16059;
-        border-color: red;
-        white-space: nowrap;
-    }
+#icon:hover {
+    cursor: pointer;
+    color: #1977CC;
+    border-color: red;
+    white-space: nowrap;
+}
 
     .SignIn p {
         padding-left: 8px;
@@ -106,61 +111,85 @@ body {
 }
 
 .main-navbar img {
-    width: 95px;
+    width: 200px;
 }
 
 .main-navbar p {
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
     font-weight: 400;
-  /*  margin-left: -0.1rem;*/
-}
-.main-navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #FFFFFF;
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #D7D7D7;
+    color:white;
 }
 
-#mmmm :hover {
-    cursor: pointer;
-    color: red;
-}
-
-    #camp {
-        padding: 0.5rem 1.9rem;
-        background-color: #F16059;
-        color: white;
-        display: block;
-        font-family: Montserrat,'Open Sans',sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1;
-        padding: 14px 32px;
-        padding-top: 14px;
-        padding-right: 32px;
-        padding-bottom: 14px;
-        padding-left: 32px;
-        text-decoration: none;
-        text-decoration-line: none;
-        text-decoration-thickness: initial;
-        text-decoration-style: initial;
-        text-decoration-color: initial;
+    #camp a
+    {
+       color:white;
+       font-size:12px;
     }
 
-    #camp:hover
-    {
-        cursor:pointer;
-        background-color:#743737;
-        color:white;
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFFFFF;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #D7D7D7;
+        color: white;
+        text-decoration: none;
+    }
+
+    .main-navbar a {
+        color:#2C4964;
+        text-decoration:none;
+        font-size:14px;
+    }
+
+#main-nav-logo :hover {
+    cursor: pointer;
+    color: #1977CC;
+}
+
+#camp {
+    padding: 0.5rem 1.9rem;
+    background-color: #1977CC;
+    color: #fff;
+    display: block;
+    border-radius:35px;
+    font-family: Montserrat,'Open Sans',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 14px 32px;
+    padding-top: 14px;
+    padding-right: 32px;
+    padding-bottom: 14px;
+    padding-left: 32px;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+
+
+#camp a:hover
+{
+    color:white;
+}
+
+    #camp:hover {
+        cursor: pointer;
+        background-color: #166ab5;
+        color: white;
+        box-shadow:5px;
     }
 
 .main-footer-container {
     border-top: 0.1px solid #ddcdcd;
     padding-top:50px;
+    background-color:#f4e9e9;
 }
 
 
@@ -225,20 +254,15 @@ footer h3 {
 
 .footer-menu
 {
-    margin-top:80px;
+    margin-top:79px;
     display:flex;
-    justify-content:space-around;
-   
+    justify-content:space-around;  
 }
-
-
-
-    .menu-section {
-        /* width: fit-content;*/
-    }
 
 .menu-section a{
     line-height:40px;
+    text-decoration:none;
+    color:black;
 }
 
 .footer-menu hr{
@@ -274,8 +298,7 @@ footer h3 {
     justify-content: space-evenly;
     margin-top: 2.5rem;
     align-items: center;
-    /* margin-right:5rem;*/
-    margin-left: -12rem;
+    margin-left: -4rem;
     padding: 2.5rem;
 }
 
@@ -296,7 +319,7 @@ footer h3 {
 
 .footer-logo-title img
 {
-    width: 120px;
+    width: 130px;
 }
 
 .footer-logo-title {
@@ -307,6 +330,7 @@ footer h3 {
     justify-content: flex-start;
     font-size: 12px;
     padding: 2.5rem 3.3rem;
+    margin-left:-2rem;
 }
 
 .line-divider {
@@ -320,25 +344,29 @@ footer h3 {
 }
 
 
-#pppp a:hover {
+#section a:hover {
     cursor: pointer;
-    color: red;
+    color: #1977CC;
 }
 
 #copywrite {
     padding-top: 3px;
+
 }
 
 #copywrite a {
    
     padding-left: 50px;
     cursor:pointer;
+    color:#444444;
 }
 #copywrite-text {
     color: black;
     padding-left: 50px;
+    font-size:14px;
+    font-weight:400;
 }
 
-    #copywrite a:hover{
-        color:red;
-    }
+#copywrite a:hover {
+    color: #1977CC;
+}
