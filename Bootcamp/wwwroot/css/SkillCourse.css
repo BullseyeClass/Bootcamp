@@ -1,63 +1,33 @@
 ﻿body {
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    height: 100%;
+    background-image: url('/Images/BGI1.jpg');
+    background-size: cover;
     overflow: hidden;
-/*   background-position: center bottom;
-*/    background-image: url('/Images/BGI1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 7rem;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position:absolute;
     margin-left: auto;
     margin-right: auto;
     top: 0;
     left: 0;
-    right:0;
-    line-height:inherit;
+    right: 0;
+    line-height: inherit;
     border-width: 0;
     border-style: solid;
     border-color: currentColor;
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
-    font-family: Montserrat, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 
-/*.content {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    padding-bottom: 20px;
-    height: 50rem;
-    line-height: 5rem;
-}
-*/
-
-
-    .content .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-weight: 700;
-        font-size: 1rem;
-    }
-
-.content img {
-    width: 100%;
-    margin-top: 20px;
-    max-height: none;
-}
-
 .cta-box {
     display: inline-block;
-    background-color: /*#8ad1ded4*/ #2c4964;
+    background-color:  #1977cc;
     right: 0;
     padding: 10px 20px;
     border-radius: 5px;
@@ -72,10 +42,10 @@
     margin-top: 3rem;
     text-transform: uppercase;
 }
-
-    .cta-box:hover {
-        background-color: #2c4964;
-        color: #fff;
+   
+.cta-box:hover {
+        background-color: #195bcc;
+        color: #fff
     }
 
 .content .font-sans p {
@@ -89,18 +59,13 @@
     line-height: 2;
 }
 
-
-
 element.style {
 }
 
 .leading-10 {
-    line-height: 2.5rem;
+    line-height: 7.5rem;
+    margin-left:-5rem;
 }
-
-/*.uppercase {
-    text-transform: uppercase;
-}*/
 
 .font-bold {
     font-weight: 700;
@@ -115,33 +80,15 @@ element.style {
 }
 
 
-
-
-
-
 .additional-content p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .rounded-full {
     border-radius: 9999px;
 }
-
-
-
 .my-2 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -151,12 +98,6 @@ element.style {
     margin-left: auto;
     margin-right: auto;
 }
-
-/**, ::after, ::before {
-    box-sizing: border-box;
-}*/
-
-
 
 .leading-loose {
     line-height: 2;
@@ -194,129 +135,22 @@ h1, p {
     margin: 0;
 }*/
 
-/**, ::after, ::before {
-    box-sizing: border-box;
-    background-color: #d7f4f4;
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
+
+./*img {
+    max-width: 100%;
+    height: auto;
+}*/
+
+/*controls the enroll now / learn more position/ 22videos 4classess form python x-ms-webview command react
 */
-/*@media (min-width: 1024px) .lg\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-@media (min-width: 768px) .md\:inline {
-    display: inline;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
-.text-xs {
-    font-size: .75rem;
-}
-
-.py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-
-.px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-}
-
-.rounded-full {
-    border-radius: 9999px;
-}
-
-.max-w-max {
-  
-    max-width: max-content;
-}
-
-.my-2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-.mb-6 {
-    margin-bottom: 1.5rem;
-}
-
-.mt-5 {
-    margin-top: 1.25rem;
-}*/
-/*.md\:flex-row {
-    flex-direction: row;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.flex {
-    display: flex;
-}
-
-@media screen and (min-width: 768px) .md\:flex-row {
-    flex-direction: row;
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}*/
-
-
-
-
-
-
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.img {
-    max-width: 100%;
-    height: auto;
-}
-
-iframe, img, object, svg, video {
-    display: block;
-    vertical-align: middle;
-}
-
-
-
-.img {
-    max-width: 100%;
-    height: auto;
-}
-
-.img, svg {
-    display: block;
-}
-
 img {
     display: block;
 }
-
-
-
 
 /* frontend dev padding of 4class 22videos
 */
@@ -324,10 +158,6 @@ img {
     display: inline;
 }
 
-/*.uppercase {
-    text-transform: uppercase;
-}*/
-
 .font-bold {
     font-weight: 700;
 }
@@ -344,6 +174,8 @@ img {
 .px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+
+
 }
 
 .rounded-full {
@@ -364,11 +196,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
 .leading-loose {
     line-height: 2;
 }
@@ -379,9 +206,6 @@ img {
     border-width: 0;
     border-style: solid;
 }
-
-
-
 
 .font-sans {
     font-family: "Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -398,28 +222,8 @@ img {
 .mb-5 {
     margin-bottom: 1.25rem;
 }
-
-
-    
-
-
-
-
-
-
-
 element.style {
     background-color: #d7f4f4;
-}
-
-/*{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}*/
-
-
-
-
 }
 
 .font-bold {
@@ -454,52 +258,10 @@ element.style {
 }
 
 
-
-
-
-img, video {
-    max-width: 100%;
-    height: auto;
-}
-
-iframe, img, object, svg, video {
-    display: block;
-    vertical-align: middle;
-}
-
-
-
-img {
-    max-width: 50%;
-    height: auto;
-}
-
-/*img, svg {
-    display: block;
-*/}
-
-/*img {
-    display: block;*/
 }
 .ul {
     list-style: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .text-center {
@@ -509,30 +271,20 @@ img {
 
 .leading-loose {
     line-height: 2;
-    /*    color: rgba(0,0,0,var(--tw-text-opacity));
-*/ font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     border-width: 0;
     border-style: solid;
     border-color: currentColor;
     box-sizing: border-box;
     margin-left: 8rem;
     margin-left: 7rem;
-    margin-left: 9rem;
+    margin-left: 10rem;
     margin-right: auto;
     width: 83.333333%;
-    /* padding-top: 7rem;
-    padding-bottom: 7rem;*/
 }
-
-
-
 .leading-10 {
     line-height: 2.5rem;
 }
-
-/*.uppercase {
-    text-transform: uppercase;
-}*/
 
 .font-bold {
     font-weight: 700;
@@ -550,9 +302,8 @@ img {
     box-sizing: border-box;
 }
 #Badge{
-/*    position:absolute;
-*//*    margin-right:10rem;
-*/    margin-right:-50rem;
+
+   margin-right:-50rem;
     margin-bottom:-5rem;
     display:flex;
     margin-left:-12.5rem;
@@ -586,17 +337,6 @@ img {
 .upperCase{
     text-transform: uppercase;
 }
-/*margin-bottom: 0;
-margin-right: 1.5rem;
-*/
-/*element.style{
-color: rgb(40, 189, 189);
-border-color: rgb(40, 189, 189);
-background-color: rgb(239, 250, 250);
-}*/
-
-
-
 .font-style {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     border-width: 0;
@@ -609,28 +349,20 @@ background-color: rgb(239, 250, 250);
     margin-right: auto;
 }
 .my-10 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: -7.5rem;
+    margin-bottom: -3.5rem;
 }
 .max-w-4xl {
     max-width: 56rem;
 }
 .py-16 {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 9rem;
+    padding-bottom: 3rem;
 }
-
-/*media query
-*/
-
-
-
-/* Global box-sizing */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-/* Responsive Utility Classes */
 @media (min-width: 1024px) {
     /* Large screen padding */
     .lg\:py-28 {
@@ -643,10 +375,6 @@ background-color: rgb(239, 250, 250);
         width: 83.333333%;
     }
 }
-
-/* Common Utility Classes */
-
-
 .w-11\/12 {
     width: 91.666667%;
 }
@@ -655,31 +383,12 @@ background-color: rgb(239, 250, 250);
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right:18rem;
+    margin-right: 18rem;
 }
-
 .feature-list {
     list-style: none;
     margin: 0;
@@ -689,7 +398,9 @@ background-color: rgb(239, 250, 250);
     align-items: center;
     align-items: flex-start;
     margin-right: 19rem;
+
 }
+
 
     .feature-list li {
         display: flex;
@@ -701,20 +412,21 @@ background-color: rgb(239, 250, 250);
 .icon {
     width: 30px;
     height: 30px;
-    margin-right: 0.5rem;
+    margin-right: -0.5rem;
 }
 
 .feature-title {
     font-family: 'Your Font Family', sans-serif;
     font-weight: bold;
     font-size: 1rem;
-    margin-left: 1.5REM;
+    margin-left: 0.5REM;
     color: #2c4964;
 }
 
 .button-section {
-    display: flex;
-    margin-top: 2rem;
+/*    display: flex;
+*/    margin-top: 2rem;
+    align-items:center;
 }
 
 .learn-more-button,
@@ -748,55 +460,15 @@ background-color: rgb(239, 250, 250);
     background-color: #FFF;
     color: #3359FF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*jjjjjjjjjjjjjjjjjjjjjsssssssssssssssssssssssssss   LOGO*/
-
-
-
-
-
 .font-sans {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
   
     .max-w-4xl
 {
-    max-width: 56rem;
+    max-width: 50rem;
 
 }
-
-
-
-
-
-img {
-    border-style: none;
-}
-    img, svg, video, canvas, audio, iframe, embed, object {
-    display: block;
-    vertical-align: middle;
-}
-    img, video {
-    max-width: 100%;
-    height: auto;
-}
-    .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.................................
 
 .container1 {
     margin-top: 3rem; /* Adjust margin as needed */
@@ -821,7 +493,7 @@ img {
 .icon {
     width: 30px;
     height: 30px;
-    margin-right: -1rem;
+    margin-right: 1rem;
     border-radius: 30px;
 }
 
@@ -830,7 +502,7 @@ img {
     font-size: 1rem; /* Adjust font size as needed */
     font-weight: bold;
     color: #000; /* Adjust color as needed */
-    margin-left:1.5rem;
+    margin-left:0.5rem;
 }
 
 .button-section {
@@ -841,7 +513,7 @@ img {
 .enroll-button {
     display: inline-block;
     padding: 1rem 2rem;
-    margin-right: 1rem;
+    margin-right: 10rem;
     border: 2px solid #3359FF;
     border-radius: 0.5rem;
     color: #FFF;
@@ -856,18 +528,14 @@ img {
     }
 
 
-
-
-
-
 .font-sans {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
    
-
     .flex {
     display: flex;
     margin-right:2rem;
+    margin-left:2rem;
 }
     .md\:flex-row {
     flex-direction: row;
@@ -887,53 +555,13 @@ element.style {
 
 .flex {
     display: flex;
-    margin-right: 6rem;
+    margin-right: 2rem;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-
-/* Responsive Styles for Small Screens (up to 767px) */
-/*@media (max-width: 767px) {*/
-    /* Adjust styles for screens up to 767px wide */
-    /*.content {
-        padding-top: 10vh;
-    }
-    .additional-content {
-        padding-top: 20vh;
-    }
-    .new-section {
-        padding: 2rem;
-    }
-    .max-w-4xl {
-        max-width: 100%;
-    }
-    .text-center.md\:text-left.md\:ml-11 {
-        text-align: center;
-        margin-left: 0;
-    }
-    .text-left.md\:ml-11 {
-        text-align: left;
-        margin-left: 0;
-    }
-    .my-sm-4 {
-        margin-top: 0.5rem;
-    }
-}*/
-
-/* Responsive Styles for Tablet Screens (768px to 1023px) */
-/*@media (min-width: 768px) and (max-width: 1023px) {*/
-    /* Adjust styles for tablet screens */
-    /* ... (add your tablet responsive styles here) ... */
-/*}*/
-
-/* Responsive Styles for Desktop Screens (1024px and larger) */
-/*@media (min-width: 1024px) {*/
-    /* Adjust styles for desktop screens */
-    /* ... (add your desktop responsive styles here) ... */
-/*}*/
 
 
 

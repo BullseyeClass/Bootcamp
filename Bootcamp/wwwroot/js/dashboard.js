@@ -82,17 +82,14 @@ new Chart(ctx2, {
     type: 'doughnut',
     data: {
         datasets: [{
-            label: 'Overall Spending',
-            data: [8000, 2130, 1510, 2245, 4385, 1000],
+            label: 'Total Score',
+            data: [78, 92, 35],
             borderRadius: 5,
             cutout: 80,
             backgroundColor: [
                 'rgb(235, 124, 166)',
                 'rgb(255, 172, 200)',
-                'rgb(204, 111, 248)',
-                'rgb(124, 92, 252)',
-                'rgb(92, 175, 252)',
-                'rgb(161, 169, 254)'
+                'rgb(204, 111, 248)'
             ],
             hoverOffset: 4,
             spacing: 8
