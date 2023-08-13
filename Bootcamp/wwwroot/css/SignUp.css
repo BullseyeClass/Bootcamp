@@ -11,10 +11,11 @@
 }
 
 .first {
-    background-position: center bottom;
+     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/camp-bg-8-22-1.png);
+    background-color: #e9ecef;
     padding-top: 10rem;
 }
 
