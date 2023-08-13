@@ -4,7 +4,8 @@ namespace Bootcamp.Controllers
 {
     public class UserController : Controller
     {
-        public IActionResult Index()
+		[HttpGet]
+		public IActionResult Index()
         {
             return View();
         }
