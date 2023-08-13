@@ -1,152 +1,317 @@
 [
   {
-    "question": "What does JavaScript primarily add to a webpage?",
-    "options": [
-      "a) Style and layout",
-      "b) Interactivity and behavior",
-      "c) Database storage",
-      "d) Audio and video"
-    ],
-    "correctAnswer": "b) Interactivity and behavior"
+    "question": "What does the acronym 'HTML' stand for?",
+    "options": {
+      "a": {
+        "text": "Hypertext Markup Language",
+        "correct": true
+      },
+      "b": {
+        "text": "Hyperlink and Text Markup Language",
+        "correct": false
+      },
+      "c": {
+        "text": "Home Tool Management Language",
+        "correct": false
+      },
+      "d": {
+        "text": "High-level Text Manipulation Language",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "Which keyword is used to declare a variable in JavaScript?",
-    "options": [
-      "a) var",
-      "b) variable",
-      "c) v",
-      "d) let"
-    ],
-    "correctAnswer": "a) var"
+    "question": "Which HTML element is used to define the structure of an HTML document?",
+    "options": {
+      "a": {
+        "text": "<structure>",
+        "correct": false
+      },
+      "b": {
+        "text": "<document>",
+        "correct": false
+      },
+      "c": {
+        "text": "<html>",
+        "correct": true
+      },
+      "d": {
+        "text": "<body>",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "What is the purpose of the 'console.log()' function in JavaScript?",
-    "options": [
-      "a) To log errors in the console",
-      "b) To create a popup message",
-      "c) To print messages to the console for debugging",
-      "d) To display a message in the browser"
-    ],
-    "correctAnswer": "c) To print messages to the console for debugging"
+    "question": "What is the purpose of the 'alt' attribute in the 'img' tag?",
+    "options": {
+      "a": {
+        "text": "To define the alignment of the image",
+        "correct": false
+      },
+      "b": {
+        "text": "To set the image source",
+        "correct": false
+      },
+      "c": {
+        "text": "To specify alternative text for the image",
+        "correct": true
+      },
+      "d": {
+        "text": "To control the image size",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "Which symbol is used for single-line comments in JavaScript?",
-    "options": [
-      "a) //",
-      "b) /* */",
-      "c) <!-- -->",
-      "d) --"
-    ],
-    "correctAnswer": "a) //"
+    "question": "Which HTML tag is used to create an unordered list?",
+    "options": {
+      "a": {
+        "text": "<list>",
+        "correct": false
+      },
+      "b": {
+        "text": "<ul>",
+        "correct": true
+      },
+      "c": {
+        "text": "<ol>",
+        "correct": false
+      },
+      "d": {
+        "text": "<li>",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "What is the result of the expression: 5 + '5' in JavaScript?",
-    "options": [
-      "a) 55",
-      "b) 10",
-      "c) '55'",
-      "d) NaN"
-    ],
-    "correctAnswer": "c) '55'"
+    "question": "What is the purpose of the 'href' attribute in the 'a' tag?",
+    "options": {
+      "a": {
+        "text": "To define the heading for the link",
+        "correct": false
+      },
+      "b": {
+        "text": "To set the target of the link",
+        "correct": false
+      },
+      "c": {
+        "text": "To specify the link's destination URL",
+        "correct": true
+      },
+      "d": {
+        "text": "To format the link's appearance",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "Which built-in method is used to convert a string to uppercase letters in JavaScript?",
-    "options": [
-      "a) toUpperCase()",
-      "b) upper()",
-      "c) changeCase('upper')",
-      "d) stringToUpper()"
-    ],
-    "correctAnswer": "a) toUpperCase()"
+    "question": "Which HTML tag is used to create a table row?",
+    "options": {
+      "a": {
+        "text": "<td>",
+        "correct": false
+      },
+      "b": {
+        "text": "<row>",
+        "correct": false
+      },
+      "c": {
+        "text": "<tr>",
+        "correct": true
+      },
+      "d": {
+        "text": "<th>",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "In JavaScript, what is the purpose of the 'return' statement?",
-    "options": [
-      "a) To terminate the execution of a loop",
-      "b) To exit the current function and return a value",
-      "c) To display a message in the console",
-      "d) To reload the webpage"
-    ],
-    "correctAnswer": "b) To exit the current function and return a value"
+    "question": "What does the 'DOCTYPE' declaration specify in an HTML document?",
+    "options": {
+      "a": {
+        "text": "The document's title",
+        "correct": false
+      },
+      "b": {
+        "text": "The version of HTML used",
+        "correct": false
+      },
+      "c": {
+        "text": "The character encoding for the document",
+        "correct": false
+      },
+      "d": {
+        "text": "The type of document and its version",
+        "correct": true
+      }
+    }
   },
   {
-    "question": "Which JavaScript data type can hold multiple values of different types?",
-    "options": [
-      "a) string",
-      "b) number",
-      "c) boolean",
-      "d) array"
-    ],
-    "correctAnswer": "d) array"
+    "question": "Which HTML tag is used to emphasize text without implying any specific semantic meaning?",
+    "options": {
+      "a": {
+        "text": "<strong>",
+        "correct": false
+      },
+      "b": {
+        "text": "<em>",
+        "correct": true
+      },
+      "c": {
+        "text": "<bold>",
+        "correct": false
+      },
+      "d": {
+        "text": "<italic>",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "What does the '=== 'operator in JavaScript check for?",
-    "options": [
-      "a) Equality of value and type",
-      "b) Equality of value",
-      "c) Assignment",
-      "d) Inequality"
-    ],
-    "correctAnswer": "a) Equality of value and type"
+    "question": "What does the 'meta' tag provide in the 'head' section of an HTML document?",
+    "options": {
+      "a": {
+        "text": "The main content of the document",
+        "correct": false
+      },
+      "b": {
+        "text": "The title of the document",
+        "correct": false
+      },
+      "c": {
+        "text": "Additional styles for the document",
+        "correct": false
+      },
+      "d": {
+        "text": "Metadata and document information",
+        "correct": true
+      }
+    }
   },
   {
-    "question": "Which JavaScript method is used to add a new element to an array?",
-    "options": [
-      "a) push()",
-      "b) add()",
-      "c) insert()",
-      "d) append()"
-    ],
-    "correctAnswer": "a) push()"
+    "question": "Which HTML tag is used to define a line break?",
+    "options": {
+      "a": {
+        "text": "<lb>",
+        "correct": false
+      },
+      "b": {
+        "text": "<br>",
+        "correct": true
+      },
+      "c": {
+        "text": "<newline>",
+        "correct": false
+      },
+      "d": {
+        "text": "<break>",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "What is the purpose of the 'setTimeout()' function in JavaScript?",
-    "options": [
-      "a) To pause the execution of a loop",
-      "b) To define a delay before running a function",
-      "c) To create a timer for animations",
-      "d) To set the font size of an element"
-    ],
-    "correctAnswer": "b) To define a delay before running a function"
+    "question": "What does the 'id' attribute uniquely identify in an HTML document?",
+    "options": {
+      "a": {
+        "text": "A block-level element",
+        "correct": false
+      },
+      "b": {
+        "text": "A paragraph",
+        "correct": false
+      },
+      "c": {
+        "text": "A class of elements",
+        "correct": false
+      },
+      "d": {
+        "text": "A specific element",
+        "correct": true
+      }
+    }
   },
   {
-    "question": "Which JavaScript loop executes a block of code as long as a specified condition is true?",
-    "options": [
-      "a) while loop",
-      "b) for loop",
-      "c) do-while loop",
-      "d) if-else loop"
-    ],
-    "correctAnswer": "a) while loop"
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": {
+      "a": {
+        "text": "<link>",
+        "correct": false
+      },
+      "b": {
+        "text": "<a>",
+        "correct": true
+      },
+      "c": {
+        "text": "<hlink>",
+        "correct": false
+      },
+      "d": {
+        "text": "<href>",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "What is the purpose of the 'NaN' value in JavaScript?",
-    "options": [
-      "a) To represent a negative number",
-      "b) To indicate 'Not a Number'",
-      "c) To represent an infinity value",
-      "d) To stand for 'No action needed'"
-    ],
-    "correctAnswer": "b) To indicate 'Not a Number'"
+    "question": "What is the purpose of the 'header' element in HTML?",
+    "options": {
+      "a": {
+        "text": "To define the main heading of the page",
+        "correct": false
+      },
+      "b": {
+        "text": "To group together navigation links",
+        "correct": false
+      },
+      "c": {
+        "text": "To create a header section for content",
+        "correct": true
+      },
+      "d": {
+        "text": "To style text as a header",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "Which JavaScript function is used to parse JSON data?",
-    "options": [
-      "a) JSON.stringify()",
-      "b) JSON.parse()",
-      "c) parseJSON()",
-      "d) stringifyJSON()"
-    ],
-    "correctAnswer": "b) JSON.parse()"
+    "question": "Which HTML attribute is used to provide alternative text for images?",
+    "options": {
+      "a": {
+        "text": "alt",
+        "correct": true
+      },
+      "b": {
+        "text": "title",
+        "correct": false
+      },
+      "c": {
+        "text": "src",
+        "correct": false
+      },
+      "d": {
+        "text": "href",
+        "correct": false
+      }
+    }
   },
   {
-    "question": "What is the JavaScript 'this' keyword used for?",
-    "options": [
-      "a) To create a new object",
-      "b) To refer to the current object or context",
-      "c) To declare a variable",
-      "d) To import external scripts"
-    ],
-    "correctAnswer": "b) To refer to the current object or context"
+    "question": "Which HTML tag is used to create an ordered list?",
+    "options": {
+      "a": {
+        "text": "<ol>",
+        "correct": true
+      },
+      "b": {
+        "text": "<list>",
+        "correct": false
+      },
+      "c": {
+        "text": "<ul>",
+        "correct": false
+      },
+      "d": {
+        "text": "<li>",
+        "correct": false
+      }
+    }
   }
 ]
