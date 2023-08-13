@@ -8,7 +8,8 @@ namespace Bootcamp.Controllers
   
     public class TestController : Controller
     {
-        private readonly IGetTest _getTest;
+        private readonly IGetTest _getTest; 
+
 
         public TestController(IGetTest getTest)
         {
@@ -40,6 +41,8 @@ namespace Bootcamp.Controllers
             var result = _getTest.GetJsQuestions();
             return View("Index", result);
         }
+
+        
 
     }
 }
