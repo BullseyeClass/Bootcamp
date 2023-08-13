@@ -24,6 +24,21 @@ namespace Bootcamp.Controllers
 
         }
 
+        [HttpPost]
+        public ActionResult PostHtmlTest(List<Questions> questionList)
+        {
+            foreach(var questions in questionList)
+            {
+                foreach (var question in questions.Options)
+                {
+                    var text = question.Value.Text;
+                    var isCorrect = question.Value.Correct;
+                }
+            }
+            
+            return RedirectToAction("Thank");
+        }
+
         [HttpGet]
         public IActionResult GetCssTest()
         {
