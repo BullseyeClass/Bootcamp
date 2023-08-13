@@ -1,115 +1,70 @@
 ﻿@model List<Questions>
 
 <style>
-    .error-message {
-        display: none;
-        color: red;
-    }
+	.error-message {
+		display: none;
+		color: red;
+	}
 
-    .hidden-ol {
-        list-style: none;
-        padding-left: 0;
-    }
+	.hidden-ol {
+		list-style: none;
+		padding-left: 0;
+	}
 
 </style>
 
 <h1>@ViewData["title"]</h1>
 
 
-@*<form id="quizForm" method="post" asp-action="PostHtmlTest" asp-controller="Test">
-    @if (Model != null)
-    {
-        for (int i = 0; i < Model.Count; i++)
-        {
-            var question = Model[i];
-            <div class="question">
-                <p>@string.Format($"{i+1}. ")<strong>@question.Question</strong></p>
-                <ol class="hidden-ol">
-                    @for (int j = 0; j < question.Options.Count; j++)
-                    {
-                        var option = question.Options.ElementAt(j);
-                        <li>
-                            @option.Key)
-                            <label>
-                                <input class="option-radio" type="radio" name="model[@i].SelectedAnswer" value="@option.Key">
-                                @option.Value.Text
-                            </label>
-                        </li>
-                    }
-                </ol>
-                <div class="error-message" style="display: none;">Please select an option.</div>
-            </div>
-        }
-        <button type="submit" id="submitButton">Submit</button>
-    }
-    else
-    {
-        <p>No questions available.</p>
-    }
-</form>
-*@
 
 <form id="quizForm" method="post" asp-action="PostHtmlTest" asp-controller="Test">
 
-    @if (Model != null)
+	@if (Model != null)
 
-    {
+	{
+		for (int i = 0; i < Model.Count; i++)
 
-        for (int i = 0; i < Model.Count; i++)
+		{
+			var question = Model[i];
 
-        {
+			<div class="question">
 
-            var question = Model[i];
+				<p>@string.Format($"{i+1}. ")<strong>@question.Question</strong></p>
 
-            <div class="question">
+				<ol class="hidden-ol">
 
-                <p>@string.Format($"{i+1}. ")<strong>@question.Question</strong></p>
+					@for (int j = 0; j < question.Options.Count; j++)
 
-                <ol class="hidden-ol">
+					{
+						var option = question.Options.ElementAt(j);
 
-                    @for (int j = 0; j < question.Options.Count; j++)
+						<li>
 
-                    {
+							@option.Key)
 
-                        var option = question.Options.ElementAt(j);
+							<label>
 
-                        <li>
+								<input class="option-radio" type="radio" name="questionList[@i].Options[@option.Key].Selected" value="true">
 
-                            @option.Key)
+								@option.Value.Text
 
-                            <label>
+							</label>
+						</li>
+					}
+				</ol>
+				<div class="error-message" style="display: none;">Please select an option.</div>
+			</div>
+		}
 
-                                <input class="option-radio" type="radio" name="questionList[@i].Options[@option.Key].Selected" value="true">
+		<button type="submit" id="submitButton">Submit</button>
+	}
 
-                                @option.Value.Text
-
-                            </label>
-
-                        </li>
-
-                    }
-
-                </ol>
-
-                <div class="error-message" style="display: none;">Please select an option.</div>
-
-            </div>
-
-        }
-
-        <button type="submit" id="submitButton">Submit</button>
-
-    }
-
-    else
-
-    {
-
-        <p>No questions available.</p>
-
-    }
-
+	else
+	{
+		<p>No questions available.</p>
+	}
 </form>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -126,8 +81,7 @@
                 var errorMessage = question.getElementsByClassName("error-message")[0];
                 var isChecked = false;
 
-             
-   for (var j = 0; j < options.length; j++) {
+                for (var j = 0; j < options.length; j++) {
                     if (options[j].checked) {
                         isChecked = true;
                         break;
@@ -143,7 +97,7 @@
             }
 
             if (hasErrors) {
-                event.preventDefault(); 
+                event.preventDefault();
             }
         });
 
@@ -151,6 +105,15 @@
         for (var i = 0; i < optionRadios.length; i++) {
             optionRadios[i].addEventListener("click", function () {
                 var question = this.closest(".question");
+                var otherOptions = question.getElementsByClassName("option-radio");
+
+                
+                for (var j = 0; j < otherOptions.length; j++) {
+                    if (otherOptions[j] !== this) {
+                        otherOptions[j].checked = false;
+                    }
+                }
+
                 var errorMessage = question.getElementsByClassName("error-message")[0];
                 errorMessage.style.display = "none";
             });
