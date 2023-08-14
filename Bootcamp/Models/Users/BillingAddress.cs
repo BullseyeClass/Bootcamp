@@ -1,4 +1,4 @@
-﻿using Bootcamp.Models.SignUp;
+﻿using Bootcamp.Models.Users;
 
 namespace Bootcamp.Models.Users
 {
