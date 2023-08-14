@@ -13,8 +13,7 @@ namespace Bootcamp.Models.Users
 		
 		public string Password { get; set; }
 		
-		
-		public List<PhoneNumber> PhoneNumber { get; set; } = new List<PhoneNumber>();
+		public string PhoneNumber { get; set; } 
         public List<BillingAddress> BillingAddress  { get; set; } = new List<BillingAddress>();
 
     }

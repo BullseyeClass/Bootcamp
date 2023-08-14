@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Bootcamp.Models.UserViewModel;
+using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
 
 namespace Bootcamp.Controllers
 {
@@ -9,5 +11,17 @@ namespace Bootcamp.Controllers
         {
             return View();
         }
-    }
+
+		[HttpPost]
+		public IActionResult PostSignUp(UserView users)
+		{
+			if (!ModelState.IsValid)
+			{
+				return View("SignUp", users);
+			}
+
+			return RedirectToAction("SignUp Successful");
+		}
+
+	}
 }
