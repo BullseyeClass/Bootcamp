@@ -3,16 +3,23 @@
     ViewData["Title"] = "Blog Content";
 }
 
-<div class="Content">
-    
-        <div class="Title">
-            <h1>@Model.Title</h1>
+<link rel="stylesheet" href="~/css/blogContent.css" asp-append-version="true" />
+
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-10 col-xl-10 mx-2">
+            <div class="title text-center">
+                <h1>@Model.Title</h1>
+            </div>
+            <div class="intro mt-10 text-center text-lg">
+                <p>@Model.Content</p>
+            </div>
+            <div class="blog_img text-center">
+                <img src="@Model.Image" class="img-fluid">
+            </div>
+            <div class="big_content">
+                @Model.BiggerContent
+            </div>
         </div>
-        <div class="blog_img">
-            @*<img src=@string.Format($"~{Model.Image}")/>*@
-        <img src="@Model.Image">
-        </div>
-        <div class="big_content">
-            @Model.BiggerContent
-        </div>
+    </div>
 </div>
