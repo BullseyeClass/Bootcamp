@@ -28,15 +28,27 @@ namespace Bootcamp.Controllers
         [HttpPost]
         public ActionResult PostHtmlTest(List<Questions> questionList)
         {
-            foreach(var questions in questionList)
+            var result = _getTest.GetHtmlQuestions();
+
+            int score = 0;
+            int index = 0;
+
+            foreach (var question in result)
             {
-                foreach (var question in questions.Options)
+                var selectedOptionKey = questionList[index].Options.FirstOrDefault().Key; // Get the selected option's key
+
+                if (question.Options.ContainsKey(selectedOptionKey))
                 {
-                    var text = question.Value.Text;
-                    var isCorrect = question.Value.Correct;
+                    var selectedOption = question.Options[selectedOptionKey];
+                    if (selectedOption.Correct)
+                    {
+                        score++;
+                    }
                 }
+
+                index++;
             }
-            
+
             return RedirectToAction("Thank");
         }
 
