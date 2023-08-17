@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 5rem auto 1rem;
+}
+.title text-center {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: Montserrat,"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.intro {
+    font-style: italic;
+    margin: 2rem auto;
+    font-size: 1.125rem;
+}
+
+.blog_img {
+    margin-bottom: 5rem;
+}
+
+.big_content {
+    line-height: 2.5;
+    text-align: justify;
+}
