@@ -35,7 +35,7 @@ namespace Bootcamp.Controllers
 
             foreach (var question in result)
             {
-                var selectedOptionKey = questionList[index].Options.FirstOrDefault().Key; // Get the selected option's key
+                var selectedOptionKey = questionList[index].Options.FirstOrDefault().Key; 
 
                 if (question.Options.ContainsKey(selectedOptionKey))
                 {
