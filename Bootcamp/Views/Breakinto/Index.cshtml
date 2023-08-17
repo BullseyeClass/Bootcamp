@@ -5,6 +5,9 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/BreakInto.css" asp-append-version="true" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 @*Section 1*@
 
 <div class="bullseyecontainter">
@@ -381,51 +384,142 @@
 
 </div>
 
-<div class="Stepcontainer">
+<!-- Portfolio section -->
 
-    <div class="steimgcontainer">
-        <img id="steimg" src="/BreakImage/jg-kacey-1-1.png.png" />
-    </div>
-    <section class="stepsection">
-        <div class="containergap">
-            <div class="steimgcontainer">
-            </div>
-            <div class="textcontainer">
-                <img id="steimg1" src="/BreakImage/Athonia.jpeg" />
-                <div class="namecontainer">
-                    <p><strong>Anthonia Okwe</strong></p><p>Backend Developer</p><p>Bullseye Manpower</p><p><a href="https://www.linkedin.com/in/anthonia-okwe-b73209ab/" target="_BLANK">View portfolio</a></p>
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/BreakImage/Athonia.jpeg" alt="Testimonial" class="card-img-top rounded-circle">
+                            <div class="card-body">
+                                <h5 class="card-title">Anthonia Okwe</h5>
+                                <p class="card-text">Backend Developer</p>
+                                <a href="https://www.linkedin.com/in/anthonia-okwe-b73209ab/" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/BreakImage/josh.jpg" alt="Testimonial" class="card-img-top rounded-circle">
+                            <div class="card-body">
+                                <h5 class="card-title">Joshua (Ayodele) Olorunshola</h5>
+                                <p class="card-text">FullStack Developer</p>
+                                <a href="https://www.joshmcdavid.com.ng" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
-    </section>
-    <div class="steimgcontainer">
-        <img id="steimg" src="/BreakImage/niki-haynes-portfolio.png.png" />
+        <div class="carousel-item">
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/BreakImage/sammm.jpg" alt="Testimonial" class="card-img-top rounded-circle">
+                            <div class="card-body">
+                                <h5 class="card-title">Surakat Samuel Ayobami</h5>
+                                <p class="card-text">FullStack Developer</p>
+                                <a href="https://www.linkedin.com/in/surakat-samuel-35575416b" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/BreakImage/tope.jpeg" alt="Testimonial" class="card-img-top rounded-circle">
+                            <div class="card-body">
+                                <h5 class="card-title">Temitope (Ayoola) Olawole</h5>
+                                <p class="card-text">FullStack Developer</p>
+                                <a href="https://www.linkedin.com/in/temitope-olawole/" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/BreakImage/adigun.jpeg" alt="Testimonial" class="card-img-top rounded-circle">
+                            <div class="card-body">
+                                <h5 class="card-title">Pelumi Adigun</h5>
+                                <p class="card-text">FullStack Developer</p>
+                                <a href="https://www.linkedin.com/in/pelumi-adigun-8778a7265/" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img src="/BreakImage/samson.jpeg" alt="Testimonial" class="card-img-top rounded-circle">
+                            <div class="card-body">
+                                <h5 class="card-title">Ogbebor Samson Dominic</h5>
+                                <p class="card-text">FullStack Developer</p>
+                                <a href="https://www.linkedin.com/in/2021ogbebor-samson-dominic-86b769183/" class="btn btn-primary">View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add -->
     </div>
-    <section class="stepsection">
-      
-        <div class="textcontainer">
-            <img id="steimg1" src="/BreakImage/josh.jpg" />
 
-            <div class="namecontainer">
-                <p id="textcon1">Joshua (Ayodele) Olorunshola</p><p class="textcon1">FullStack Developer</p><p>Bullseye Manpower</p><p><a href="https://www.joshmcdavid.com.ng/" target="_BLANK">View portfolio</a></p>
-            </div>
-            </div>
-    </section>
-
-
-    <div class="steimgcontainer">
-        <img id="steimg" src="/BreakImage/jg-liz-1-1.png.png" />
-    </div>
-    <section class="stepsection">
-       
-        <div class="textcontainer">
-            <img id="steimg1" src="/BreakImage/sammm.jpg" />
-            <div class="namecontainer">
-                <p>Surakat Samuel</p><p>FullStack Developer</p><p>SAMCOM TECHNOLOGY</p><p><a href="https://www.linkedin.com/in/surakat-samuel-35575416b/" target="_BLANK">View portfolio</a></p>
-            </div>
-            </div>
-    </section>
-
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<h1 style="justify-content:center;"> Intructors</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/BreakImage/ogidan.jpg" class="card-img-top" alt="Intructor">
+                <div class="card-body">
+                    <h5 class="card-title"> Engr. Emmanuel (Bamidele) Ogidan</h5>
+                    <p class="card-text">Stack: Csharp (C#) </p>
+                    <p class="card-text">Experienced C# developer specializing in building robust and efficient applications...</p>
+                    <a href="https://www.linkedin.com/in/emmanuel-ogidan-6852b9220/" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+       @* <div class="col-md-4">
+            <div class="card">
+                <img src="/BreakImage/" class="card-img-top" alt="Intructor ">
+                <div class="card-body">
+                    <h5 class="card-title"> Engr. Amara</h5>
+                    <p class="card-text">Stack: Python</p>
+                    <a href="readmore2.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="image3.jpg" class="card-img-top" alt="Intructor">
+                <div class="card-body">
+                    <h5 class="card-title">Engr. Samuel</h5>
+                    <p class="card-text">Stack: Javascript</p>
+                    <a href="readmore3.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>*@
+    </div>
+</div>
+
+  
 

@@ -511,6 +511,45 @@ ul {
     width:100rem;
 }
 
+.testimonial-card {
+    top: 0;
+    transition: transform 1s, visibility 0.5s;
+}
+
+    .testimonial-card.active {
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
