@@ -1,21 +1,18 @@
 ﻿@model Bootcamp.Models.Blogs
+@{
+    ViewData["Title"] = "Blog Content";
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>@Model.Title</title>
-</head>
-<body>
-    <div id="header">
-        <h1>@Model.Title</h1>
-        <p>By: @Model.Author</p>
-        <p>Published on: @Model.PublishedDate.ToString("MMMM dd, yyyy")</p>
-    </div>
-
-    <div id="content">
-        @Html.Raw(Model.BiggerContent)
-    </div>
-
-
-</body>
-</html>
+<div class="Content">
+    
+        <div class="Title">
+            <h1>@Model.Title</h1>
+        </div>
+        <div class="blog_img">
+            @*<img src=@string.Format($"~{Model.Image}")/>*@
+        <img src="@Model.Image">
+        </div>
+        <div class="big_content">
+            @Model.BiggerContent
+        </div>
+</div>

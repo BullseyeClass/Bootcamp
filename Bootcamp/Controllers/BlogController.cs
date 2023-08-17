@@ -32,5 +32,18 @@ namespace Bootcamp.Controllers
 
             return View(pagedBlogs);
         }
+
+        public IActionResult ReadMore(string id)
+        {
+            
+            var blogEntry = _getBlogs.GetBlogsFromDB().Result.FirstOrDefault(item => item.Id == id);
+
+            if (blogEntry == null)
+            {
+                return NotFound();
+            }
+
+            return View(blogEntry);
+        }
     }
 }
