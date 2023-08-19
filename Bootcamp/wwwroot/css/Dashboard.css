@@ -170,6 +170,13 @@ body {
     .dashboard.dark .box td {
         color: #596780;
     }
+    .dashboard.dark .top-container span {
+        color: #596780;
+    }
+    .dashboard.dark .bottom-container {
+        background-color: #596780;
+        ;
+    }
 
  /* -------------- SEARCH -------------- */
     .search {
