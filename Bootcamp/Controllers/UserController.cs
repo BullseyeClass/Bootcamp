@@ -36,8 +36,8 @@ namespace Bootcamp.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     var responseBody = await response.Content.ReadAsStringAsync();
-                    // Process the response from the API
-                    return View();
+                    // Process the response from the API 
+                    return RedirectToAction("Index", "Breakinto");
 
                 }
                 else
