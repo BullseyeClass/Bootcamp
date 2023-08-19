@@ -155,6 +155,28 @@ body {
     .dashboard.dark div .box {
         background-color: #2a3137;
     }
+    .dashboard.dark .box h3 {
+        color: #596780;
+    }
+    .dashboard.dark .box span {
+        color: #596780;
+    }
+    .dashboard.dark .box svg {
+        fill: #596780;
+    }
+    .dashboard.dark .box .pie-chart__labels-item {
+        color: #596780;
+    }
+    .dashboard.dark .box td {
+        color: #596780;
+    }
+    .dashboard.dark .top-container span {
+        color: #596780;
+    }
+    .dashboard.dark .bottom-container {
+        background-color: #596780;
+        ;
+    }
 
  /* -------------- SEARCH -------------- */
     .search {
