@@ -110,6 +110,7 @@ body {
 }
 
 /*------------TOGGLE BUTTON------------*/
+
 /*.theme-toggler {
     position: absolute;
     top: 30px;
@@ -175,7 +176,6 @@ body {
     }
     .dashboard.dark .bottom-container {
         background-color: #596780;
-        ;
     }
 
  /* -------------- SEARCH -------------- */
