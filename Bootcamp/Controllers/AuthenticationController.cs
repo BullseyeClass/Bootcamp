@@ -7,5 +7,6 @@ namespace Bootcamp.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
+
     }
 }
