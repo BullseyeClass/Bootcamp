@@ -5,7 +5,7 @@ namespace Bootcamp.Models.SignInPage
 {
     public class SignIn
     {
-        [Required(ErrorMessage = "Username Required")]
+        [Required(ErrorMessage = "Email Required")]
         [DisplayName("Email*")]
         public string Email { get; set; }
         [Required(ErrorMessage = "Password Required")]
