@@ -103,3 +103,14 @@ new Chart(ctx2, {
         }
     }
 });
+
+
+const themeToggleBtn = document.querySelector(".theme-toggler");
+const dashborad = document.querySelector(".dashboard");
+const toggleIcon = document.querySelector(".toggler-icon");
+let isDark = false;
+themeToggleBtn.onclick = () => {
+    dashborad.classList.toggle("dark");
+    themeToggleBtn.classList.toggle("active");
+    isDark = !isDark;
+};

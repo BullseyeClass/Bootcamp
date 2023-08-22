@@ -69,20 +69,19 @@ body {
 
 .SignIn {
     display: flex;
-   justify-content:center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
     font-weight: 400;
-    flex-direction:row;
-    text-decoration:none;
-    color:black;
+    flex-direction: row;
+    color: black;
 }
 
 .SignIn a {
    text-decoration: none;
-    color: black;
+   color:black;
 }
 
 #icon:hover {
@@ -92,22 +91,11 @@ body {
     white-space: nowrap;
 }
 
-    .SignIn p {
-        padding-left: 8px;
-        margin: 0;
-        padding-bottom: 0;
-        margin-top: 0.2rem;
-    }
-
-   
-
 .menu-main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    list-style-type: none;
-   
-    
+    list-style-type: none;  
 }
 
 .main-navbar img {
@@ -362,7 +350,7 @@ footer h3 {
 }
 #copywrite-text {
     color: black;
-    padding-left: 49px;
+    padding-left: 50px;
     font-size:14px;
     font-weight:400;
 }

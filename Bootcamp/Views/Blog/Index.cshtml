@@ -24,7 +24,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item"  asp-action="GetHtmlTest" asp-controller="Test">HTML</a>
                     <a class="dropdown-item" asp-action="GetCssTest" asp-controller="Test">CSS</a>
-                    <a class="dropdown-item"  asp-action="GetJsTest" asp-controller="Test">JAVA SCRIPT</a>
+                    <a class="dropdown-item"  asp-action="GetJsTest" asp-controller="Test">JAVASCRIPT</a>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@
                         <div class="my-card-body">
                             <h5 class="my-card-title">@item.Title</h5>
                             <p class="card-text">@item.Content</p>
-                            <div class="card-cta"> <a href="@item.Link">Read More</a>  </div>
+                            <div class="card-cta"> <a asp-controller="Blog" asp-action="ReadMore" asp-route-id = "@item.Id">Read More</a>  </div>
                         </div>
                     </div>
 

@@ -8,7 +8,8 @@ namespace Bootcamp.Controllers
   
     public class TestController : Controller
     {
-        private readonly IGetTest _getTest;
+        private readonly IGetTest _getTest; 
+
 
         public TestController(IGetTest getTest)
         {
@@ -27,15 +28,27 @@ namespace Bootcamp.Controllers
         [HttpPost]
         public ActionResult PostHtmlTest(List<Questions> questionList)
         {
-            foreach(var questions in questionList)
+            var result = _getTest.GetHtmlQuestions();
+
+            int score = 0;
+            int index = 0;
+
+            foreach (var question in result)
             {
-                foreach (var question in questions.Options)
+                var selectedOptionKey = questionList[index].Options.FirstOrDefault().Key; 
+
+                if (question.Options.ContainsKey(selectedOptionKey))
                 {
-                    var text = question.Value.Text;
-                    var isCorrect = question.Value.Correct;
+                    var selectedOption = question.Options[selectedOptionKey];
+                    if (selectedOption.Correct)
+                    {
+                        score++;
+                    }
                 }
+
+                index++;
             }
-            
+
             return RedirectToAction("Thank");
         }
 
@@ -54,6 +67,14 @@ namespace Bootcamp.Controllers
             ViewData["title"] = "Javascript Questions";
             var result = _getTest.GetJsQuestions();
             return View("Index", result);
+        }
+
+        [HttpGet]
+        public IActionResult ScoresView()
+        {
+            ViewData["title"] = "View";
+           
+            return View();
         }
 
     }

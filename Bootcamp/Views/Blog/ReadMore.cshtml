@@ -1,21 +1,25 @@
 ﻿@model Bootcamp.Models.Blogs
+@{
+    ViewData["Title"] = "Blog Content";
+}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>@Model.Title</title>
-</head>
-<body>
-    <div id="header">
-        <h1>@Model.Title</h1>
-        <p>By: @Model.Author</p>
-        <p>Published on: @Model.PublishedDate.ToString("MMMM dd, yyyy")</p>
+<link rel="stylesheet" href="~/css/blogContent.css" asp-append-version="true" />
+
+<div class="container">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-10 col-xl-10 mx-2">
+            <div class="title text-center">
+                <h1>@Model.Title</h1>
+            </div>
+            <div class="intro mt-10 text-center text-lg">
+                <p>@Model.Content</p>
+            </div>
+            <div class="blog_img text-center">
+                <img src="@Model.Image" class="img-fluid">
+            </div>
+            <div class="big_content">
+                @Model.BiggerContent
+            </div>
+        </div>
     </div>
-
-    <div id="content">
-        @Html.Raw(Model.BiggerContent)
-    </div>
-
-
-</body>
-</html>
+</div>

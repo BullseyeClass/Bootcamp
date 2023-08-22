@@ -5,6 +5,9 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/BreakInto.css" asp-append-version="true" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 @*Section 1*@
 
 <div class="bullseyecontainter">
@@ -381,54 +384,212 @@
 
 </div>
 
-<div class="Stepcontainer">
 
-    <div class="steimgcontainer">
-        <img id="steimg" src="/BreakImage/jg-kacey-1-1.png.png" />
-    </div>
-    <section class="stepsection">
-        <div class="containergap">
-            <div class="steimgcontainer">
-            </div>
-            <div class="textcontainer">
-                <img id="steimg1" src="/BreakImage/Athonia.jpeg" />
-                <div class="namecontainer">
-                    <p><strong>Anthonia Okwe</strong></p><p>Backend Developer</p><p>Bullseye Manpower</p><p><a href="https://www.linkedin.com/in/anthonia-okwe-b73209ab/" target="_BLANK">View portfolio</a></p>
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">OUR TEAM</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/Athonia.jpeg" alt="card image"></p>
+                                    <h4 class="card-title">Anthonia Okwe</h4>
+                                    <p class="card-text"><strong class="special-text">Frontend Developer</strong></p>
+                                    <p class="card-text">A dedicated problem solver, Anthonia is committed to delivering pixel-perfect interfaces that seamlessly merge aesthetics with functionality.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">With a comprehensive skill set spanning both frontend and backend technologies,  He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. His relentless pursuit of excellence results in dynamic web applications that meet both user needs and technical standards.</p>
+                                    <a href="https://www.linkedin.com/in/anthonia-okwe-b73209ab/" id="textcolour" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-        </div>
-    </section>
-    <div class="steimgcontainer">
-        <img id="steimg" src="/BreakImage/niki-haynes-portfolio.png.png" />
-    </div>
-    <section class="stepsection">
-      
-        <div class="textcontainer">
-            <img id="steimg1" src="/BreakImage/josh.jpg" />
-
-            <div class="namecontainer">
-                <p id="textcon1">Joshua (Ayodele) Olorunshola</p><p class="textcon1">FullStack Developer</p><p>Bullseye Manpower</p><p><a href="https://www.joshmcdavid.com.ng/" target="_BLANK">View portfolio</a></p>
+           
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/josh.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Joshua Olorunshola</h4>
+                                    <p class="card-text"><strong class="special-text">FullStack Developer</strong></p>
+                                    <p class="card-text">A dedicated problem solver, Joshua is committed to delivering pixel-perfect interfaces that seamlessly merge aesthetics with functionality.</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. </p>
+                                    <a href="https://www.joshmcdavid.com.ng" id="textcolour" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/sammm.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Surakat Samuel</h4>
+                                    <p class="card-text"><strong class="special-text">FullStack Developer</strong></p>
+                                    <p class="card-text">A dedicated problem solver, Samuel is committed to delivering pixel-perfect interfaces that seamlessly merge aesthetics with functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. </p>
+                                    <a href="https://www.linkedin.com/in/surakat-samuel-35575416b" id="textcolour" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </section>
-
-
-    <div class="steimgcontainer">
-        <img id="steimg" src="/BreakImage/jg-liz-1-1.png.png" />
-    </div>
-    <section class="stepsection">
-       
-        <div class="textcontainer">
-            <img id="steimg1" src="/BreakImage/sammm.jpg" />
-            <div class="namecontainer">
-                <p>Surakat Samuel</p><p>FullStack Developer</p><p>SAMCOM TECHNOLOGY</p><p><a href="https://www.linkedin.com/in/surakat-samuel-35575416b/" target="_BLANK">View portfolio</a></p>
+           
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/adigun.jpeg" alt="card image"></p>
+                                    <h4 class="card-title">Pelumi Adigun</h4>
+                                    <p class="card-text"><strong class="special-text">FullStack Developer</strong></p>
+                                    <p class="card-text">A dedicated problem solver, Pelumi is committed to delivering pixel-perfect interfaces that seamlessly merge aesthetics with functionality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. </p>
+                                    <a href="https://www.linkedin.com/in/pelumi-adigun-8778a7265/" id="textcolour" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+           
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/samson.jpeg" alt="card image"></p>
+                                    <h4 class="card-title">Ogbebor Samson</h4>
+                                    <p class="card-text"><strong class="special-text">FullStack Developer</strong></p>
+                                    <p class="card-text">A dedicated problem solver, Samson is committed to delivering pixel-perfect interfaces that seamlessly merge aesthetics with functionality.</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. </p>
+                                    <a href="https://www.linkedin.com/in/2021ogbebor-samson-dominic-86b769183/" id="textcolour" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </section>
+           
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/tope.jpeg" alt="card image"></p>
+                                        <h4 class="card-title">Temitope Olawole</h4>
+                                    <p class="card-text"><strong class="special-text">FullStack Developer</strong></p>
+                                    <p class="card-text">A dedicated problem solver, Temitope is committed to delivering pixel-perfect interfaces that seamlessly merge aesthetics with functionality.</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. </p>
+                                    <a href="https://www.linkedin.com/in/temitope-olawole/" id="textcolour" class="btn btn-primary">Read More</a>
+                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
 
-</div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="/BreakImage/ogidan2.jpg" alt="card image"></p>
+                                    <h5 class="card-title"> Engr. Emmanuel (Bamidele) Ogidan</h5>
+                                    <p class="card-text"><strong class="special-text">C# Stack Intructor</strong></p>
+                                    <p class="card-text">Experienced C# developer specializing in building robust and efficient applications...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Bullseye</h4>
+                                    <p class="card-text">He's adept at crafting elegant and user-friendly frontend interfaces while also architecting robust backend systems. He ability to seamlessly integrate databases, APIs, and frameworks enables him to deliver cohesive and efficient solutions. </p>
+                                    <a href="https://www.linkedin.com/in/emmanuel-ogidan-6852b9220/" id="textcolour"class="btn btn-primary">Read More</a>
 
- <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>  
+</section>
 
- </div>
+<style>
+    #textcolour {
+        color: white;
+    }
+</style>
