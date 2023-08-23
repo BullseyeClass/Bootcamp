@@ -1,11 +1,13 @@
 ﻿using Bootcamp.Models;
 using Bootcamp.Repository.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bootcamp.Controllers
 {
-  
+
+    [Authorize]
     public class TestController : Controller
     {
         private readonly IGetTest _getTest; 
@@ -15,6 +17,7 @@ namespace Bootcamp.Controllers
         {
             this._getTest = getTest;
         }
+
 
         [HttpGet]
         public IActionResult GetHtmlTest()
@@ -76,6 +79,7 @@ namespace Bootcamp.Controllers
            
             return View();
         }
+
 
     }
 }

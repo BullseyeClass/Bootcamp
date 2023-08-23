@@ -74,8 +74,8 @@ namespace Bootcamp.Controllers
                             var claims = new List<Claim>
                             {
                                 new Claim(ClaimTypes.NameIdentifier, userId),
-                                new Claim(ClaimTypes.Name, fullName),
-                                new Claim(ClaimTypes.Email, email)
+                                //new Claim(ClaimTypes.Name, fullName),
+                                new Claim(ClaimTypes.Name, email)
                                 // Add other claims as needed
                             };
 
@@ -121,6 +121,14 @@ namespace Bootcamp.Controllers
                     return RedirectToAction("Index", "Error");
                 }
             }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] // Add this attribute for security against cross-site request forgery (CSRF) attacks.
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "BreakInto");
         }
     }
 
