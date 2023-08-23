@@ -15,7 +15,7 @@
                             <img src="~/Images/bullseye.png" style="width:10rem; margin-top:-2rem; margin-bottom:-2rem"/>
                         </a>
 
-                        <form asp-action="signIn" method="post">
+                        <form asp-action="Index" asp-controller = "SignIn" method="post">
                             <div class="form-outline mb-4">
                                 <label asp-for="Email" class="form-label" id="labels"></label>
                                 <input asp-for="Email" class="form-control form-control-lg" style="border-color:#1977cc; background-color:#e9ecef" />

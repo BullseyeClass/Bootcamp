@@ -37,13 +37,13 @@ namespace Bootcamp.Controllers
                 {
                     var responseBody = await response.Content.ReadAsStringAsync();
                     // Process the response from the API 
-                    return RedirectToAction("Index", "Breakinto");
+                    return RedirectToAction("Index", "SignIn");
                      
                 }
                 else
                 {
                     // Handle error case
-                    return RedirectToAction("Error", "Index");
+                    return RedirectToAction("Index", "Error");
 
                 }
             }

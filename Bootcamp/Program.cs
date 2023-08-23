@@ -1,6 +1,7 @@
 using Bootcamp.Repository.Helper;
 using Bootcamp.Repository.Interfaces;
 using Bootcamp.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,16 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IJsonHelper, JsonHelper>();
 builder.Services.AddScoped<IGetBlogs, GetBlogs>()
     .AddScoped<IGetTest, GetTest>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+        .AddCookie(options =>
+        {
+            options.Cookie.HttpOnly = true;
+            options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+            options.Cookie.SameSite = SameSiteMode.Strict;
+            options.LoginPath = "/SignIn";
+            //options.AccessDeniedPath = "/Account/AccessDenied"; // Specify the access denied page URL
+        });
 
 var app = builder.Build();
 
@@ -25,6 +36,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
