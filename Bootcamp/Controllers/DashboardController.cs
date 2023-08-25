@@ -29,8 +29,7 @@ namespace Bootcamp.Controllers
 					if (response.IsSuccessStatusCode)
 					{
 						string responseBody = await response.Content.ReadAsStringAsync();
-						ApiResponseModel traineeDetails = JsonConvert.DeserializeObject<ApiResponseModel>(responseBody);
-						//var details = traineeDetails.Where(x => x.TraineeId == Guid.Parse(userId));
+						ApiResponseModel traineeDetails = JsonConvert.DeserializeObject<ApiResponseModel>(responseBody);						
 						return View(traineeDetails);
 					}
 					else

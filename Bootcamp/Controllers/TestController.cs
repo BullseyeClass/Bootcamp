@@ -76,8 +76,7 @@ namespace Bootcamp.Controllers
             }
 
             var testScore = new TestResponseModel
-            {
-                //TraineeId = HttpContext.User.FindFirst(x => x.Type == ClaimTypes.NameIdentifier).Value,
+            {                
                 TestType = selectedTestType,
                 Score = score,
             };
