@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="~/css/SignUp.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/js/build/css/demo.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/js/build/css/intlTelInput.css" asp-append-version="true" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <div class="row">
 <section class="first">
@@ -21,11 +22,28 @@
 					<input asp-for="Email" type="email" class="form-control" placeholder="">
 					<span asp-validation-for="Email" class="text-danger"></span>
 				</div>
-				<div class="form-group">
-					<label>Password*</label>
-					<input asp-for="Password" type="password" class="form-control" placeholder="">
-					<span asp-validation-for="Password" class="text-danger"></span>
-				</div>
+
+
+					<div class="form-group">
+						<label asp-for="Password" class="form-label" id="labels"></label>
+						<div class="input-group">
+							<input asp-for="Password" type="password" class="form-control form-control-lg" style=" background-color:#e9ecef; border-radius: 0;" id="passwordInput" />
+							<div class="input-group-append">
+								<button class="" type="button" id="passwordToggle" style="border:none; border-radius: 0; height:3.3rem;background-color:#e9ecef;">
+									<i class="fa fa-eye-slash text-primary" id="eyeIcon"></i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" fill="black" class="bi bi-eye" viewBox="0 0 16 16">
+										<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+										<path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<span asp-validation-for="Password" class="text-danger"></span>
+					</div>
+
+
+
+
 				<div class="form-group">
 					<label id="label">Phone* </label><em id="label"> Optional</em>
 				    <input asp-for="PhoneNumber" type="tel" id="phone" class="form-control" placeholder="">
@@ -219,5 +237,20 @@
 		await Html.RenderPartialAsync("_ValidationScriptsPartial");
 	}
 }
+<script>
+	$(document).ready(function () {
+		$("#passwordToggle").click(function () {
+			var passwordInput = $("#passwordInput");
+			var eyeIcon = $("#eyeIcon");
 
+			if (passwordInput.attr("type") === "password") {
+				passwordInput.attr("type", "text");
+				eyeIcon.removeClass("fa-eye-slash").addClass("fa-eye");
+			} else {
+				passwordInput.attr("type", "password");
+				eyeIcon.removeClass("fa-eye").addClass("fa-eye-slash");
+			}
+		});
+	});
+</script>
 
