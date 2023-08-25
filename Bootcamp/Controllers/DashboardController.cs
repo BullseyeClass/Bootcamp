@@ -1,4 +1,4 @@
-﻿using Bootcamp.Models.ApiResponse;
+﻿using Bootcamp.Models.UserViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net;
@@ -6,7 +6,7 @@ using System.Security.Claims;
 
 namespace Bootcamp.Controllers
 {
-	public class DashboardController : Controller
+    public class DashboardController : Controller
 	{
 		private readonly IConfiguration _configuration;
 		private readonly string _baseUrl;
@@ -29,7 +29,7 @@ namespace Bootcamp.Controllers
 					if (response.IsSuccessStatusCode)
 					{
 						string responseBody = await response.Content.ReadAsStringAsync();
-						List<ApiResponseModel> traineeDetails = JsonConvert.DeserializeObject<List<ApiResponseModel>>(responseBody);
+						ApiResponseModel traineeDetails = JsonConvert.DeserializeObject<ApiResponseModel>(responseBody);
 						//var details = traineeDetails.Where(x => x.TraineeId == Guid.Parse(userId));
 						return View(traineeDetails);
 					}

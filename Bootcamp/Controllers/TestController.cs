@@ -1,8 +1,15 @@
 ﻿using Bootcamp.Models;
+using Bootcamp.Models.Users;
+using Bootcamp.Models.UserViewModel;
 using Bootcamp.Repository.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using NuGet.Common;
+using System.Net;
+using System.Security.Claims;
+using System.Text;
 
 namespace Bootcamp.Controllers
 {
@@ -10,16 +17,19 @@ namespace Bootcamp.Controllers
     [Authorize]
     public class TestController : Controller
     {
-        private readonly IGetTest _getTest; 
+		private readonly IGetTest _getTest;
+		private readonly IConfiguration _configuration;
+		private readonly string _baseUrl;
+
+		public TestController(IGetTest getTest, IConfiguration configuration)
+		{
+			this._getTest = getTest;
+			this._configuration = configuration; // Assign the parameter to the field
+			_baseUrl = _configuration["AppSettings:BaseUrl"];
+		}
 
 
-        public TestController(IGetTest getTest)
-        {
-            this._getTest = getTest;
-        }
-
-
-        [HttpGet]
+		[HttpGet]
         public IActionResult GetHtmlTest()
         {
             ViewData["title"] = "Html Questions";
@@ -29,16 +39,29 @@ namespace Bootcamp.Controllers
         }
 
         [HttpPost]
-        public ActionResult PostHtmlTest(List<Questions> questionList)
+        public async Task<IActionResult> PostHtmlTest(List<Questions> questionList, string selectedTestType)
         {
-            var result = _getTest.GetHtmlQuestions();
+            List<Questions> result = new List<Questions>();
+
+            if (selectedTestType == "Html")
+            {
+                result = _getTest.GetHtmlQuestions();
+            }
+            else if (selectedTestType == "Css")
+            {
+                result = _getTest.GetCssQuestions();
+            }
+            else if (selectedTestType == "Js")
+            {
+                result = _getTest.GetJsQuestions();
+            }
 
             int score = 0;
             int index = 0;
 
             foreach (var question in result)
             {
-                var selectedOptionKey = questionList[index].Options.FirstOrDefault().Key; 
+                var selectedOptionKey = questionList[index].Options.FirstOrDefault().Key;
 
                 if (question.Options.ContainsKey(selectedOptionKey))
                 {
@@ -52,8 +75,44 @@ namespace Bootcamp.Controllers
                 index++;
             }
 
-            return RedirectToAction("Thank");
-        }
+            var testScore = new TestResponseModel
+            {
+                //TraineeId = HttpContext.User.FindFirst(x => x.Type == ClaimTypes.NameIdentifier).Value,
+                TestType = selectedTestType,
+                Score = score,
+            };
+
+            try
+            {
+                using (var httpClient = new HttpClient())
+                {
+                    if (HttpContext.Request.Cookies.TryGetValue("token", out string token))
+                    {
+                        var json = JsonConvert.SerializeObject(testScore);
+                        var requestBody = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+						httpClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
+						HttpResponseMessage response = await httpClient.PostAsync($"{_baseUrl}/api/TestScore/post", requestBody);
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string responseBody = await response.Content.ReadAsStringAsync();                            
+                            return RedirectToAction("Index", "Dashboard");
+                        }
+                        else
+                        {
+                            // Handle error case
+                            return RedirectToAction("Index", "Error");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions
+                return RedirectToAction("Index", "Error");
+            }
+            return View();
+        }			
 
         [HttpGet]
         public IActionResult GetCssTest()

@@ -18,7 +18,7 @@
 
 <div class="container">
 <form id="quizForm" method="post" asp-action="PostHtmlTest" asp-controller="Test">
-
+        <input type="hidden" name="selectedTestType" id="selectedTestType" value="">
 	@if (Model != null)
 
 	{
@@ -65,6 +65,18 @@
 	}
 </form>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include JavaScript code for setting test type in the form -->
+<script>
+    $(document).ready(function () {
+        var storedTestType = localStorage.getItem("selectedTestType");
+        if (storedTestType) {
+            $("#selectedTestType").val(storedTestType);
+        }
+    });
+</script>
 
 @*<script>
     document.addEventListener("DOMContentLoaded", function () {

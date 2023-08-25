@@ -1,4 +1,4 @@
-﻿@model Bootcamp.Models.
+﻿@model Bootcamp.Models.UserViewModel.ApiResponseModel
 @{
 	ViewData["Title"] = "Dashboard";
 	Layout = "~/Views/Dashboard/Dashboard_Layout.cshtml";
@@ -76,13 +76,13 @@
 
 	   <main class="main-content">
 			<div class="top-container">
-				<div action="#" class="search">
+				@*<div action="#" class="search">
 					<svg class="search__icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M10.5418 19.25C15.3513 19.25 19.2502 15.3512 19.2502 10.5417C19.2502 5.73223 15.3513 1.83337 10.5418 1.83337C5.73235 1.83337 1.8335 5.73223 1.8335 10.5417C1.8335 15.3512 5.73235 19.25 10.5418 19.25Z" stroke="#596780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 						<path d="M20.1668 20.1667L18.3335 18.3334" stroke="#596780" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 					</svg>
 					<input type="text" class="search__input" placeholder="Search something here">
-				</div>
+				</div>*@
 				<div class="user-nav">
 
 				<div class="user-info">
@@ -94,7 +94,7 @@
 						<input type="checkbox" id="dropdown_rp_ids">
 
 						<label class="dropdown_padding_demo" for="dropdown_rp_ids">
-								<div class="dropdown_main_text"><span class="user-name">@User.Identity.Name</span></div>
+								<div class="dropdown_main_text"><span class="user-name">@Model.FirstName</span></div>
 
 						  <div class="dropdown_arrow_demo"></div>
 						</label>
@@ -135,39 +135,71 @@
 							</svg>
 						</div>
 						<div class="pie-chart">
-							<canvas id="myChart2" height="220px" width="220px"></canvas>
+							@*<canvas id="myChart2" height="220px" width="220px"></canvas>*@
 						</div>
 						<div class="overall-spending">
 							<h4>Total Score</h4>
-							<span>0</span>
+							<span>
+								@{
+									int htmlTotal = Model.Tests.Where(test => test.TestType == "HTML").Sum(test => test.Score);
+									int cssTotal = Model.Tests.Where(test => test.TestType == "Css").Sum(test => test.Score);
+									int jsTotal = Model.Tests.Where(test => test.TestType == "Js").Sum(test => test.Score);
+									int totalScore = htmlTotal + cssTotal + jsTotal;
+								}
+								@totalScore
+								
+								
+							</span>
 						</div>
 						<div class="pie-chart__labels">
 							<div class="pie-chart__labels-item">
-								<div class="label">
-									<div class="label__color first"></div>
-									HTML
-								</div>
-								0
+								@foreach(var test in Model.Tests)
+								{
+									@if(test.TestType == "HTML")
+									{
+										<div class="label">
+											<div class="label__color first"></div>
+											HTML
+										</div>
+										@test.Score
+									}
+									
+								}
+								
 							</div>
 							<div class="pie-chart__labels-item">
-								<div class="label">
-									<div class="label__color second"></div>
-									CSS
-								</div>
-								0
+								@foreach(var test in Model.Tests)
+								{
+									@if (test.TestType == "Css")
+									{
+										<div class="label">
+											<div class="label__color second"></div>
+											CSS
+										</div>
+										@test.Score
+									}																
+								}
+								
 							</div>
 							<div class="pie-chart__labels-item">
-								<div class="label">
-									<div class="label__color third"></div>
-									JavaScript
-								</div>
-								0
+								@foreach(var test in Model.Tests)
+								{
+									@if(test.TestType == "Js")
+									{
+									<div class="label">
+										<div class="label__color third"></div>
+										JavaScript
+									</div>									
+										@test.Score
+									}															
+								}
+								
 							</div>
 
 						</div>
 					</div>
 
-					<div class="box transaction-box dashboard">
+					@*<div class="box transaction-box dashboard">
 						<div class="header-container">
 							<h3 class="section-header">Test History</h3>
 							<div class="date-selector">
@@ -291,7 +323,7 @@
 							</tr>
 						</table>
 					</div>
-				</div>
+				</div>*@
 
 
 				</div>
