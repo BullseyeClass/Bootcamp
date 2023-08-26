@@ -1,9 +1,7 @@
-﻿
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 html, body {
@@ -49,6 +47,12 @@ body {
     flex-direction: column;
 }
 
+.side-nav__item > a {
+    text-decoration: none;
+    color: #596780;
+    font-weight: 500;
+}
+
 .side-nav__header {
     font-size: 14px;
     line-height: 21px;
@@ -87,7 +91,7 @@ body {
         margin-bottom: 4px;
     }
 
-    .side-nav__item:hover, .side-nav__item-active {
+    .side-nav__item > a:hover, .edit-detail-button, .side-nav__item:hover, .side-nav__item-active {
         background-color: rgba(25,119,204, 0.9);
         color: white;
     }
@@ -105,7 +109,7 @@ body {
     border-bottom: 1px solid #F3F5F7;
     padding: 18px 32px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -222,54 +226,71 @@ body {
 /* -------------DARK THEME-------------*/
 .dashboard.dark {
     background-color: #2a3137;
+    color: #C3D4E9;
 }
+
     .dashboard.dark nav {
         background-color: #2a3137;
-    }
-    .dashboard.dark main {
-        background-color: #2a3137;
-    }
-    .dashboard.dark tr {
-        background-color: #2a3137;
-    }
-    .dashboard.dark div .box {
-        background-color: #2a3137;
-    }
-    .dashboard.dark .box h3 {
-        color: #596780;
-    }
-    .dashboard.dark .box span {
-        color: #596780;
-    }
-    .dashboard.dark .box svg {
-        fill: #596780;
-    }
-    .dashboard.dark .box .pie-chart__labels-item {
-        color: #596780;
-    }
-    .dashboard.dark .box td {
-        color: #596780;
-    }
-    .dashboard.dark .top-container span {
-        color: #596780;
-    }
-    .dashboard.dark .bottom-container {
-        background-color: #596780;
+        color: #C3D4E9;
     }
 
- /* -------------- SEARCH -------------- */
-    .search {
-        display: flex;
-        align-items: center;
-        padding: 11px 0 11px 24px;
-        max-width: 492px;
-        width: 100%;
-        border: 1px solid #C3D4E9;
-        border-radius: 70px;
-        gap: 26px;
-        background: #FFFFFF;
-        opacity: 0.8;
+    .dashboard.dark main {
+        background-color: #2a3137;
+        color: #C3D4E9;
+        /*z-index: -1;*/
     }
+
+    .dashboard.dark tr {
+        background-color: #2a3137;
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark div .box {
+        background-color: #2a3137;
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark .box h3 {
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark .box span {
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark .box svg {
+        fill: #C3D4E9;
+    }
+
+    .dashboard.dark .box .pie-chart__labels-item {
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark .box td {
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark .top-container span {
+        color: #C3D4E9;
+    }
+
+    .dashboard.dark .bottom-container {
+        background-color: #C3D4E9;
+    }
+
+/* -------------- SEARCH -------------- */
+.search {
+    display: flex;
+    align-items: center;
+    padding: 11px 0 11px 24px;
+    max-width: 492px;
+    width: 100%;
+    border: 1px solid #C3D4E9;
+    border-radius: 70px;
+    gap: 26px;
+    background: #FFFFFF;
+    opacity: 0.8;
+}
 
 .search__input {
     border: none;
@@ -329,12 +350,13 @@ body {
     gap: 24px;
     padding: 32px;
     background-color: #F3F5F7;
+    /*z-index: -3;*/
 }
 
 .box {
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 24px;
+    padding: 24px 4rem;
     margin-bottom: 24px; /*fix later*/
 }
 
@@ -350,13 +372,6 @@ body {
     max-height: 338px;
 }
 
-/* -------------- BAR CHART -------------- */
-.bar-chart {
-    max-height: 223px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 /* -------------- HEADER -------------- */
 .header-container {
@@ -511,6 +526,16 @@ tr > td {
     background-color: white;
     color: black;
     border: 2px solid #7C5CFC;
+}
+
+.edit-detail-button {
+    padding: 0.2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    width: 4rem;
+    text-transform: uppercase;
+    border-radius: 0.8rem;
+    background-color: rgb(25,119,204);
 }
 
 /* -------------- PIE CHART -------------- */

@@ -4,6 +4,7 @@
     Layout = "~/Views/SignIn/Sign_In_Layout.cshtml";
 }
 
+
 <section class="vh-100%" style="background-color:#e9ecef; height:100%; width:100%">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
@@ -11,11 +12,11 @@
                 <div class="card shadow-2-strong">
                     <div class="card-body p-5 text-center">
 
-                        <a class="inline-block focus:outline-none focus:ring-offset-2 focus:ring-offset-primary focus:ring-2 focus:ring-grey-darkest" href="https://learn.skillcrush.com" title="Skillcrush Home Page">
+                        <a class="inline-block focus:outline-none focus:ring-offset-2 focus:ring-offset-primary focus:ring-2 focus:ring-grey-darkest" asp-controller="Breakinto" asp-action="Index" title="Home Page">
                             <img src="~/Images/bullseye.png" style="width:10rem; margin-top:-2rem; margin-bottom:-2rem"/>
                         </a>
 
-                        <form asp-action="signIn" method="post">
+                        <form asp-action="Index" asp-controller = "SignIn" method="post">
                             <div class="form-outline mb-4">
                                 <label asp-for="Email" class="form-label" id="labels"></label>
                                 <input asp-for="Email" class="form-control form-control-lg" style="border-color:#1977cc; background-color:#e9ecef" />
@@ -24,13 +25,23 @@
 
                             <div class="form-outline mb-4">
                                 <label asp-for="Password" class="form-label" id="labels"></label>
-                                <input asp-for="Password" type="password" class="form-control form-control-lg" style="border-color:#1977cc; background-color:#e9ecef" />
+                                <div class="input-group">
+                                    <input asp-for="Password" type="password" class="form-control form-control-lg" style="border-color:#1977cc; background-color:#e9ecef; border-right:none;" id="passwordInput"  />
+                                    <button class="btn btn-outline-light btn-outline-primary btn-lg" type="button" id="passwordToggle" style="border-color:#1977cc;border-left:none; height:3em; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                   </svg>  
+                                    </button>
+                                  
+                                </div>
                                 <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
+
                             <div class="form-check d-flex justify-content-start mb-4">
                                 <input class="form-check-input" type="checkbox" value="" id="form1Example3" style="border:1px solid #2c4964" />
                                 <label class="form-check-label" style="margin-left:10px; color:#2c4964"> Remember Me </label>
-                                <a style="font-style:italic; color:#2c4964; text-decoration:underline" class="lost" href="#">Lost Password?</a>
+                                <a style="font-style:italic; color:#2c4964; text-decoration:underline" class="lost" asp-controller="ForgotPass" asp-action="Index" >Lost Password?</a>
                             </div>
 
                             <button class="btn btn-primary btn-lg btn-block" type="submit" style="width:100%; background-color:#1977cc; border:none; margin-bottom:20px">SIGN IN</button>
@@ -77,4 +88,21 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
+<script>
+    $(document).ready(function () {
+        $("#passwordToggle").click(function () {
+            var passwordInput = $("#passwordInput");
+            var eyeIcon = $("#eyeIcon");
+
+            if (passwordInput.attr("type") === "password") {
+                passwordInput.attr("type", "text");
+                eyeIcon.removeClass("fa-eye-slash").addClass("fa-eye");
+            } else {
+                passwordInput.attr("type", "password");
+                eyeIcon.removeClass("fa-eye").addClass("fa-eye-slash");
+            }
+        });
+    });
+</script>
 
