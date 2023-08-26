@@ -573,7 +573,10 @@ tr > td {
     line-height: 15px;
     color: #596780;
 }
-
+    .label a {
+        text-decoration: none;
+        color: #596780;
+    }
 .label__color {
     width: 12px;
     height: 12px;

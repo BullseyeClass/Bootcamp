@@ -1,0 +1,51 @@
+﻿@model Bootcamp.Models.TraineeUpdateDTO
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/SignIn/Sign_In_Layout.cshtml";
+}
+
+
+<div class="row text">
+    <div class="col-md-8 offset-2">
+    <p>
+            <h4 style="text-align:center;">Edit Details @*@Model.FirstName*@ </h4>
+    </p>
+<div class="row">
+        <div class="col-md-8 offset-2">
+        <form asp-controller="Update" asp-action="UpdateTrainee" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiddleName" class="control-label"></label>
+                <input asp-for="MiddleName" class="form-control" />
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <a class="btn btn-outline-success float-end mt-3 ms-2" asp-action="">Add Phone</a>
+                <a class="btn btn-outline-success float-end mt-3" asp-action="">Add Address</a>
+                <input type="submit" @*value="Save"*@ class="btn btn-primary mt-3" />
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+<div>
+    <a style="text-decoration:none; color:black; margin-left:21.50rem; margin-bottom:-8rem;" asp-controller="Dashboard" asp-action="Index">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+        </svg>Back to Dashboard
+    </a>
+</div>
+
