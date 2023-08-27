@@ -122,10 +122,6 @@
                     </div>
                 </div>
             </div>
-
-            <div id="test-result" class="bottom-container">
-                <div class="bottom-container__left">
-
                     <div class="box spending-box dashboard">
                         <div class="header-container">
                             <h3 class="section-header">Test Result</h3>
@@ -141,7 +137,7 @@
                             <div class="pie-chart__labels-item">
                                 <div class="label">
                                     <div class="label__color first"></div>
-                                    HTML
+                                    <a asp-action="GetHtmlTest" asp-controller="Test">HTML</a> 
                                 </div>
                                 @foreach (var test in Model.Tests)
                                 {
@@ -155,7 +151,7 @@
                             <div class="pie-chart__labels-item">
                                 <div class="label">
                                     <div class="label__color second"></div>
-                                    CSS
+                                    <a asp-action="GetCssTest" asp-controller="Test">CSS</a>
                                 </div>
                                 @foreach (var test in Model.Tests)
                                 {
@@ -169,7 +165,7 @@
                             <div class="pie-chart__labels-item">
                                 <div class="label">
                                     <div class="label__color third"></div>
-                                    JavaScript
+                                    <a asp-action="GetJsTest" asp-controller="Test">JavaScript</a>
                                 </div>
                                 @foreach (var test in Model.Tests)
                                 {
@@ -181,14 +177,13 @@
 
                             </div>
 
-                        </div>
-                    </div>
+						</div>
+					</div>
 
                     <div class="box transaction-box dashboard">
                         <div class="header-container">
                             <h3 class="section-header">Test History</h3>
                             <div class="date-selector">
-
                                 <span>24 Aug 2023</span>
                             </div>
                         </div>
@@ -324,39 +319,38 @@
                                 First Name:
                             </td>
                             <td>@Model.FirstName</td>
-
-                            <td>
+                           @* <td>
                                 <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
-                            </td>
+                            </td>*@
                         </tr>
                         <tr>
                             <td>
                                 Middle Name:
                             </td>
                             <td>@Model.MiddleName</td>
-                            <td>
+                           @* <td>
                                 <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
-                            </td>
+                            </td>*@
                         </tr>
                         <tr>
                             <td>
                                 Last Name:
                             </td>
                             <td>@Model.LastName</td>
-                            <td>
+                           @* <td>
                                 <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
-                            </td>
-                        </tr>
-                        @*<tr>
-                            <td>
-                                Phone Number1:
-                            </td>
-                            <td>08023234657</td>
-                            <td>
-                                <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
-                            </td>
+                            </td>*@
                         </tr>
                         <tr>
+                            <td>
+                                Phone Number:
+                            </td>
+                            @*<td>08023234657</td>
+                            <td>
+                                <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
+                            </td>*@
+                        </tr>
+                        @*<tr>
                             <td>
                                 Phone Number2:
                             </td>
@@ -364,17 +358,17 @@
                             <td>
                                 <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
                             </td>
-                        </tr>
+                        </tr>*@
                         <tr>
                             <td>
                                 Address:
                             </td>
-                            <td>16, San Jose Street, Lagos Island, Lagos.</td>
+                            @*<td>16, San Jose Street, Lagos Island, Lagos.</td>
                             <td>
                                 <button asp-action="" class="btn-primary edit-detail-button">Edit</button>
-                            </td>
+                            </td>*@
                         </tr>
-                        <tr>
+                       @* <tr>
                             <td>
                                 Username:
                             </td>
@@ -383,8 +377,6 @@
                     </table>
                 </div>
             </div>
-
-
     </div>
     </div>
     </main>
