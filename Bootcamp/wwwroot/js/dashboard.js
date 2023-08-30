@@ -24,6 +24,7 @@ var value1 = parseFloat(score1.textContent);
 var value2 = parseFloat(score2.textContent);
 var value3 = parseFloat(score3.textContent);
 
+
 var totalScore = value1 + value2 + value3;
 
 var labels = ["HTML Score", "CSS Score", "JavaScript Score"];
